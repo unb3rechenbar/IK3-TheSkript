@@ -1,0 +1,78 @@
+\documentclass[../WiSe22ANA3.tex]{subfiles}
+\begin{document}
+	\lesson{1}{di 10 jan 2023 08:30}{Fortsetzung Oszillator} 
+		Wir nehmen nun an, die Eigenfrequenzen $\omega_\alpha$ seien paarweise verschieden. Wir untersuchen, ob $\Maus{A}{i,\alpha}$ proportional zu $\Minor{i}{\Lambda-\omega_\alpha^2T}$ ist. Wir sparen uns hier allerdings den allgemeinen Beweis und betrachten einen Spezialfall. Sei $n=3$ und $\alpha=1=i$. Dann 
+		$$\sum_{j\in[3]}\Maus{\Lambda}{i,j}-\omega_\alpha^2\Maus{T}{i,j}\cdot\Maus{A}{j,\alpha}=\Null{\R^3}.$$
+		\begin{Aufgabe}
+			\nr Zeige den allgemeinen Fall. 
+			
+			\nr Überlege dir die Minoren der angegebenen Matrix für den $\R^3$ Fall. 
+		\end{Aufgabe}
+		
+		Erweitere die Determinante entlang der ersten Spalte mit $\Maus{\mcM}{i,\alpha}:=\Minor{i}{\Lambda-\omega_\alpha^2T}$, also
+		$$\sum_{i\in[3]}\nbra{\Maus{\Lambda}{i,1}-\omega_1^2\Maus{T}{i,1}}\cdot\Maus{\mcM}{i,\alpha}=0.$$
+		Wir finden ein $C_\alpha\in\C$ mit
+		$$\Maus{A}{i,\alpha}=C_\alpha\cdot\Maus{\mcM}{i,\alpha},$$
+		charakterisiert durch 
+		$$C_\alpha\cdot\nbra{\sum_{i\in[3]}\nbra{\Maus{\Lambda}{i,1}-\omega_1^2\Maus{T}{i,1}}\cdot\Maus{\mcM}{i,\alpha}}=0.$$
+		Damit ergibt sich für die Verschiebung
+		$$\Maus{h}{i,\alpha}(t)=C_\alpha\cdot\Maus{\mcM}{i,\alpha}\cdot\exp(-\cmath\omega_\alpha t),$$
+		sodaß eine allgemeine reelle Lösung der Realteil von 
+		$$\Real{h_i(t)}=\Real{\sum_{\alpha\in[n]}C_\alpha\cdot\Maus{\mcM}{i,\alpha}\cdot\exp(-\cmath\omega_\alpha t)}$$
+		ist. 
+		\begin{Aufgabe}
+			\nr Rechne $\Maus{A}{i,\alpha}=C_\alpha\cdot\Maus{\mcM}{i,\alpha}$ nach. Erweitere hierzu zunächst die Determinante $\det(\Lambda-\omega_\alpha^2 T)$ in der ersten Spalte. 
+			
+			\nr Übertrage $\Maus{A}{i,\alpha}=C_\alpha\cdot\Maus{\mcM}{i,\alpha}$ auf die am Anfang betrachtete Verschiebung $h$ der generalisierten Koordinate $q$ im Potential $V$. 
+			
+			\nr Zeige, daß die allgemeine reelle Lösung die Gleichung (???) löst. 
+		\end{Aufgabe}
+		Schreiben wir $\Theta_\alpha(t):=\Maus{\mcM}{i,\alpha}\cdot\exp(-\cmath\omega_\alpha t)$, dann können wir überlegen, ob die Bewegungsgleichungen zu $\Theta_\alpha$ entkoppelt sind.
+		\begin{Aufgabe}
+			\nr Untersuche die Kopplung. 
+		\end{Aufgabe}
+		Damit dann 
+		\begin{multline*}
+			T(t,(h(t),h'(t)))=\frac{1}{2}\Real{\stern{h'}{i}{t}}\cdot\Real{\stern{h'}{j}{t}}\\
+			=\frac{1}{2}\Maus{T}{i,j}\cdot\Maus{\mcM}{i,\alpha}\cdot\stern{\Theta'}{\alpha}{t}\cdot\Maus{\mcM}{j,\beta}\cdot\stern{\Theta'}{\beta}{t}
+		\end{multline*}
+		und 
+		$$V(t,h(t))=\frac{1}{2}\Real{h_i}\Real{h_j}.$$
+		\begin{Aufgabe}
+			\nr Schreibe das Potential $V$ aus. 
+		\end{Aufgabe}
+		Wir können nun für $\alpha,\beta\in\Mengenschriftdesign{Eigenmodi}$ schreiben
+		$$\sum_{j\in[n]}\Maus{\Lambda}{i,j}\Maus{\mcM}{i,\alpha}=\omega_\alpha^2\sum_{j\in[n]}\Maus{T}{i,j}\Maus{A}{j,\alpha}.$$
+		\begin{Aufgabe}
+			\nr Verwende $\Maus{A}{j,\alpha}=C_\alpha\cdot\Maus{\mcM}{i,\alpha}$ um die Summengleichheit zu zeigen. 
+		\end{Aufgabe}
+		Die Differenz für $\alpha,\beta$ ergibt dann
+		$$\nbra{\omega_\alpha^2-\omega_\beta^2}\cdot\sum_{(i,j)\in[n]^2}\Maus{T}{i,j}\Maus{\mcM}{i,\alpha}\Maus{\mcM}{i,\beta}=0_\R.$$
+		Wenn $\alpha\neq 0$ und $\beta\neq 0$ und $\alpha\neq\beta$ folgt $\sum_{(i,j)\in[n]^2}\Maus{T}{i,j}\Maus{\mcM}{i,\alpha}\Maus{\mcM}{i,\beta}=0$. Sind jedoch $\alpha=\beta$, dann kann die Summe Element aus $\R$ sein. 
+		
+		Irgendwie... kann man dann vereinfachen zu 
+		\begin{align*}
+			&T=\frac{1}{2}\nbra{\Theta_\alpha'(t)}^2 &&\frac{1}{2}\sum_{\alpha\in[n]}\omega_\alpha^2\Theta_\alpha(t)^2.
+		\end{align*}
+		\begin{Aufgabe}
+			\nr Führe die Vereinfachung durch. 
+		\end{Aufgabe}
+		Damit kann die Lagrange-Gleichung endlich beschrieben werden durch
+		$$L(t,(q(t),q'(t)))=\frac{1}{2}\sum_{\alpha\in[n]}\nbra{\Theta_\alpha'(t)^2-\omega_\alpha^2\Theta_\alpha(t)^2}$$
+		mit der aus der \Euler-\Lagrange Gleichung resultierenden DGL
+		$$\Theta_\beta''(t)+\omega_\beta^2\Theta_\beta(t)^2=0.$$
+		\begin{Aufgabe}
+			\nr Recherchiere \enquote{\emph{dispersion relation photons}} und betrachte die Graphen. 
+			
+			\nr Finde den Zusammenhang zur Festkörperphysik. Inwiefern ist der bearbeitete Zusammenhang z.B. im Metzler vorhanden? 
+			
+			\nr Recherchiere wie das Verfahren modifiziert wird, wenn zwei oder mehr Eigenfrequenzen entartet sind. 
+		\end{Aufgabe}
+		\begin{Beispiel}[Freies Teilchen]
+			Betrachte ein freies Teilchen, dessen Potential $V(t,x(t))=\frac{1}{2}\nbra{k_1x_1^2+k_2x_2^2+k_3x_3^2}$ ist. Die kinetische Energie sei $T(t,(x(t),x'(t)))=\frac{1}{2}m\dabs{x'(t)}{2}^2$. Dann ist die Potentialenergiematrix $\Lambda$ diagonal, also $\Lambda=\fdef{\delta_(i,j)\cdot k_i}{(i,j)\in[3]^2}$. Die Matrix $T$ ist demensprechend $T=m\cdot I_3$. Es gilt also 
+			$$m\stern{x''}{i}{t}+k_i\stern{x}{i}{t}=0$$
+			für $i\in[3]$, wobei $\stern{x}{i}{t}=A_i\cdot\exp(-\cmath\omega t)$. Die Bedingung ist 
+			$$\det(\Lambda-\omega^2 T)=0=\sum_{i\in[3]}\nbra{k_i-m\omega^2}$$
+			und somit $\omega_i=\sqrt{k_i/m}$. 
+		\end{Beispiel}
+\end{document}

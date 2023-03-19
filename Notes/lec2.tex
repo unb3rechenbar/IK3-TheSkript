@@ -1,0 +1,219 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+	\lesson{2}{di 25 okt 2022 08:15}{D'Alembertscher Grundsatz und Lagrangesche Gleichungen}
+	Betrachten wir ein System $\Sigma$ in welchem $N\in\N$ Teilchen gegeben seien. Dann ist der $i$-te Ortsvektor gleich 
+	\begin{align*}
+		\vec{r}_i^*(t,q(t))=\vec{r}_i(t,(q_1^*(t),\dots,q_{3N-k}^*(t))),
+	\end{align*}
+	mit $q:\R\to\R^{3N-k}$ als \emph{Parameterfunktion}. 
+	\begin{info}[Die Parameterfunktion]
+		Eine Funktion $q\in C^n(K,K^M)$ mit $M:=\dim(V)\cdot N-k$ nennen wir \emph{$n$-fache $M$-Parameterfunktion} auf $\Raum{V}{K}$.
+	\end{info} 
+	\section{Virtuelle Verschiebung}			
+		Die virtuelle Verschiebung ist eine kleine Verschiebung der Parameter des Systems unter Berücksichtigung aller möglichen Zwänge. Sie ist eine Funktion $h\in C^n(K,K^M)$ mit $M:=\dim(V)\cdot N-k$ und verschiebt den Ort $\vec r$ eines Teilchens gemäß
+		$$\diff{\vec r}{H}{t,(q(t),q'(t))}{}\approx\vec r((t,(q(t),q'(t)))+H)-\vec r(t,(q(t),q'(t)))$$
+		für $H$ als Platzhalter von $(0,(h(t),h'(t)))$. 
+		\begin{info}[Virtuelle Verschiebung]
+			Als \emph{virtuelle Verschiebung} bezeichnen wir eine Änderung der Parameter einer Funktion $f:\R\times(\R^d)^{p+1}$ mit der Parameterfunktion $q\in C^p(\R,\R^d)$ und der Verschiebung $h\in C^p(\R,\R^d)$ unter konstantem Zeitparameter $t\in\R$. 
+		\end{info}
+		
+		\begin{bsp}
+			In einem Gleichgewichtssystem ist die Nettokraft auf ein Teilchen gleich dem Nullvektor, also $\sum_{i\in[N]\setminus\nset{j}}\vec F_{(i,j)}=0_{\R_3}$. Mit der virtuellen Verschiebung mit einbezogen gilt
+			\begin{align*}
+				\sum_{i\in[N]}\scpr{\vec{F}_i}{\delta\vec{r}_i}=0_{\R^3}
+			\end{align*}
+			mit $\vec{F}_i=\vec{F}_i^{ext}+\sum_{j\in[N]\setminus\nset{i}}\vec{F}_{(i,j)}$. Die Gesamtkraft ist dann die Summe der externen und der Zwangskräfte:
+			\begin{align*}
+				\vec{F}_i=\vec{F}_i^a+\vec f_i. 
+			\end{align*}
+		\end{bsp}
+		\begin{Behauptung}
+			Wir gehen nun davon aus, daß die virtuelle Verschiebung senkrecht zur Zwangskraft verläuft, also
+			\begin{align*}
+				\scpr{\vec{f}_i}{\delta\vec{r}_i}=0_{\R^3}. 
+			\end{align*}
+		\end{Behauptung}
+		\begin{begruendung}
+			Dies liegt daran, daß die Zwänge eine Verschiebung \enquote{verhindern}; Kräfte aus Zwängen verrichten also keine Arbeit! 
+		\end{begruendung}
+		Durch diese Annahme wird erstmal die Reibung aus dem System ausgeschlossen. Auf diese kommen wir später zurück. 
+		\begin{info}[D'Alembertsches Prinzip für statische Systeme]
+			Es gilt ihmentsprechend 
+			\begin{align*}
+				\sum_{i\in[N]}\scpr{\vec{F}_i^a}{\delta\vec{r}_i}=0_{\R^3}. 
+			\end{align*}
+			Man sagt auch \enquote{Gesetz über virtuelle Arbeit}.
+		\end{info}
+		
+	\section{Dynamischer Fall}
+		Die Bewegungsgleichung des $i$-ten Teilchens ist durch das zweite Newtonsche Gesetz mit 
+		\begin{align*}
+			\vec{F}_i-\dv{t}\vec{p}_i=\Null{\R^3}.
+		\end{align*}
+		\begin{info}[Dynamisches D'Alembertsches Prinzip]
+			\begin{align*}
+				\sum_{i\in[N]}\scpr{\vec{F}_i-\dv{t}\vec{p}_i}{\delta\vec{r}_i}=
+				\sum_{i\in[N]}\nsqbra{\scpr{\vec F_i}{\delta\vec{r}_i}-\scpr{\dv{t}\vec p_i}{\delta\vec r_i}}
+				=0_{\R}. 
+			\end{align*}
+		\end{info}
+		\subsubsection{Vorteil des Prinzips}
+			Der Vorteil liegt darin, daß die Zwangskräfte eleminiert wurden! Unter der Annahme, daß die Zwänge \so{holonom} sind, können wir verallgemeinerte Koordinaten wie oben vorgestellt verwenden.
+			\begin{align*}
+				\vec{v}_i=\dv{t}\vec{r}_i=\sum_{i\in[N]}\dv{\vec{r}_i}{q_i}q_i'(t)+\pdv{\vec{r}_i}{t}&=\vec{v}_i(q_1,\dots,q_{3N-k},\dot q_1,\dots,\dot q_{3N-k},t) \\
+				&=:\vec{v}_i(t,(q(t),q'(t))).
+			\end{align*}
+			Damit können wir auch die virtuelle Verschiebung in den neuen Koordinaten ausdrücken:
+			\begin{align*}
+				\delta\vec{r}_i=\sum_{j\in[N]}\pdv{\vec{r}_i}{q_j}\delta q_j.
+			\end{align*}
+			Bemerke, daß die virtuelle Verschiebung nur Koordinatenverschiebungen beinhaltet, also zu einem fixen Zeitpunkt stattfindet.
+			 
+		\subsection{Genauere Betrachtung des Prinzips}
+			\begin{Behauptung}
+				Man kann den ersten Term des dynamischen \textsc{d'Alembert}sches Prinzips umschreiben.
+			\end{Behauptung}
+			\begin{begruendung}
+				\begin{align*}
+					\sum_{i\in[N]}\scpr{\vec{F}_i}{\delta\vec{r}_i}=\sum_{(i,j)\in[N]^2}\scpr{\vec{F}_i^a}{\pdv{\vec{r}_i}{q_j}\delta q_j}=\sum_{j\in[N]}Q_j\delta q_j.
+				\end{align*}
+				\begin{info}[Verallgemeinerte Kraft]
+					Die verallgemeinerte Kraft $Q_j$ definieren wir mit 
+					\begin{align*}
+						Q_j:=\sum_{i\in[N]}\scpr{\vec{F}_i^a}{\pdv{\vec{r}_i}{q_j}}.
+					\end{align*}
+				\end{info}
+				Die Dimension/Einheit von $Q_j\delta q_j$ ist diejenige der Arbeit, diejenigen von $Q_j$ und $\delta q_j$ sind allerdings systemabhängig.
+			\end{begruendung} 
+			
+		\subsection{Betrachtung des zweiten Terms im d'Alembertschen Prinzip}
+			\begin{Behauptung}
+				Man kann den zweiten Term des dynamischen \textsc{d'Alembert}sches Prinzips umschreiben. 
+			\end{Behauptung}
+			\begin{begruendung}
+				Er lautet
+				\begin{align*}
+					\sum_{i\in[N]}\scpr{\dv{t}\vec{p}_i}{\delta\vec{r}_i}=\sum_{(i,j)\in[N]^2}\scpr{m_i\dv[2]{\vec{r}_i}{t}}{\pdv{\vec r_i}{q_j}\delta q_j}.
+				\end{align*}
+				Mit der Kettenregel folgt dann 
+				\begin{align*}
+					\sum_{(i,j)\in[N]^2}\scpr{m\dv[2]{\vec{r}_i}{t}}{\pdv{r_i}{q_j}\delta q_j}=\sum_{i\in[N]}\nsqbra{\dv{t}\scpr{m_i\vec{r}_i}{\pdv{\vec{r}_i}{q_i}}-m_i\vec{r}_i\dv{t}\pdv{q_j}\vec{r}_i}. 
+				\end{align*}
+				In der \textsc{Übung} zeigen wir 
+				\begin{align*}
+					\dv{t}\pdv{q_j}\vec r_i=\pdv{q_j}\dv{t}\vec r_i \qquad \pdv{\vec{v}_i}{q'_j}=\pdv{\vec{r}_i}{q_i}. 
+				\end{align*}
+				\begin{begruendung}
+					Wir führen aus:
+					\begin{align*}
+						\dv{t}\pdv{q_j}\vec r_i=\sum_{k\in[N]}\pdiff{\pdiff{\vec r_i}{q_k}{}{}}{q_j}{}{}\cdot q'_k(t)+\pdiff{\pdiff{\vec r_i}{t}{}{}}{q_j}{}{}
+					\end{align*}
+					und für die rechte Seite
+					\begin{align*}
+						\pdv{q_j}\dv{t}\vec r_i=:\pdv{\vec v_i}=\pdv{q_j}\nsqbra{\sum_{k\in[N]}\pdiff{\vec r_i}{q_k}{}{}\cdot q'_k(t)+\pdiff{\vec{r}_i}{t}{}{}}. 
+					\end{align*}
+				\end{begruendung}
+				Damit erreicht man 
+				\begin{align*}
+					\sum_{(i,j)\in[N]^2}\scpr{m\dv[2]{\vec{r}_i}{t}}{\pdv{r_i}{q_j}\delta q_j}&=\sum_{i\in[N]}\nsqbra{\dv{t}\scpr{m_i\vec{v}_i}{\pdv{q_j}\vec{v}_i}-m_i\vec{v}_i\pdv{q_j}\vec v_i} \\
+					&=\sum_{i\in[N]}\nsqbra{\dv{t}\pdv{\dot q_j}\nbra{\frac{1}{2}m_i\vec{v}_i^2}-\pdv{q_j}\nbra{\frac{1}{2}m_i\vec{v}_i^2}} \\
+					&=\dv{t}\pdv	{\dot q_j}W_{kin}-\pdv{q_j}W_{kin}. 
+				\end{align*}
+			\end{begruendung}
+			\begin{info}[Grundsatz von D'Alembert]
+				Damit folgt der Grundsatz unter \so{holonomen} Bedingungen mit
+				\begin{align*}
+					\sum_{j\in[N]}\nsqbra{\dv{t}\pdv	{\dot q_j}W_{kin}-\pdv{q_j}W_{kin}-Q_j}\delta q_j=\Null{\R^3}. 
+				\end{align*}
+			\end{info}
+			\begin{Behauptung}
+				Jeder Term innerhalb der Summation selbst ist gleich $\Null{\R^3}$. Damit dann
+				\begin{align*}
+					\begin{align*}
+						\dv{t}\pdv	{\dot q_j}W_{kin}-\pdv{q_j}W_{kin}=Q_j
+					\end{align*}
+				\end{align*}
+			\end{Behauptung}
+			
+		\section{Konservative Systeme}
+			\begin{Voraussetzung}
+				Es gilt $\vec{F}_i=-\div_i\phi$ und $\phi=\phi(q_j)$.
+			\end{Voraussetzung}
+			Setzen wir dies in die Definition von $Q_j$ ein, dann folgt
+			\begin{align*}
+				Q_j=\sum_{i\in[N]}\scpr{\vec{F}_i}{\pdv{r_i}{q_j}}=-\sum_{i\in[N]}\scpr{\div_i\phi}{\pdv{\vec{r}_i}{q_j}}=-\pdv{q_j}\phi.
+			\end{align*}
+			Damit dann 
+			\begin{align*}
+				\pdv{\dot q_j}\phi=\Null{\R^3}. 
+			\end{align*}
+			\begin{info}[Lagrange Funktion und Gleichung]
+				Es gilt mit $L:=E_{kin}-\phi$ in holonomen und konservativen Systemen der Zusammenhang  
+				\begin{align*}
+					\dv{t}\pdv{L}{\dot q_j}-\pdv{L}{q_j}=\Null{\R^3}.
+				\end{align*}
+			\end{info}
+			\noindent Es ist $L$ hier nicht eindeutig definiert! Die Physik bleibt dieselbe, wenn 
+			\begin{align*}
+				L':=L+\dv{\vec{f}(q,t)}{t}
+			\end{align*}
+			mit $f:\R^d\to\R$. 
+			
+		\section{Reibung und andere geschwindigkeitsabhängige Potentiale}
+				\begin{Behauptung}
+					Sei ein geschwindigkeitsabhänhiges Potential mit
+				\begin{align*}
+					\psi=\psi(q_j,\dot q_j)
+				\end{align*}
+				gegeben. Dann gilt 
+				\begin{align*}
+					Q_j=-\pdv{\psi}{q_j}+\dv{t}\pdv{\psi}{\dot q_j}. 
+				\end{align*}
+			\end{Behauptung}
+			\begin{begruendung}
+				Folgt in der Übung.
+			\end{begruendung}
+			\begin{Erinnerung}
+				Für die Lorentzkraft gilt die Gleichung $\vec{F}=q(\vec{E}+\vec{v}\times\vec{B})$. 
+			\end{Erinnerung}
+			Als Skalarfeld ausgedrückt mithilfe der Gleichungen 
+			\begin{align*}
+				&\div\vec{B}=\Null{\R^3}\Rightarrow \rot\vec A=\vec	B &&\rot\vec{E}=-\pdv{\vec{B}}{t}
+			\end{align*}
+			und der Folgerung 
+			\begin{align*}
+				\rot\nsqbra{\underbrace{\vec{E}+\pdv{\vec{A}}{t}}_{-\div\Phi}}=\Null{\R^3}
+			\end{align*}
+			ergibt sich dann 
+			\begin{align*}
+				\vec{F}=q\nsqbra{-\div\Phi-\pdv{\vec{A}}{t}+\vec{v}\times\rot\vec{A}}.
+			\end{align*}
+			Der Grund für diese Umformungen ist die \so{gauge Invarianz}, welche später in der \textsc{speziellen Relativitätstheorie} relevant wird. 
+			\begin{info}[Einsteinsche Summenkonvention]
+				\begin{align*}
+					\scpr{A}{B}=\sum_{i\in[N]}A_iB_i=A_iB_i.
+				\end{align*}
+			\end{info}
+			\noindent Damit können wir \enquote{vereinfacht} schreiben
+			\begin{align*}
+				\nsqbra{\vec{v}\times\rot\vec{A}}_i=\vec{v}_j\pdiff{\vec{A}_j}{i}{}{}-\vec{v}_j\pdiff{\vec{A}_j}{i}{}{}
+			\end{align*}
+			und es folgt die folgende Infobox.
+			\begin{info}[Lorentz und Einstein]
+				Mit der \textsc{Einstein}schen Summenkonvention und den Maxwellgleichungen gilt für die Lorentzkraft
+				\begin{align*}
+					\vec{F}_i=q(-\pdiff{\Phi}{i}{}{}-\pdiff{\vec{A}_i}{t}{}{}+\vec{v}_j\pdiff{\vec{A}_j}{i}{}{}-\vec{v}_j\pdiff{\vec{A}_j}{i}{}{}). 
+				\end{align*}
+			\end{info}
+			Mit der Linearität der partiellen Ableitung folgt $\vec v_j\pdiff{\vec{A}_j}{i}{}{}=\pdiff{(\vec v_j\vec{A}_j)}{i}{}{}$ und wegen 
+			\begin{align*}
+				\dv{t}\vec{A}_i=\pdv{t}\vec A_i+\pdiff{(\vec v_j\vec A_j)}{j}{}{}
+			\end{align*} 
+			erweitert sich die Gleichung zu 
+			\begin{align*}
+				\vec{F}_i&=q\nsqbra{-\pdiff{\Phi}{i}{}{}+\pdiff{\scpr{\vec v}{\vec A}}{i}{}{}-\dv{\vec{A}_i}{t}} \\
+				&=q\nsqbra{-\pdiff{(\Phi-\scpr{\vec v}{\vec A})}{i}{}{}-\dv{t}\pdv{\vec{v}_i}\scpr{\vec v}{\vec A}} \\
+				&=-\pdiff{\psi}{i}{}{}+\dv{t}\pdv{\psi}{\vec{v}_i}. 
+			\end{align*}
+			
+\end{document}

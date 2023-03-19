@@ -1,0 +1,53 @@
+\documentclass[../WiSe22ANA3.tex]{subfiles}
+\begin{document}
+	\lesson{1}{di 22 nov 2022 08:15}{Virial- und Kepler Problem} 
+		\begin{Erinnerung}
+			Bezüglich des Zweikörperproblems haben wir herausgefunden 
+			\begin{align*}
+				t=\gint{r_0,r}\frac{1}{\sqrt{g(W,V,m,r,l}}\dint{t}{}
+			\end{align*}
+			mit 
+			\begin{align*}
+				g:\lfdef{\R^5\to\R}{x\mapsto 2/x_3(x_1-x_2-x_5^2/(2x_4^2))}. 
+			\end{align*}
+		\end{Erinnerung}
+		\section{Das Virialproblem}
+			Für $i\in[N]$ seien Massen $m_i\in\R$ mit Orten $\vec q_i:=\vec r_i\in\Abb{\R}{\R^3}$ und Kräften $\vec F_i\in\Abb{\R}{\R^3}$ gegeben. Es gilt mit $\diff{\vec p_i}{1_\R}{t}{}=\vec F_i(t)$, wobei $\vec p_i\in\Abb{\R}{\R^3}$, dann 
+			\begin{align*}
+				G_N:\lfdef{\R\times\Abb{\R^N}{\Abb{\R}{\R^3}}^2\to\R}{(t,x)\mapsto \sum_{i\in[N]}\scpr{x_1(i)(t)}{x_2(i)(t)}}.
+			\end{align*}
+			\begin{Erinnerung}
+				Es gilt eigentlich $\vec p,\vec F,\vec q\in\Abb{\R^N}{\Abb{\R}{\R^3}}$.
+			\end{Erinnerung}
+			Betrachte die zeitliche Ableitung von $G$, dann 
+			\begin{align*}
+				\pdiff{G}{t}{x}{}\stackrel{KR.}{=}\sum_{i\in[N]}\scpr{x'_1(i)(t)}{x_2(i)(t)}+\sum_{i\in[N]}\scpr{x_1(i)(t)}{x'_2(i)(t)}. 
+			\end{align*}
+			Für unseren Speziellen Fall ergibt sich 
+			\begin{align*}
+				\pdiff{G}{t}{t,(\vec q,\vec p)}{}=\sum_{i\in[N]}\scpr{\vec q_i(t)}{(\vec p_i)'(t)}+\sum_{i\in[N]}\scpr{(\vec q_i)'(t)}{\vec p_i(t)}.
+			\end{align*}
+			Wegen $W_{kin}(t)=1/2m\dabs{r'(t)}{2}^2$ folgt die Abkürzung
+			\begin{align*}
+				\pdiff{G}{t}{t,(\vec q,\vec p)}{}=2\cdot W_{kin}(t)+\sum_{i\in[N]}\scpr{\vec F_i(t)}{\vec p_i(t)}.
+			\end{align*}
+			Mit dem Mittelwertsatz der Integralrechunung folgt über ein Intervall $[0,\tau]$ mit $\tau\in\R_{>0}$ die Existenz eines $\zeta\in\R$ mit
+			\begin{align*}
+				\pdiff{G}{t}{\zeta,(\vec q,\vec p)}{}=\frac{1}{\tau}\cdot\gint{0_\R,\tau}\pdiff{G}{t}{t,(\vec q,\vec p)}{}\dint{t}{}=\frac{1}{\tau}\cdot\nsqbra{G(s,(\vec q,\vec p))}_{s=0}^{s=\tau}.
+			\end{align*}
+			\begin{Annahme}
+				Es sei nun $\tau=T$ die Periodendauer eines oszillierenden Systems. Andernfalls betrachte $\lim_{\tau\to\infty}$. 
+			\end{Annahme}
+			Dann ist $1/\tau\cdot(G(\tau,(\vec q,\vec p))-G(0,(\vec q,\vec p)))=0_\R$ und wir erhalten
+			\begin{align*}
+				W_{kin}(t)=-\frac{1}{2}\cdot \sum_{i\in[N]}\scpr{\vec F_i(t)}{\vec p_i(t)}. 
+			\end{align*}
+			\begin{bsp}
+				Betrachte ein Gas des Volumens $V\subseteq\R^3$ mit $N\in\N$ Teilchen.
+				\begin{multline*}
+					\frac{1}{2}\cdot\overline{\sum_{i\in[N]}\scpr{\vec F_i(t)}{\vec p_i(t)}}=-\frac{1}{2}p\cdot\int_{\pdiff{V}{}{}{}}\scpr{\vec n}{\sum_{i\in[N]}\vec r_i(t)}\dint{t}{S}\\
+					\stackrel{SvG}{=}-\frac{1}{2}p\cdot\int_{V}\div\nbra{\sum_{i\in[N]}\vec r_i(t)}\dint{t}{}\stackrel{?}{=}-\frac{3}{2}pV.
+				\end{multline*}
+			\end{bsp}
+
+\end{document}

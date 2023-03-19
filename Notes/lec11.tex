@@ -1,0 +1,71 @@
+\documentclass[../WiSe22ANA3.tex]{subfiles}
+\begin{document}
+	\lesson{1}{mo 05 dez 2022 10:00}{Orthogonale Transformationen} 
+	\section{Das Vektorrezept}
+		Betrachte die Basis $\underline e$ des $\R^3$ und ein Basistupel $\underline l$ in
+		\begin{align*}
+			\underline l\in\Bij{[3]}{\ONBasis{\R^3}{\R}},
+		\end{align*}
+		wobei $\underline l$ im Anwendungsfall die im starren Körper fixiere ONB sei. Dann lässt sich jeder Vektor $x\in\R^3$ basteln mit Elementen in $\underline e$ und $\underline l$. Hierzu brauchen wir verschiedene Multiplikatoren, welche offensichtlich Basisabhängig sind. Wir notieren zunächst das \emph{Vektorrezept}. 
+		\begin{info}[Vektorrezept]
+			Für $x\in\R^3$ und $\underline e\in\Basistupel{\R^3}{\R}$ definieren wir die Menge
+			$$\Vektorrezept{\R^3}{x}{\underline e}:=\nset{\lambda\in\R^3:\Phi(\lambda,\underline e)=x},$$
+			wobei $\Phi(\lambda,\underline e):=\sum_{i\in\Def{\lambda}}\lambda_i\cdot\underline e_i$. 
+		\end{info}
+		\begin{Aufgabe}
+			\nr Verallgemeinere das Konzept auf $\R^d$ für $d\in\N$.
+			
+			\nr Zeige $\Phi(\lambda,\underline e)=\avec{x}{\underline e}$. 
+			
+			\nr Zeige die Eindeutigkeit des Elementes aus $\Vektorrezept{\R^d}{x}{\underline e}$.
+		\end{Aufgabe}
+		Wir können nun eine Analogie zur Linearen Algebra ziehen: Es gilt nämlich 
+		$$\coord{x}{\underline e}=\Eintrag{\Vektorrezept{\R^3}{x}{\underline e}}.$$
+		Um nun einen Basiswechsel vorzunehmen, brauchen wir das Vektorrezept des Vektors $x$ bezüglich der Zielbasis $\underline l$, also
+		$$\coord{x}{\underline l}=\Eintrag{\Vektorrezept{\R^3}{x}{\underline l}}.$$
+		\begin{info}[Die Vektorrezeptabbildung]
+			Seien $\coord{x}{\underline e}$ und $\coord{x}{\underline l}$ Vektorrezepte des Vektors $x\in\R^d$ zu den Basen $\underline l$ und $\underline e$, dann nennen wir 
+			$$\Funktionenschriftdesign{Vektorrezeptabbildung}_{(\underline e,\underline l)}:\clfdef{\R^d}{\R^d}{\coord{x}{\underline e}}{\coord{x}{\underline l}}$$
+			die zugehörige Vektorrezeptabbildung.
+		\end{info}
+		\begin{Aufgabe}
+			\nr Zeige daß $\Funktionenschriftdesign{Vektorrezeptabbildung}$ eine Bijektion ist. 
+		\end{Aufgabe}
+		Mit der Form der Vektorrezeptabbildung können wir nun ein Gleichungssystem aufstellen, dessen Lösung $\coord{x}{\underline l}$ sein wird:
+		$$f(x)=\sum_{i\in[3]}\Funktionenschriftdesign{Vektorrezeptabbildung}_{(\underline e,\underline l)}(x)\cdot \underline l_i=:\avec{x}{\underline l}.$$
+		Damit ist dann 
+		$$f=\avec{x}{\underline l}\circ\Funktionenschriftdesign{Vektorrezeptabbildung}_{(\underline e,\underline l)}.$$
+		Die Basiswechselmatrix erhält man dann durch Einsetzen der Vektoren aus $\underline e$ für $x$. Sie lautet dann
+		$$M(f,\underline e,\underline l):=\fdef{\Funktionenschriftdesign{Vektorrezeptabbildung}_{(\underline e,\underline l)}(\underline e_j)(i)}{(i,j)\in[3]^2}.$$
+		\begin{Aufgabe}
+			\nr Verallgemeinere das Konzept auf $\R^d$ für $d\in\N$. 
+			
+			\nr Beschreibe, wie man einen beliebigen Vektor $x\in\R$ zu $f(x)$ überführt. Nutze dazu die Abbildung $\Vektorrezept{\R^3}{x}{\underline e}$ und das Matrixvektorprodukt. Bastle aus dem Ergebnis mit $\avec{x}{\underline l}$ das Ergebnis $f(x)$. 
+		\end{Aufgabe}
+	\section{Die Winkelzuordnung}
+		\begin{align*}
+			\textit{Winkelzuordnung}(\underline l,\underline e):\clfdef{[3]^2}{\R}{(i,j)}{\frac{\scpr{\underline l_i}{\underline e_j}}{\dabs{\underline l_i}{2}\cdot\dabs{\underline e_j}{2}}}. 
+		\end{align*}
+		Da allerdings $\dabs{\underline e_i}{}=\dabs{\underline l_i}{}=1$ gilt 
+		\begin{align*}
+			\textit{Winkelzuordnung}(\underline l,\underline e)(i,j)=\scpr{\underline l_i}{\underline e_j}=:\Gamma(\underline l,\underline e)(i,j). 
+		\end{align*}
+		\begin{info}[Eulerwinkelzuordnung und Eulerwinkel]
+			Seien $\underline l,\underline e\in\Basistupel{\R^3}{\R}$, dann sammeln wir die \emph{Eulerzuordnungswinkel} in der Menge
+			$$\Eulerwinkelzuordnung{\underline l_i}{\underline e}:=\nset{\Gamma(\underline l,\underline e)(i,j):j\in\Def{\underline e}}$$
+			und sprechen von den Winkelzuordnungen von $\underline l_i$ bezüglich der ONB $\underline e$ für ein $i\in\Def{\underline l}$. Weiter sammeln wir in 
+			$$\Eulerwinkel{\underline l_i}{\underline e}:=\nset{\cos^{-1}(\alpha):\alpha\in\Eulerwinkelzuordnung{\underline l_i}{\underline e}}$$
+			die tatsächlichen \emph{Winkel} $\alpha\in(-\pi,\pi)$ zu den obigen Zuordnungen. 
+		\end{info}
+		\begin{Bemerkung}
+			Beachte: $(\textit{Winkel }\circ\textit{Winkelzuordnung})(i)$ gibt für $\textit{Winkel}:\llfdef{\R\to[0,2\pi]}{t\mapsto \cos^{-1}(t)}$ den tatsächlichen Winkel zwischen den $i$-ten Basisvektoren - die Funktion \textit{Winkelzuordnung} selbst ordnet nur den Eingabewert zu, gibt aber selbst \textbf{keinen} Winkel aus!
+		\end{Bemerkung}
+		Damit ist dann $\Gamma(\underline l,\underline e)$ eine Matrix in $\R^{3\times 3}$! Damit ergibt sich dann für einen Vektor in $\underline l$ gerade
+		\begin{align*}
+			&\underline l_i=\sum_{j\in[3]}\Gamma(\underline l,\underline e)(i,j)\cdot\underline e_j && \underline e_j=\sum_{i\in[3]}\Gamma(\underline l,\underline e)(i,j)\cdot\underline l_i
+		\end{align*} 
+		Ein Vektor $\vec r=\vec r_1\cdot\underline e_1+\vec r_2\cdot\underline e_2+\vec r_3\cdot\underline e_3$ in $\underline l$ gerade
+		\begin{align*}
+			\vec r=\sum_{i\in[3]}\vec r_i\cdot \underline e_i=\sum_{i\in[3]}\vec r_i\cdot \sum_{j\in[3]}\Gamma(j,i)\cdot\underline l_j.
+		\end{align*}
+\end{document}

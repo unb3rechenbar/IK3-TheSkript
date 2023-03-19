@@ -1,0 +1,132 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+	\tableofcontents
+	\newpage
+
+	\lesson{1}{mo 24 okt 2022 10:00}{Einführung und Einleitung}
+	
+	\section*{Themen und Termine}
+		\begin{clist}
+			\item Lagrange Formalismus
+			\item Symmetrien und Erhaltungssätze
+			\item Hamilton Mechanik
+			\item Spezielle Relativitätstheorie
+			\item Nichtlineare Dynamik
+		\end{clist}
+		\begin{itemize}
+			\item Experimentelle Physik: Prof. Dr. Peter Baum
+			\item Theoretische Physik: Prof. Dr. Oded Zilberberg
+		\end{itemize}
+		Übungsblätter mittwochs. Letzte Buchquelle wird befolgt. \enquote{Introduction to Lagragian $\&$ Hamiltonian mechanics}. Ziel: Lernen. 
+		
+		\subsection*{Klausuren}
+			\begin{itemize}
+				\item Experimentalphysikklausur: 14.02.2023
+				\item Theoretische Physik Klausur: 27.02.2023
+			\end{itemize}
+		
+	\section{Notation und kurze Wiederholung}
+		Ziel: Übergang zu allgemeinerer Schreibweise, zur besseren Problemlösung. Wir arbeiten in den allermeisten Fällen auf $\Raum{\R^3}{\R}$. 
+		\begin{itemize}
+			\item Position angegeben durch $\vec{r}\in\R^3$
+			\item Geschwindigkeit angegeben durch $\vec{v}\in\R^3$.
+			\item Impuls angegeben durch $\vec v m=:\vec{p}\in\R^3$
+			\item Für die Kraft angegeben durch $\diff{\vec p}{1_\R}{t}{}=\dv{\vec{p}(t)}{t}\stackrel{Newton}{=:}\vec{F}(t)\in\R^3$ benötigen wir eine Zeitparametrisierung. Damit hat $\vec p$ die Form $\vec p:\R\to\R^3$. 
+			\item Drehimpuls angegeben durch $\vec r\times\vec p(t)=:\vec{L}(t)\in\R^3$
+			\item Drehmoment angegeben durch $\vec{r}\times\vec F(t)=:\vec T(t)\in\R^3$. Umgeschrieben mit Newton als $\vec T(t)=\vec{r}(t)\times\dv{\vec p(t)}{t}=\dv{\vec r(t)\times\vec{p}(t)}{t}-\dv{\vec r(t)}{t}\times\vec p=\dv{\vec L(t)}{t}-\vec v(t)\times\vec vm=\dv{\vec L(t)}{t}$. 
+			\item Arbeit angegeben durch $\int_{t_1}^{t_2}\scpr{\vec F(t)}{\dv{\vec r(t)}{t}}\dint{t}{}=:W$. 
+			\begin{Erinnerung}
+				Mit $X,Y$ endlichdim. VR und $x\in X$ gilt für $f:X\rightharpoonup Y$ und $\mu:X\rightharpoonup\R$ und $\fdef{\mu_x\cdot f_x}{x\in\R}$ die Kettenregel 
+				\begin{align*}
+					\diff{(f\cdot g)}{h}{x}{}=\diff{f}{h}{x}{}\cdot \mu+f\cdot\diff{\mu}{h}{x}{}
+				\end{align*}
+			\end{Erinnerung}
+			Wegen $\dv{t}\vec{v}(t)^2=2\vec{v}(t)\dv{t}\vec{v}(t)$ gilt 
+			\begin{align*}
+				m\int_{t_1}^{t_2}\scpr{\vec v(t)}{\dv{\vec v}{t}}\dint{t}{}\stackrel{\text{Kettenr.}}{=}& m\int_{t_1}^{t_2}\frac{1}{2}\dv{t}\scpr{\vec{v}(t)}{\vec{v}(t)}\\
+				&=\frac{1}{2}m\int_{t_1}^{t_2}\dv{t}\vec{v}(t)^2\dint{t}{}=W_{kin,2}-W_{kin,1}. 
+			\end{align*}
+		\end{itemize}
+		\begin{Erinnerung}
+			Mit $F:\R^3\to\R^3$ konservativ und $x*\in\Def{F}$ gilt für alle $x\in\Def{F}$ für einen Kurvenzug $\kappa(x)$ von $x*$ nach $x$ die Potentialdefinition/Stammfunktionsdefinition
+			\begin{align*}
+				\phi:=\fdef{\int_{\kappa(x)}F}{x\in\Def{F}}:=\fdef{\int_a^b\scpr{F(\gamma(t))}{\gamma'(t)}\dint{t}{}}{x\in\Def{F}},
+			\end{align*}
+			wobei $\gamma:[a,b]\to\R^3$ eine Parametrisierung von $\kappa(x)$ ist. Für $x=x*$ ist $\kappa(x)$ geschlossen und es kann mit $\kappa$ abgekürzt werden. 
+		\end{Erinnerung}
+		 In einem konservativen System gilt
+		 \begin{align*}
+		 	\int_{\kappa}\scpr{\vec{F}_{\vec{r}(t)}}{\dv{\vec{r}_t}{t}}\dint{t}{}=:\oint \scpr{\vec{F}}{\dv{\vec r}{t}}\dint{t}{}=0_\R \qquad\kappa\text{ geschlossener Kurvenzug}
+		 \end{align*}
+		 \anm{Dies wird zu einem Potential $\phi:\R\to\R^3$ führen!} Für die Kraft können wir schreiben
+		 \begin{align*}
+		 	\vec{F}=-\grad\nsqbra{\phi(\vec{r})-\phi(0_{\R^3})}
+		 \end{align*}
+		 Damit dann in konservativen Systemen: $W_{12}=E_{pot,2}-E_{pot,1}=E_{kin,2}-E_{kin,1}$. Daraus folgt, daß Energie in koservativen Systemen erhalten ist. 
+		 
+	\section{Vielteilchensysteme}
+		Unser Vorgehen startet bei der Differenzierung zwischen inneren und äußeren Kräften. 
+		\begin{info}[Innere und äußeren Kräfte]
+			Wir nennen eine Kraft zwischen Teilchen eines betrachteten Systems $\Sigma$ \emph{innere Kräfte} und schreiben $\vec F^{\text{ext}}$, wenn sie nur zwischen diesen wechselwirkt. Eine von außen an $\Sigma$ herangetragene Kraft nennen wir \emph{äußere Kraft} und schreiben $\vec F^{\text{int}}$.
+		\end{info}
+		\noindent Seien also $N\in\N$ Teilchen in $\Sigma$ gegeben. Dann können wir auseinanderziehen und erhalten 
+		\begin{align*}
+			\dv{\vec p(t)}{t}=\vec{F}&=\vec{F}_i^{ext}+\sum_{j\in[N]\setminus\nset{i}}\vec{F}^{\text{int}}_{(j,i)} \\
+			\dv[2]{\vec p(t)}{t}=\sum_{i\in[N]}m_i\vec{v}_i&=\underbrace{\sum_{i\in[N]}\vec{F}_i^{ext}}_{=:\vec{F}^{ext}}+\underbrace{\sum_{j\in[N]\setminus\nset{i}}\vec{F}^{\text{int}}_{(j,i)}}_{=0_{\R^3}}.
+		\end{align*}
+		\begin{Aufgabe}
+			\nr Schreibe die Funktionen $\vec F^{\text{int}}$ und $\vec F^{\text{ext}}$ auf. 
+		\end{Aufgabe}
+		\noindent Es gilt bezüglich der Matrix $\vec{F}_{(i,j)}=-\vec{F}_{(j,i)}$. 
+		\begin{info}[Der Massenschwerpunktweg]
+			Wir definieren als \emph{Massenschwerpunktsweg} $\vec R:\R\to\R^3$ eines Systems $\Sigma$ den Quotienten $\vec R:=\fdef{(\sum_{i\in[N]}m_i\cdot\vec{r}_i(t))/(\sum_{i\in[N]}m_i)}{t\in\R}$. 
+		\end{info}
+		\begin{Aufgabe}
+			\nr Überlege die Funktionsformen von $m$ und $\vec{r}$. 
+			
+			\nr Berechne den Systemimpuls $\vec p_\Sigma$ und $\vec F_{\Sigma}$ als Ableitungen des Massenschwerpunktsweges. Schreibe mit demselben Vorgehen den Systemdrehimpuls $\vec L_\Sigma$. 
+		\end{Aufgabe}
+		\noindent Den Systemdrehimpuls können wir nun wieder aufspalten in die internen und externen Anteile, sodaß für dessen zeitliche Ableitung gilt
+		\begin{align*}
+			\dv{\vec{L}(t)}{t}=\sum_{i\in[N]}\vec{r}_i(t)\times(\vec{F}^{\text{ext}})_i^*(t)+\sum_{j\in[N]\setminus\nset{i}}\vec{r}_i^*(t)\times(\vec{F}^{\text{int}})_{(j,i)}^*(t).
+		\end{align*}
+		Wir definieren $\vec{r}_{ij}(t):=(\vec{r}_i^*(t)+\vec{r}^*_j(t))$. Damit $\vec{r}_{ij}(t)\times\vec F(t)=\vec{r}_i^*(t)\times\vec{F}(t)+\vec{r}_j^*(t)\times\vec{F}(t)$. Schreibe damit vereinfacht
+		\begin{align*}
+			\dv{\vec{L}(t)}{t}=\vec{L}^{ext}(t)+\frac{1}{2}\sum_{j\in[N]\setminus\nset{i}}\vec{r}_{ij}\times\vec{F}_{ji}=\vec{T}^{ext}(t).
+		\end{align*} 
+		Fordere die Eigenschaft $\vec{r}_{ij}\times\vec{F}_{ji}=0_{\R^3}$ für alle $i,j\in\N$, dann heißt das System ein \so{Zentralkraftfeld}. 
+		\subsection*{Relative Koordinaten}
+			Natürlich ist es auch möglich, über einen Umweg über den Massenschwerpunkt den Ort eines Teilchens zu definieren. Hierzu ist eine Verschiebung des Ursprungs notwendig. 
+			\begin{info}[Verschiebung des Ursprungs]
+				Sei $V$ ein $K$-Vektorraum und $v,w\in V$, dann ist $v=v-w+w=:\tilde v+w$ eine Verschiebung des Vektors $v$ um $w$. 
+			\end{info}
+			\noindent Sei nun speziell $w:=\vec R(t)$ und $v:=\vec r(t)$, dann können wir als Relativkoordinate schreiben 
+			\begin{align*}
+				\vec{r}(t)=\vec r(t)-\vec{R}(t)+\vec R(t)=:\tilde{\vec r}(t)+\vec R(t). 
+			\end{align*}
+			Für den relativen Drehimpuls ergibt sich als Beispiel die Beziehung 
+			und damit 
+			$$\vec{L}(t)=\vec{R}(t)\times M\vec{V}(t)+\sum_{i\in[N]}\vec{\tilde r}_i^*(T)\times\vec{\tilde p}_i^*(t).$$
+			Für die kinetische Energie folgt weiter 
+			$$W_{kin}=\frac{1}{2}\sum_{i\in[N]}m_i\vec{v}_i^2=\frac{1}{2}M\cdot\vec V(t)^2+\frac{1}{2}\sum_{i\in[N]}m_i\vec{\tilde v}_i^*(t)^2.$$
+			\begin{Aufgabe}
+				\nr[Drehimpulsverschiebung] Rechne die Behauptung nach, indem du die Definitionen verwendest. Warum fallen zwei Summanden weg?
+			\end{Aufgabe}
+			
+	\section{Zwangsbedingungen und verallgemeinerte Koordinaten}
+		Es gibt verschiedene Arten der Zwänge, die wir zur Unterscheidung klassifizieren wollen.
+		\begin{info}[Zwangsbedingungsklassifizierung]
+			Seien $[N]$ Teilchen im System $\Sigma$ in $\Raum{\R^3}{\R}$ und $f:\R\times(\R^3)^N\to\R$ die \emph{Zwangsfunktion}, dann unterscheiden wir zwischen den folgenden Fällen:
+			\begin{align*}
+				f(t,(\gamma_1^*(t),...,\gamma_N^*(t)))&=0_\R &&\textit{holonom} \\
+				f(t,(\gamma_1^*(t),...,\gamma_N^*(t)))&\lessgtr 0_\R &&\textit{anholonom}
+			\end{align*}
+			Weiter können wir zwischen \emph{explizit} und \emph{implizit} zeitabhängigen Zwangsfunktionen unterscheiden; Erstere nennen wir \emph{rheonom}, letztere \emph{skleronom}. 
+		\end{info}
+		\noindent In den meisten Fällen werden wir in \underline{holonomen rheonomen} Zwangssituationen arbeiten. Beispielsweise ist die Zwangsbedingung einer Kreisbahn durch $(\vec{r}_i-\vec{r}_j)^2-\vec c_{ij}^2=0_{\R^3}$ für ein $c\in\R_{\geq 0}$ holonom, jedoch skleronom. 
+		\begin{info}[Freiheitsgrade]
+			Die Anzahl der Freiheitsgrade in $\Sigma$ berechnen wir durch 
+			$$\Funktionenschriftdesign{Freiheitsgrade}(\Sigma):=\dim(V)\cdot N-k$$
+			für $k$ Zwangsbedingungen und $V$ als $K$-Vektorraum. 
+		\end{info}
+\end{document}

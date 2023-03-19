@@ -1,0 +1,99 @@
+\documentclass[../WiSe22ANA3.tex]{subfiles}
+\begin{document}
+	\lesson{1}{mo 09 jan 2023 10:00}{Gekoppelter Oszillator} 
+		\section{Gekoppelter Oszillator}
+			Der gekoppelter Oszillator kann durch das Potential $V(x)=kx^2/2$ beschrieben werden. Die GewegungsDGL ist dann $mx''(t)+kx(t)=0_\R$ mit der Lösung $x(t)=\exp(-\lambda t/m)\cdot\Real{A\cdot\exp(-\cmath\omega t)}$.
+			
+			\begin{Aufgabe}
+				\nr Verifiziere die angegebene Lösung $x(t)=\exp(-\lambda t/m)\cdot\Real{A\cdot\exp(-\cmath\omega t)}$ des DGP $mx''(t)+kx(t)=0_\R$ für den gekoppelten Oszillator.
+			\end{Aufgabe}
+			
+		\section{Mehrteilchensysteme}
+			\begin{info}[Gleichgewichtszustand]
+				Der \emph{Gleichgewichtszustand} ist der Zustand, für welchen alle verallgemeinerten Kräfte gleich $0$ sind, also
+				$$0=Q_i(t,(q(t),q'(t)))=:-\Diff{V}{(0,(\mbbEins_i,0)}{t,(q(t),q'(t))}{}.$$
+			\end{info}
+			Es hat also $V$ einen Extrempunkt $(t,x)\in\kritPkt{V}$. Wir unterscheiden hierbei $(t,q)\in\argmin{V}$ und sagen \enquote{$(t,x)$ ist ein \emph{stabiler Punkt}}, andernfalls mit $(t,q)\in\argmax{V}$ ein \emph{instabiler Punkt}. 
+			
+			\begin{Aufgabe}
+				\nr Bedenke den Zusammenhang des Extrempunktes mit der Definition des Gleichgewichtszustandes. 
+			\end{Aufgabe}
+			Man kann sich nun die Umgebung des solchen Punktes $(t,q)$ genauer ansehen, indem man kleine Änderungen der Einträge $q_i$ durch eine Verschiebung $h_2(i)$ stimuliert:
+			$$\diff{V}{h}{x}{}\approx V(x+h)-V(x).$$
+			
+			\subsection*{Taylorentwicklung}
+			Es ist vielleicht nützlich, sich einmal das ganze aus der \Taylor Perspektive anzusehen, wobei wir die \Einstein Summenkonvention verwenden wollen; Dann ist für $x\in\kritPkt{V}$ 
+			$$V(x+h)=V(x)+\Diff{V}{h}{x}{}+\frac{1}{2}\Diff{V}{h}{x}{2}+\TAF{V}{x}{h}.$$
+			Dabei ist $\Diff{V}{0,\mbbEins_i}{x}{}=0$ wegen $x\in\kritPkt{V}$ und für $V(x)$ \emph{eichen} wir nach der Art $V(x)=0$, also wählen wir (willkürlich, aber von Vorteil) die lineare Verschiebung $-V(x)$ um schreiben zu können 
+			$$V(x+h)=\frac{1}{2}\Diff{V}{h}{x}{2}+\TAF{V}{x}{h}.$$
+			Es ist jetzt an der Zeit sich zu überlegen, welche Form $x$ und insbesondere $h$ haben muss: Zunächst ist $x\in\R\times\R^3$, und da wir mit $x$ einen Ort zu einem Zeitpunkt darstellen wollen, wählen wir $q\in C^1(\R,\R^3)$ mit $(t,q(t))=x$ für ein $t\in\R$. Dementsprechend ist die Verschiebung $h$ von der Form $(s,\mch(t))$ für $\mch\in C^1(\R,\R^3)$, also
+			$$\tilde q(t)=q(t)+h(t)$$
+			für das verschobene $\tilde q$. Wir können schreiben
+			$$V((t,q(t))+(s,\mch(t))=\frac{1}{2}\cdot\Diff{V}{(s,\mch(t))}{t,q(t)}{2}+\TAF{V}{(t,q(t))}{s,\mch(t)}.$$
+			Dies ist schon um einiges unübersichtlicher, da die Gleichung in die Länge gezogen wird; jedoch bietet es den Vorteil zu überblicken, mit welchen Konstruktionen gearbeitet wird. Wir wollen nun jedoch die Struktur umformulieren. 
+			\begin{Aufgabe}
+				\nr Führe die Umformulierung durch, indem du die Linearität der Ableitung im Mehrdimensionalen verwendest. Verwende hierbei den \emph{Differentialquotient} $\mbbD_{h}f(x)$.  
+			\end{Aufgabe}
+			Wir haben dann
+			\begin{multline*}
+				V(x+(s,\mch(x_1))\approx s^2\cdot\QDiff{V}{\fdef{1_\R,0_{\R^3}}{i\in[2]}}{x}{}+\\
+				\sum_{(i,j)\in[3]^2}\stern{\mch}{i}{x_1}\cdot\stern{\mch}{j}{x_1}\cdot\underbrace{\QDiff{V}{((0_\R,e_i),(0_\R,e_j))}{x}{}}_{=d^2V(x)(0_\R,e_i)(0_\R,e_j)}.
+			\end{multline*}
+			Man fühlt bereits den Raum einer Abkürzung: Wir führen eine Matrix ein, um nicht immer den Differentialquotienten direkt schreiben und sehen zu müssen: 
+			$$\Lambda:=\fdef{\QDiff{V}{((0_\R,e_i),(0_\R,e_j))}{x}{}}{(i,j)\in[d]^2}.$$
+			Man kann weiter zeigen $\Lambda_{(i,j)}=\Lambda_{(j,i)}$.
+			\begin{Aufgabe}
+				\nr Mache dir klar, weshalb in den \Taylor Summanden mit $h_i,h_j$ multipliziert wird. Beachte hierbei die Linearität der Ableitung $\Diff{V}{\mbbEins_i}{x}{}$.
+				
+				\nr Zeige $\Diff{V}{\mbbEins_i}{q}{}=0$ und $V(x)=0$.
+				
+				\nr Zeige $\Lambda_{(i,j)}=\Lambda_{(j,i)}$. 
+			\end{Aufgabe}
+			Den kinetischen Energieterm kann man in der Betrachtung des Extrempunktes $(t,q)\in\kritPkt{V}$ zu einer quadratischen Funktion schreiben:
+			$$T(x)=\frac{1}{2}\Maus{m}{i,j}\cdot x_ix_j=\frac{1}{2}\Maus{m}{i,j}h_ih_j.$$
+			Zu beachten ist, daß $m$ von den Koordinaten $x_k$ abhängt:
+			$$\Maus{m}{i,j}(x)=\Maus{m}{q}+...$$
+			\begin{Aufgabe}
+				\nr Überlege, was $m$ für eine Matrix ist; wie fließt die Auswertung in $x$ in die Konstruktion mit ein?
+				
+				\nr Vervollständige die Punkte. 
+			\end{Aufgabe}
+			... Damit können wir dann den Lagrangian schreiben mit
+			$$L(t,h(t),h'(t))=\frac{1}{2}\nbra{\Maus{T}{i,j}\stern{h'}{i}{t}\cdot\stern{h'}{j}{t}-\Maus{V}{i,j}\stern{h}{i}{t}\cdot\stern{h}{j}{t}}.$$
+			Unter der Verwendung der \Euler-\Lagrange Gleichung erhalten wir die Bewegungsgleichungen, welche Aussagen über die zeitliche Entwicklung der Abweichung $h$ liefern; 
+			$$\Diff{L}{0,(0,\mbbEins_l)}{t,x}{}=\frac{1}{2}\Maus{T}{l,i}\cdot\stern{x_2'}{l,i}{j}+\frac{1}{2}\Maus{T}{i,l}\cdot\stern{x_2'}{i}{t}$$
+			und wegen $\Maus{T}{i,j}=\Maus{T}{j,i}$ dann 
+			$$\Diff{L}{0,(0,\mbbEins_l)}{t,x}{}=\Maus{T}{i,l}\cdot\stern{x_2'}{i}{t}.$$
+			Für den Term $\Diff{L}{0,(\mbbEins_i,0)}{(t,x)}{}$ finden wir 
+			$$\Diff{L}{0,(\mbbEins_i,0)}{(t,x)}{}=-\Maus{\Lambda}{l,j}\cdot h_j.$$
+			Somit ist dann die Bewegungsgleichung 
+			$$\Maus{T}{i,j}\stern{h''}{j}{t}+\Maus{\Lambda}{i,j}\stern{h}{j}{t}=0.$$
+			\begin{Aufgabe}
+				\nr Rechne den Lagrangian nach und stelle ihn formal auf. 
+				
+				\nr Rechne die Terme der \Euler \Lagrange Gleichung nach und berechne die zeitliche Ableitung. 
+			
+				\nr Kläre, welche Null in der Bewegungsgleichung gemeint ist.
+			\end{Aufgabe}
+			... Aus der Theorie der Linearen Algebra sei bekannt, daß das System genau dann eine nicht-triviale Lösung besitzt, wenn
+			$$\det(\Lambda-\omega^2 T)=0.$$
+			\begin{Aufgabe}
+				\nr Zeige die Aussage und den dahinterliegenden Satz. 
+			\end{Aufgabe}
+			Durch diese Gleichung sind die \emph{Eigenfrequenzen} $\omega$ des Systems. Es kann dabei bis zu $n$ Einträge geben, sogar $\omega\in\C^k\setminus\R^k$ mit $k\in[n]$ ist möglich! Wenn für $i\in[k]$ $\omega_i\in\C$ gilt, dann können wir $\omega_\alpha=\omega'+\cmath \omega''$ mit $\omega',\omega''\in\R$ schreiben. Dann gäbe es (i) für $\omega''>0$ eine \emph{exponentielle Zunahme} oder (ii) für $\omega''<0$ eine \emph{Dämpfung}, was \underline{nicht} mit der Energieerhaltung vereinbar ist. 
+			
+			\begin{Aufgabe}
+				\nr Definiere den Begriff \emph{Eigenfrequenz}. 
+				
+				\nr Überlege dir, weshalb $\omega''<0$ nicht mit der Energieerhaltung vereinbar ist; Trifft dies auch auf $\omega''>0$ zu?
+				
+				\nr Was ist $\omega_\alpha$? 
+			\end{Aufgabe}
+			Damit lässt sich dann die Amplitude $\Maus{A}{i,\alpha}$ bestimmen entlang der Koordinate $\stern{q}{i}{t}$ im \emph{Modus} $\alpha$:
+			$$\nbra{\Maus{\Lambda}{i,j}-\omega_\alpha^2\cdot\Maus{T}{i,j}}\cdot\Maus{A}{j,\alpha}=0$$
+			mit $\Maus{A}{*,\alpha}=\fdef{\Maus{A}{j,\alpha}}{j\in[n]}$. Wir assoziieren also $\omega_\alpha$ mit der zugehörigen Gleichung der Amplitude $\Maus{A}{j,\alpha}$. 
+			\begin{Aufgabe}
+				\nr Was ist ein Modus?
+			\end{Aufgabe}
+			
+\end{document}

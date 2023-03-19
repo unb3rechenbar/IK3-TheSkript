@@ -1,0 +1,124 @@
+\documentclass[../WiSe22ANA3.tex]{subfiles}
+\begin{document}
+	\lesson{3}{di 25 okt 2022 10:30}{Wiederholung und Reibung} 
+		Wir haben bisher gesehen, daß monogene Systeme, die entweder durch $U(t,(\vec q,\vec q'))$ oder $V(\vec{r})$ beschrieben werden, zu Lagrange-Gleichungen führen. 
+		\begin{center}
+			\href{https://de.wikibrief.org/wiki/Monogenic_system}{monogen}: auf System wirkende besonders bequem mathematisch modellierbar
+		\end{center}
+		Der grobe Ablauf wird immer sein
+		\begin{clist}
+			\item Freiheitsgrade bestimmen mit $\dim(\Raum{\R^n}{\R})\cdot N-k$, wobei $N$ die Teilchenanzahl und $k$ die Anzahl der Zwangsbedingungen/Einschränkungen ist. 
+			\item $q$ finden
+			\item $L(t,(q,q'))=T(t,(q,q'))-V(t,(q,q'))$ aufstellen
+			\item Die partiellen Ableitungen nach den Komponenten bestimmen: $\pdiff{T}{q}{}{}$, $\pdiff{T}{q'}{}{}$, $\pdiff{V}{q}{}{	}$ und $\pdiff{V}{q'}{}{}$.
+		\end{clist}
+		Dann liefert das Lagrange-PDP mit
+		\begin{align*}
+			\dv{s}\nbra{\pdv{b}L(s,(a,b))\big|_{\substack{a=q(s)\\b=q'(s)}}}\Bigg|_{s=t}=\pdv{a}L(t,(a,b))\big|_{\substack{a=q(s)\\b=q'(s)}}\numberthis\label{eq:LagragePDP}
+		\end{align*}
+		die Bewegungsgleichung. Die Gleichung muss $N$ mal gelöst werden.
+		\begin{bsp}
+			Betrachte ein Partikel in kartesischen Koordinaten mit $V(t,(a,b))=0_\R$	. Setze
+			\begin{align*}
+				q(t):=x(t)\in\R^3
+			\end{align*}
+			und $T(t,(q,q'))=m/2\dabs{x'(t)}{2}^2=m/2\dabs{q'(t)}{2}^2$. Damit folgt dann für $i\in[3]$ 
+			\begin{align*}
+				&\pdv{a_i}T(t,(a,q'(t)))|_{a=q(t)}=0_\R, &&\pdv{b_i}T(t,(q(t),b))|_{b=q'(t)}=mq_i'(t).
+			\end{align*}
+			Damit ist in \eqref{eq:LagragePDP} die rechte Seite des Systems immer $0_\R$, sodaß
+			\begin{align*}
+				\dv{s}mq_i'(s)|_{s=t}=0_\R=:mq''_i(t).
+			\end{align*}
+			\underline{\textbf{Zwangsbedingungen.}} Setze nun $x_2(t),x_3(t)=0_\R=q_2(t),q_3(t)$ voraus. Mit einem Potential 
+			\begin{align*}
+				V(t,(q(t),q'(t)))=\scpr{\fdef{F_i(q_i(t))}{i\in[3]}}{q(t)},\qquad F_i:\R\to\R
+			\end{align*}
+			gilt dann $V(t,(q(t),q'(t))=F_1(q_1(t))\cdot q_1(t)$. Setze ein affinlineares Potential voraus, dann gilt insgesamt
+			\begin{align*}
+				V(t,(q(t),q'(t)))=F_1(q_1(t))\cdot q_1(t)+V_0.
+			\end{align*}
+			Damit ist dann die rechte Seite in \eqref{eq:LagragePDP} nicht mehr gleich $0_\R$ und wir erhalten
+			\begin{multline*}
+				\pdv{a_1}V(t,(a,q'(t)))\big|_{a=q(t)}\\
+				=\nbra{a_1\cdot \pdv{a_1}F_1(a_1)+F_1(a_1)\cdot\pdv{a_1}a_1}\bigg|_{a=q(t)} \\
+				=\nbra{F_1'(a_1)\cdot a_1+F_1(a_1)}\big|_{a=q(t)} \\
+				=F_1'(q_1(t))\cdot q_1(t)+F_1(q_1(t)).
+			\end{multline*}
+			Damit ergibt sich mit \eqref{eq:LagragePDP} gerade
+			\begin{align*}
+				& mq_1''(t)=F_1'(q_1(t))\cdot q_1(t)+F_1(q_1(t)) &&mq_i''(t)=0_\R
+			\end{align*}
+			für $i\in\nset{2,3}$. Von hieraus könnte man den Exponentialansatz zur Lösung verwenden. 
+ 		\end{bsp}
+ 		\begin{bsp}
+ 			Betrachte zwei Massen im Gravitationsfeld, welche mit einem Seil über eine fixe Rolle miteinander verbunden sind. In drei Dimensionen wären $3\cdot 2$ Freiheitsgrade möglich, jedoch bewegen sich die Objekte nur in einer Linie, also $1\cdot 2=2$. Hat das Seil die Länge $l$ und die Massen die Abstände $x_1(t),x_2(t)$ zur Rotationsachse der Rolle, so gilt 
+ 			\begin{align*}
+ 				x_1(t)+x_2(t)=l\Longleftrightarrow x_2(t)=l-x_1(t). 
+ 			\end{align*}
+ 			Damit sind die Ableitungen bis auf Vorzeichen gleich: $x_1'(t)=-x_2'(t)$. Insbesondere kann $x_2(t)$ durch $x_1(t)$ ausgedrückt werden, wodurch nur noch ein Freiheitsgrad besteht! Setze dann $q(t):=x_1(t)$ und schreibe
+ 			\begin{align*}
+ 				T(t,(q(t),q'(t)))=\frac{1}{2}q'(t)^2\cdot\sum_{i\in[2]}m_i.
+ 			\end{align*}
+ 			\underline{\textbf{Potentialsuche.}} Suche ein passendes Potential $V$, welches das System beschreibt. Wähle die Summe der potentiellen Energien der einzelnen Teilchen, also
+ 			\begin{multline*}
+ 				V(t,(q(t),q'(t)))=-m_1g\cdot q(t)-m_2g\cdot (l-q(t)) \\
+ 				=q(t)\cdot g\cdot (m_2-m_1)-m_2gl.
+ 			\end{multline*}
+ 			Dann folgt die Lagrangegleichung mit
+ 			\begin{align*}
+ 				\frac{1}{2}q'(t)^2\cdot(m_1+m_2)=q(t)g\cdot(m_2-m_1)-m_2gl
+ 			\end{align*}
+ 			und mit \eqref{eq:LagragePDP} dann schließlich
+ 			\begin{align*}
+ 				q''(t)\cdot(m_1+m_2)=g\cdot(m_2-m_1).
+ 			\end{align*}
+  		\end{bsp}
+  	
+  	\section{Reibung}
+		DGPs der Form
+		\begin{align*}
+			mx''(t)-\gamma x'(t)+kx(t)=0
+		\end{align*}
+		lassen sich für gewöhnlich mit dem Exponentialansatz 
+		\begin{align*}
+			x(t)=\exp(\cmath\sqrt{\frac{k}{m}t}-\frac{\gamma}{2}t) 
+		\end{align*}
+		lösen. Als eine weitere wichtige, \so{nicht konservative} Kraft ist die Reibung zu betrachten. Für ein holonomes System lassen sich die Lagrange-Gleichungen immer in die Form
+		\begin{align*}
+			\dv{s}\nbra{\pdv{b}L(s,(a,b))\big|_{\substack{a=q(s)\\b=q'(s)}}}\Bigg|_{s=t}-\pdv{a}L(t,(a,b))\big|_{\substack{a=q(s)\\b=q'(s)}}=Q\qquad Q\in\R
+		\end{align*}
+		bringen. 
+		\begin{bsp}
+			Reibung entlang der $e_1$-Achse. Bewegt sich ein Teilchen auf dieser und erfährt Reibung, die proportional zu seiner Geschwindigkeit $x_1'(t)$ ist, dann können wir schreiben
+			\begin{align*}
+				F_1(t)=-k_1 x_1'(t)=-\pdv{a}\nbra{\frac{1}{2}k_1 a^2}\bigg|_{a=x_1'(t)}
+			\end{align*}	
+			und für den gesamten Vektor
+			\begin{align*}
+				F(t)=\fdef{-k_i x_i'(t)}{i\in[3]} \qquad k_i\in\R.
+			\end{align*}
+		\end{bsp}
+		Diesen können wir über die \textsc{Rayleigh}sche Dissipationsfunktion ausdrücken:
+		\begin{align*}
+			F(t)=-\div f(b)|_{b=x'(t)}:=-\fdef{\pdv{b_i}\nbra{\frac{k_i}{2}\cdot b_i^2}\bigg|_{b_i=x_i'(t)}}{i\in[3]}.\numberthis\label{eq:ReibungRayleigh} 
+		\end{align*}
+		Die genannte Funktion ist für $N$ Teilchen allgemeiner
+		\begin{align*}
+			f(v(t)):=\frac{1}{2}\sum_{i\in[N]}\nbra{k_{(i,1)}v_{(i,1)}(t)^2+k_{(i,2)}v_{(i,2)}(t)^2+k_{(i,3)}v_{(i,3)}(t)^2},
+		\end{align*}
+		wobei $v(t):=\fdef{x_i'(t)}{i\in[N]}$ und $x_i(t)\in\R^3$, sowie $k\in\R^{N\times 3}$. Man kann nun die generalisierte Kraft $Q_j$ nach dessen Definition so ausdrücken, daß die Reibung berücksichtigt wird:
+		\begin{multline*}
+			Q_j:=\sum_{i\in[N]}\scpr{\vec F_i}{\pdiff{\vec r_i}{q_j}{t,(q(t),q'(t))}{}}\\
+			\stackrel{\eqref{eq:ReibungRayleigh}}{=}-\sum_{i\in[N]}\scpr{\div f(b)|_{b=x'(t)}}{\pdiff{\vec r_i}{q_j}{t,(q(t),q'(t))}{}}
+			\\\stackrel{(*)}{=}-\sum_{i\in[N]}\scpr{\div f(b)|_{b=x'(t)}}{\pdiff{\vec r'_i}{q'_j}{t,(q(t),q'(t))}{}} 
+			\\=-\pdiff{f}{q'_j}{q'(t)}{} 
+		\end{multline*}
+		mit (*) $\\pdiff{\vec r_i}{q_j}{t,(q(t),q'(t))}{}=\pdiff{\vec r'_i}{q'_j}{t,(q(t),q'(t))}{}$. Damit folgt dann die Lagrangegleichung für Reibung.
+		\begin{info}[Lagrange-DGL mit Reibung]
+			Bezieht man die Reibungskraft in die Bewegung mit ein, folgt 
+			\begin{align*}
+				\dv{s}\nbra{\pdv{b}L(s,(a,b))\big|_{\substack{a=q(s)\\b=q'(s)}}}\Bigg|_{s=t}-\pdv{a}L(t,(a,b))\big|_{\substack{a=q(s)\\b=q'(s)}}=-\pdiff{f}{q'_j}{q'(t)}{}.
+			\end{align*}
+		\end{info}
+\end{document}

@@ -1,0 +1,135 @@
+\documentclass[../WiSe22ANA3.tex]{subfiles}
+\begin{document}
+	\lesson{4}{di 08 nov 2022 08:15}{Hamilton}
+	
+	 \section{Hamilton Prinzip und Aspekte der Variationsrechnung}
+	 	Ziel ist, die Lagrange-Gleichung aus einem Integralprinzip herzuleiten. \\
+	 	Wir müssen uns hierzu der Variationsrechnung widmen. Ihr Grundproblem ist
+	 	\begin{align*}
+	 		\deldiff{_{[t_1,t_2]}(S\circ F)}{h}{x}{}=0. 
+	 	\end{align*}
+	 	Wir können auch schreiben
+	 	\begin{multline*}
+	 		\deldiff{_{[t_1,t_2]}(S\circ F)}{h}{x}{}\\
+	 		=\Dvat{s}{\gint{t_1,t_2}F(t,((x+sh)(t),\dots,D^k(x+sh)(t)))\dint{t}{}}{0_\R} \\
+	 		=0_\R.
+	 	\end{multline*}
+	 	\begin{Aufgabe}
+	 		\nr Beachte die genauen Definitionen der mal und plus Funktionen und notiere sie einmal sauber. 
+	 	\end{Aufgabe}
+	 	Wir bezeichnen $S$ als \enquote{Funktional}, denn ihr Definitionsbereich ist eine Menge von Wegen auf $\R^d$. Wir definieren nun die Menge der Wegvariationen $q\in\Weg[k]{I}{\R^n}$ mit $I\subseteq\R$. Die Anfangsbedingung ist hier nur die Gleichheit der Start- und Endpunkte. Wir schreiben
+	 	\begin{align*}
+	 		M_k:=\fdef{\fdef{\nset{q\in \Weg[k]{I}{\R^d}:\loand{q(t_1)=a}{q(t_2)=b}}}{(a,b)\in(\R^d)^2}}{[t_1,t_2]\subseteq\R}.  
+	 	\end{align*}
+	 	Hierbei muss man beachten, daß die Menge $\Weg[k]{I}{\R^d}$ die Einschränkung der Menge $C^k(\R,\R^d)$ durch weitere Anfangsbedingungen wie
+	 	\begin{clist}
+	 		\item $q\in C^k(\R,\R^d)$ soll strenge Monotonie vorweisen, also knickfrei sein: $\forall t\in I:q'(t)\neq 0_{\R^d}$
+	 	\end{clist}
+	 	\begin{bsp}
+	 		Man könnte also beispielsweise definieren
+	 		\begin{align*}
+	 			\Weg[k]{I}{\R^d}:=\nset{x\in C^k(\R,\R^d):\forall t\in I:x'(t)\neq 0_{\R^d}}. 
+	 		\end{align*} 
+	 		Im Falle keiner Einschränkung gilt natürlich $\Weg[k]{I}{\R^d}=C^k(I,\R^d)$. 
+	 	\end{bsp}
+	 	Im folgenden widmet man sich dem Problem, ein $q\in M_k(a,b)([t_1,t_2])$ zu finden, sodaß $S$ minimal wird. Betrachten wir also zunächst einen Hintergrund. 
+	 	\begin{hintergrund}
+ 	 		Wir müssen uns zunächst mit Variationsanalysis auseinandersetzen. In der Kategorie \enquote{Optimierung} auf demselben Gebiet geht es um die Frage, durch welchen Weg ein Linienintegral über diesen extremal wird. Im \textbf{eindimensionalen} Fall wird folgendermaßen gehandelt. Definiere ähnlich wie oben
+ 	 		\begin{align*}
+ 	 			M_k:\fdef{\fdef{\nset{x\in \Weg[k]{[t_1,t_2]}{\R^d}:\loand{x(t_1)=a}{x(t_2)=b}}}{(a,b)\in(\R^d)^2}}{[t_1,t_2]\subseteq\R}.
+ 	 		\end{align*}
+ 	 		hier mit $I=[t_1,t_2]\subseteq\R$. Alle Vereinigungen verschiedener Intervalle auf $\R$ können durch Integralsummen leicht konstruiert werden. \\
+ 	 		
+ 	 		\begin{Behauptung}
+ 	 			$M_k(a,b)([t_1,t_2])$ für $(a,b)\in(\R^d)^2$ und $[t_1,t_2]\subseteq\R$ ist kein Vektorraum.  
+ 	 		\end{Behauptung}
+ 	 		\begin{begruendung}
+ 	 			...
+ 	 		\end{begruendung}
+ 	 		\noindent Auf dieser Menge kann das Funktional 
+ 	 		\begin{align*}
+ 	 			S_\Phi&:\lfdef{M_k(a,b)([t_1,t_2])\to\R}{x\mapsto \gint{t_1,t_2}\Phi(t,(x,\dots,D^k(x)))\dint{t}{}}, \\
+ 	 			\Phi&:\lfdef{\R\times (\R^d)^{k+1}\to \R^m}{(t,x)\mapsto \Phi(t,x)} \in C^1(\R\times (\R^d)^{k+1},\R^d)
+ 	 		\end{align*}
+ 	 		mit $k,d,m\in\N$ definiert werden. An $\Phi$ werden die Forderungen
+ 	 		\begin{clist}
+ 	 			\item differenzierbar
+ 	 			\item stetige partielle Ableitungen
+ 	 		\end{clist}
+ 	 		gestellt. Weiter definiere die Menge
+ 	 		\begin{align*}
+ 	 			H(a,b)([t_1,t_2]):=\nset{h\in\Weg[k]{[t_1,t_2]}{\R^d}:h(t_1)=h(t_2)=0_{\R^d}}. 
+ 	 		\end{align*}
+ 	 		Damit führen wir die Definition der \underline{Variation} der Bahn $y_\alpha$ ein.
+ 	 		\begin{info}[Bahnvariation]
+ 	 			Als Variation der Bahn $x\in M(a,b)([t_1,t_2])$ verstehen wir für ein $h\in H(a,b)([t_1,t_2])$
+ 	 			\begin{align*}
+ 	 				y=x+t\cdot h, \qquad t\in\R.
+ 	 			\end{align*} 
+ 	 		\end{info}
+ 	 		Daraus ergibt sich das Variationsproblem mit der Funktion $S_\Phi$ für ein Funktional $\Phi$.  
+ 	 		\begin{info}[Wirkungsvariation]
+ 	 			Als Variation der Wirkungsfunktion $S_\Phi$ verstehen wir für $x\in M_k(a,b)([t_1,t_2])$ und $h\in H_k(a,b)([t_1,t_2])$ 
+ 	 			\begin{align*}
+ 	 				\deldiff{S_\Phi}{h}{x}{}:=\Dvat{t}{S_\Phi(x+t\cdot h)}{0_\R}.
+ 	 			\end{align*}
+ 	 		\end{info}
+ 	 		\begin{verm}
+ 	 			Ist $x\in M_k(a,b)([t_1,t_2])$ die gesuchte, optimale Kurve, gilt $x\in\argmin{S_\Phi}$ und man kann die Menge $M_k(a,b)([t_1,t_2])$ mit 
+ 	 			\begin{align*}
+ 	 				y=x+th
+ 	 			\end{align*}
+ 	 			aufspannen. 
+ 	 		\end{verm} 
+ 	 	\end{hintergrund}
+ 	 	\begin{verm}
+	 		Man muss zum Vergleichen bereits wissen, welches $q$ \enquote{das richtige} ist, denn sonst wäre $\delta_{M,\square} S$ undefiniert...  
+ 	 	\end{verm}
+	 	Für die \textsc{Lagrange} Funktion ergibt sich damit dann wegen $\Phi:=L$ mit $x\in M_k(a,b)([t_1,t_2])$ die Wirkungsfunktion 
+	 	\begin{align*}
+	 		S_L(x)=\gint{t_1,t_2}L(t,(x(t),\dots,D^k(x)(t)))\dint{t}{}.  
+	 	\end{align*}
+		Dann ist genau dann der tatsächliche Weg $q\in M_k(a,b)([t_1,t_2])$ gefunden, wenn für $h\in H_k(a,b)([t_1,t_2])$ gilt 
+	 	\begin{multline*}
+	 		0_\R=\deldiff{S_L}{h}{q}{}:=\Dvat{s}{\gint{t_1,t_2}L(t,((q+sh)(t),\dots,D^k(q+sh)(t)))\dint{t}{}}{0_\R} \\
+			=\gint{t_1,t_2}\Dvat{s}{L(t,((q+sh)(t),\dots,D^k(q+sh)(t)))}{0_\R}\dint{t}{}. 
+	 	\end{multline*}
+	 	\begin{Bemerkung}
+	 		Es gilt also $q\in\argmin{S_L}$! 
+	 	\end{Bemerkung}
+	 	
+	 	\section{Ableitung Lagrange von Hamilton}
+			Wir betrachten das in der letzten Vorlesung bestimmte Problem 
+			\begin{align*}
+				\deldiff{S_L}{h}{\gamma}{}\stackrel{!}{=}0
+			\end{align*}
+			für $\gamma\in M_k(a,b)([t_1,t_2])$ mit $a,b\in\R^d$ auf dem Intervall $[t_1,t_2]\subseteq\R$ und $h\in H_k(a,b)([t_1,t_2])$ erneut. Dieses mal betrachten wir das Problem in Form von Richtungsableitungen und finden für $k=1$ \anm{Anzahl der Ableitungen von $\gamma$} mit in das Integral gezogener Ableitung vor:
+			\begin{multline*}
+				\deldiff{S_L}{h}{\gamma}{}=\gint{t_1,t_2}\Diff{L}{0,(h(t),h'(t))}{x}{}\dint{x_1}{}\\
+				=\gint{t_1,t_2}\Diff{L}{0,(h(t),0)}{x}{}+\Diff{L}{0,(0,h'(t))}{x}{}\dint{x_1}{}. 
+			\end{multline*}
+			Für die zweite Richtungsableitung gilt
+			\begin{multline*}
+				\Diff{L}{0,(0,h'(t))}{x}{}=\Diff{L}{0,(0,\diff{h}{1}{t}{})}{x}{}\\
+				=\Dvat{s}{L(x+(0,(0,h'(t)))}{0}=\Dvat{s}{L(t,(\gamma(t),\gamma'(t)+s\cdot h'(t))}{0}. 
+			\end{multline*}
+			Die Zeitableitung im zweiten Argument des zweiten Arguments kann ausgeschrieben werden:
+			\begin{multline*}
+				\Dvat{s}{L(t,(\gamma(t),\Diff{(\gamma+s\cdot h)}{1}{t}{}))}{0}\\
+				=\Dvat{s}{L\nbra{t,\nbra{\gamma(t),\Dvat{u}{\gamma(u)+s\cdot h(u)}{0}}}}{0} \\
+				=\Dvat{s}{\Dvat{u}{L\nbra{t,\nbra{\gamma(t),\gamma(u)+s\cdot h(u)}}}{0}}{0}. 
+			\end{multline*} 
+			\begin{Erinnerung}
+				Es gilt für $f\in C^2(U,V)$ mit $U,V\in\mathcal V$ die Symmetriegleichung für $h,u\in U$:
+				\begin{align*}
+					\diff{f}{h}{x}{2}(u)=\diff{f}{u}{x}{2}(h). 
+				\end{align*}
+			\end{Erinnerung}
+			Damit dann 
+			\begin{align*}
+				\Diff{L}{0,(0,h'(t))}{x}{}=
+			\end{align*}
+		\section{Hamilton's principle for non-holonomic systems}
+	 		
+	 	\section{Conversation laws and symmetries}
+\end{document}

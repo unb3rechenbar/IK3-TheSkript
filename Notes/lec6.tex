@@ -1,0 +1,110 @@
+\documentclass[../WiSe22ANA3.tex]{subfiles}
+\begin{document}
+	\lesson{1}{fr 11 nov 2022 11:45}{Symmetrien} 
+		\section{Erhaltungssätze und Symmetrien}
+			Betrachte die folgende Ableitung:
+			\begin{align*}
+				\pdv{x'_i}L=\pdv{x'_i}T-\underbrace{\pdv{x'_i}V}_{=0_\R}=\pdv{x'_i}T=m_i(x')_i^*(t)=:p_{(i,x)}(t).  
+			\end{align*}
+			\begin{hintergrund}
+				Es gilt eigentlich
+				\begin{align*}
+					\pdv{x'_i}L:=\Pdvat{a}{L\nbra{t,\nbra{q(t),\fdef{\begin{cases}
+					a & j=i \\
+					(q')_j^*(t) & \sonst
+				\end{cases}}{j\in[N]}}}}{(q')_i^*(t)}.
+				\end{align*}
+				Wir kürzen ab mit
+				\begin{align*}
+					\text{IndexTupel}_{(i,j)}(q'(t)):=\fdef{\begin{cases}
+					a & j=i \\
+					(q')_j^*(t) & \sonst
+				\end{cases}}{j\in[N]}. 
+				\end{align*}
+				Damit gilt dann
+				\begin{align*}
+					\pdv{x'_i}L=\Pdvat{a}{L\nbra{t,\nbra{q(t),\intu{i}{q'(t)}{a}}}}{(q')_i^*(t)}
+				\end{align*}
+			\end{hintergrund}
+			\begin{info}[Kanonischer Impuls]
+				Wir bezeichnen als kanonischen Impuls die Funktion
+				\begin{align*}
+					p:\lfdef{[N]\times\Abb{\R}{\R^d}\to \R^\R}{(i,x)\mapsto \lfdef{\R\to\R}{t\mapsto \pdiff{L}{(x')_i^*(t)}{t,(x(t),x'(t))}{}}}.
+				\end{align*}
+				Es gilt $p_i=\pdiff{L}{q'_i}{}{}$.
+			\end{info}
+			\begin{bsp}
+				Betrachte Partikel an den Orten $\vec r:\R\to\R^{N\times d}$ in einem elektromagnetischen Feld. Sei $\phi:\R^3\to\R$ das Potential des Vektorfeldes $\vec E$ und $\rot\vec A=\vec B$. Es gilt dann 
+				\begin{multline*}
+					L(t,(\vec r(t),\vec r'(t)))=\frac{1}{2}\sum_{i\in[N]}m_i\dabs{(\vec r')_i^*(t)}{2}^2 \\
+					-\sum_{i\in[N]}q_i\cdot\phi(\vec r_1^*(t))+\sum_{i\in[N]}q_i\cdot\vec A(\vec r_i^*(t))\cdot (\vec r')_i^*(t).
+				\end{multline*}
+				Nach kanonischer Definition des Impulses folgt
+				\begin{multline*}
+					p_{(\vec r_{(i,1)})}(t)=\Pdvat{a}{L\nbra{t,\nbra{\fdef{\vec r_{(j,1)}^*(t)}{j\in[N]},\intu{i}{\fdef{\vec r_{(l,1)}^*(t)}{l\in[N]}}{a}}}}{(q')_i^*(t)}\\
+					=:\pdv{\vec (\vec r')^*_{(i,1)}(t)}L=m_i\cdot\vec (\vec r')^*_{(i,1)}(t)+q_i(t)\cdot A\fdef{\vec (\vec r)^*_{(i,1)}(t)}{i\in[N]}\neq m_i\vec (\vec r)^*_{(i,1)}(t).  
+				\end{multline*}
+				Zu beachten ist hier, daß $\vec r$ eine Matrix ist und $\vec r_{(i,j)}(t)$ ist der Ort des $i$-ten Teilchens und dessen $j$-te Komponente. 
+			\end{bsp}
+			
+			% \subsection{Zyklisch}
+		
+			% \subsection{Kontinuierlich}
+		
+			% \subsection{Zeitunabhängig}
+		
+		\section{Noether-Theorem}
+			Wenn ein System eine kontinuierliche Symmetrie besitzt, dann gibt es eine zeitunabhängige Größe. Wir diskutieren drei Symmetrien. Wir erinnern uns: Im Allgemeinen sind $q$ Funktionen der Zeit mit
+			$$q:\clfdef{\R}{\R^d}{t}{q(t)}.$$
+			Wir finden mit den \Noether-schen Theoremen jedoch Funktionen 
+			$$F:\clfdef{\R\times(\R^d)^2}{\R^d}{(t,x)}{F(t,x)},$$
+			welche zeitliche Konstanz aufweisen und nur von den Anfangsbedingungen des Systems bestimmt sind. 
+			\begin{info}[Integrale der Bewegung]
+				Wir nennen Funktionen der Form $\llfdef{\R\times(\R^d)^2\to\R^d}{(t,x)\mapsto F(t,x)}$ für $x=(q(t),q'(t))$ \emph{Integrale der Bewegung}, falls
+				$$F(t,(q(t),q'(t)))=c\in\R$$
+				konstant. 
+			\end{info}
+			Die Integrale der Bewegung ergeben also ein AWP der Form 
+			$$c=\mcF(t,u(t))$$
+			und den Gleichungen $c_i=\mcF(t,u(t))_i$ mit $u(t):=(q(t),q'(t))$. 
+			\begin{Aufgabe}
+				\nr Überlege dir, wie man die Analysis III Kenntnisse zur Lösung des AWPs anwenden könnte. 
+			\end{Aufgabe}
+			Die generalisierten Impulse $p_{(i,q)}(t):=\pdiff{L}{q'_i}{t,(q(t),q'(t))}{}$ sind zyklischen Koordinaten. 
+			\begin{info}[Zyklische Koordinaten][Zyklisch]
+				Wir nennen $q:\R\to\R^d$ \emph{zyklisch in} $i\in[d]$ \emph{bezüglich }$L$ genau dann, wenn $\pdv{q_i}L(t,(q(t),q'(t)))=0$, also genau dann wenn $p_i=const.$  
+			\end{info}
+			Hieraus lassen sich gewisse Integrale der Bewegung bereits ableiten. Man sollte also $q$ so wählen, sodaß möglichst viele Einträge auf zyklische Koordinaten führen. 
+			\begin{Beispiel}[Zweikörperproblem]
+				Bei einem nur vom Abstand abhängigen Potential $V(r)=V(\dabs{r_1-r_2}{2})$ wähle Relativ- und Schwerpunktbewegungen:
+				\begin{clist}
+					\item Die Gesamtmasse ist $M:=m_1+m_2$
+					\item Die reduzierte Masse ist $\mu:=m_1\cdot m_2/M$
+					\item Der Schwerpunkt ist $R(t):=1/M\cdot (m_1\cdot r_1(t)+m_2\cdot r_2(t))$
+					\item Die Relativkoordinaten sind $r(t):=r_1(t)-r_2(t)$.
+				\end{clist}
+				Definiere damit 
+				$$q(t):=(R(t)_1,R(t)_2,R(t)_3,r(t)).$$
+				Mit den Definitionen und dem vorgegebenen Potential ergibt sich zunächst
+				$$L(t,(q(t),q'(t)))=\frac{1}{2}M\cdot\dabs{q'(t)}{2}^2-V(q_4^*(t)).$$
+				\begin{Aufgabe}
+					\nr Betrachte $\mcr(t):=(r\circ f)(t)$ in Kugelkoordinaten mit Transformationsfunktion $f$ und löse die Lagrange Gleichung weiter auf. 
+				\end{Aufgabe}
+				Eingesetzt erhalten wir 
+				$$L(t,(q(t),q'(t)))=\frac{1}{2}M\cdot(R'(t)_1^2+R'(t)_2^2+R'(t)_3^2+r'(t)^2)-V(q_4^*(t)).$$
+				Man erkennt durch Verwendung der Definition \eqref{info:Zyklisch} und der Kugelkoordinatendarstellung, daß $q_1,q_2,q_3$ zyklisch sind.
+				\begin{Aufgabe}
+					\nr Zeige die Aussage über $q_1,q_2,q_3$. Nutze hierzu die Koordinatentransformation. 
+				\end{Aufgabe}
+				Damit ist für $j\in[3]$ 
+				$$p_{(j,q)}(t)=M\cdot q'(t)_1=const.$$
+				und in zusammengefasster Form $P(t)=M\cdot R'(t)=const.$ für $P:=\fdef{(p_1,p_2,p_3)}{t\in\R}$. 
+			\end{Beispiel}
+			
+			\subsection{Translationssymmetrie}
+				
+			\subsection{Rotationssymmetrie}
+				
+			\subsection{Zeitsymmetrie}
+				
+\end{document}

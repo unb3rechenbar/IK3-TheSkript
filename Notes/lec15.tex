@@ -1,0 +1,109 @@
+\documentclass[../WiSe22ANA3.tex]{subfiles}
+\begin{document}
+	\lesson{1}{mo 16 jan 2023 10:00}{Spezielle Relativitätstheorie Einleitung} 
+		\textbf{Ziele des Kapitels:}
+		\begin{clist}
+			\item Konzepte der \Lorentz-Transformationen, der \Lorentz-Invarianz und des \Minkowski-Raumes verstehen.
+			\item Mit $4$-Vektoren und ihren mathematischen Eigenschaften vertraut sein.
+			\item In der Lage sein, elementare Probleme der relativistischen Mechanik zu lösen, wie z.B. die Streuung von Teilchen.
+			\item Den Begriff der Schwellenenergie erklären können und wissen, wie sich elektromagnetische Felder relativistisch transformieren. 
+		\end{clist}
+		
+		\section{Einleitung und Postulate}
+			Wir betrachten ein durch die Länge $L\in\R$ charakterisiertes System in $\R^3$. Ein in diesem befindlicher Körper der Masse $m\in\R$ habe eine Geschwindigkeit $v\in\R^3$ und damit den Impuls $p\in\R^3$. 
+			\begin{info}[De-Broglie Wellenlänge]
+				Die de-Broglie Wellenlänge ordnet jedem Körper mit dem Impuls $p\in\Abb{\R}{\R^3\setminus\nset{\Null{\R^3}}}$ eine charakteristische Wellenlänge $\lambda\in\R$ zu:
+				$$\lambda(t):=\frac{h}{p(t)}$$
+			\end{info}
+			\begin{Aufgabe}
+				\nr Was ist $L\in\R$ für eine charakterisierende Zuordnungsgröße?
+			\end{Aufgabe}
+			Für alle weiteren Überlegungen definieren wir zunächst das Newtonsche Inertialsystem, welches eine Basis von $\R^3$ mit charakterisierenden Forderungen an den Körper ist. 
+			\begin{info}[Newtonsches Inertialsystem]
+				Als \emph{Newtonsches Intertialsystem} bezeichnen wir ein Koordinatensystem $\underline v\in\Basis{\R^d}{\R}$, in welchem sich genau dann alle Objekte in geradliniger unbeschleunigter Bewegung befinden, wenn $\vec F=0$. 
+			\end{info}
+			\begin{Aufgabe}
+				\nr Überlege dir Syteme, welche die Intertialbedingung nicht erfüllen. Betrachte dazu die Coriolis-Kraft und Koordinatentransformationen. 
+			\end{Aufgabe}
+			\Einstein formulierte also die folgenden beiden Postulate als axiomatische Begründung der speziellen Relativitätstheorie:
+			\begin{clist}
+				\item Die Gesetze der Physik sind in allen Inertialsystemen gleich. 
+				\item Die Lichtgeschwindigkeit $c_0$ ist bewegungsunabhängig und hat daher in allen Inertialsystemen denselben Wert: $c_0=299792458\si{\metre\per\second}$. 
+			\end{clist}
+		
+		\section{Minkowski-Raum}
+			Wir verwenden für die folgenden Definitionen die in der Vorlesung eingeführte Konvention mit komplexer Zeitdarstellung $\cmath\cdot c_0\cdot t\in\C$. Auf andere Konventionen kommen wir kurz zu sprechen.  
+			\begin{info}[Minkowskivektormenge]
+				Als \emph{Minkowski-Raum}, manchmal auch \emph{Weltraum} genannt, bezeichnen wir den Vektorraum auf der Vektorenmenge
+				$$\mcM:=\nset{x\in\C^4:x_1,x_2,x_3\in\R}$$
+				mit $\R$ als Multiplikatormenge. Einen Weg auf $\mcM$ nennen wir \emph{Weltlinie}. 
+			\end{info}
+			\begin{Aufgabe}
+				\nr Zeige $\mcM$ bildet mit $K$ Körper einen Vektorraum. 
+			\end{Aufgabe}
+			\noindent Wir führen weiter den Raumzeitvektor ein, ein Element aus $\mcM$, welcher für die Relativitätstheorie eine grundlegende Rolle spielen und zur Formulierung der Konzepte ohne Betrachtung der Gravitation hilfreich sein wird.
+			\begin{info}[Der Raumzeitvektor]
+				Habe ein Objekt die Ortszuweisung $r:\R\to\R^3$, also den Ort $r(t)$ zum Zeitpunkt $t\in\R$, dann nennen wir
+				$$\Mengenschriftdesign{Raumzeitvektor}_{r}(t,r(t)):=(\stern{r}{1}{t},\stern{r}{2}{t},\stern{r}{3}{t},\cmath c_0\cdot t)\in\mcM$$
+				den Raumzeitvektor des Objektes bezüglich $r$.  
+			\end{info}
+			\noindent Hier können wir gleich eine Charakterisierung vorziehen, die eigentlich erst in \texttt{lec17} stattfinden würde; Nämlich müssen wir uns Gedanken über die im Minkowski-Raum verwendete Metrik machen. 
+			\subsection*{Metrikkonstruktion}
+				Diese wird erzeugt durch eine Funktion $g$ der Form $g:A\to\Abb{V^2}{\R}$. Zunächst betrachten wir die Menge $A$: Sie ist Teil des Tupels $(A,V,\rightarrow)$, genannt \emph{affiner Punktraum}. 
+				\begin{info}[Affiner Punktraum und metrischer Tensor]
+					Sei $A$ eine nichtleere Menge, $V$ ein $K-$Vektorraum und $\rightarrow:A^2\to V$. Hat die Abbildung $\rightarrow$ die Eigenschaften (i) $\forall P,Q,R\in A:\ovec{PQ}+\ovec{QR}=\ovec{PR}$ und (ii) $\forall v\in V,P\in A:\exists_1 Q\in A:\ovec{PQ}=v$, dann nennen wir das Tipel $(A,V,\rightarrow)$ einen \emph{affinen Punktraum} und schreiben $(A,V,\rightarrow)\in\affinPR{A}{V}{K}$. 
+				\end{info} 
+				\noindent An dieser macht es Sinn, die Tensordefinition zu betrachten.
+				\begin{info}[Tensor und Tensorräume]
+					Sei $K$ ein Körper und $\fdef{V_i}{i\in I}$ Vektormengen. Sei $\Raum{V_i}{K}$ endlichdimensional und $N:=\card(I)\in\N$. Dann nennen wir für $\mbbV:=\prod_{i\in I}V_i$ die Funktion $\Phi:\mbbV\to K$ einen \emph{Tensor}, wenn $\Phi\in\MultiLinearform{\mbbV}{K}$. 
+				\end{info}
+				\noindent Für den Spezialfall $V_i=V_j$ für $(i,j)\in I^2$ definieren wir 
+				$$\bigotimes^NV^*:=\MultiLinearform{V^N}{K}$$
+				für $N:=\card(I)\in\N$ mit $\dim(\Raum{\bigotimes^NV^*}{K})=\dim(V)^N$. Weiter gilt sogar $\bigotimes^NV^*\cong\R^{\dim(V)^N}$. 
+				\begin{Aufgabe}
+					\nr Definiere die Mengen $\MultiLinearform{\mbbV}{K}$ nach dem Bauplan der aus LinA 2 bekannten Menge $\Bilinearform{\mbbV}{K}$ im Fall $\mbbV=\prod_{i\in[2]}V_i$.
+					
+					\nr Rechne die Vektorraumaxiome für $\bigotimes^NV^*$ als $K$-Vektorraum nach. 
+					
+					\nr Zeige $dim(\Raum{\bigotimes^NV^*}{K})=\dim(V)^N$ und damit $\bigotimes^NV^*\cong\R^{\dim(V)^N}$. 
+					
+					\nr Stelle das Tensorprodukt $\Psi\otimes\Phi$ für $\Psi,\Phi\in\MultiLinearform{\mbbV}{K}$ auf. Zeige die Distributivität, Assoziativität und Kommutativität. 
+				\end{Aufgabe}
+				\noindent Damit können wir eine \emph{nicht-ausgeartete, symmetrische Bilinearform} zur Multiplikation zweier Minkowski-Vektoren definieren: Für jedes $P\in A$ und $\Raum{V}{K}:=\Raum{\mcM}{\R}$ ist 
+				$$\Maus{\mal}{\mcM,P}(x,y):=g(P)(x,y)$$
+				mit $x,y\in\mcM$. Wegen der im Allgemeinen fehlenden positiv Definitheit ist jedoch $g(P)$ kein Skalarprodukt auf $\Raum{\mcM}{\R}$! Um dennoch über Abstände und Winkel sprechen zu können, nutzt man in abgeschwächter Metrikbedingung (keine pd) den \emph{pseudometrischen Tensor} der Art
+				$$\Maus{\mal}{\mcM,P}(x,y)=x^T\circ\eta\circ y.$$
+				\begin{Aufgabe}
+					\nr Kläre, welcher affiner Punktraum $(A,V,\rightarrow)$ für den Spezialfall $V:=\mcM$ und $K:=\R$ gewählt wird. Wie sieht die Abbildung $\rightarrow$ aus?
+				
+					\nr Zeige $g(P)$ ist (i) nicht ausgeartet, (ii) symmetrisch und (iii) bilinear, insbesondere $g(P)\in\Bil{\mcM}$. Verwende dabei $\nset{v\in V:\forall w\in V:b(v,w)=0}=\nset{0_V}$.
+				\end{Aufgabe}
+				\noindent Für die Bilinearform $g(P)$ finden wir nun eine (konventionsabhängige) eindeutige Darstellungsmatrix 
+				$$G(P)=\fdef{g(P)(e_i,e_j)}{(i,j)\in[4]}=(1,1,1,1)\cdot I_4$$
+				mit $I_4$ als Einheitsmatrix. Sie hat die $\Spur{G(P)}=4$ und $(4,0)$ als Sylvester-Signatur. Alternativ für $(\stern{\gamma}{1}{t},\stern{\gamma}{2}{t},\stern{\gamma}{3}{t},c_0t)$ als Raumzeitvektor mit angepasstem $\mcM$ dann $G(P)=(1,1,1,-1)\cdot I_4$ mit $(3,1)$ als Signatur. 
+				\begin{Aufgabe}
+					\nr Berechne die Spur der Matrix $G(P)$ und bestimme ihre Sylvester-Signatur. Schreibe die Matrix einmal aus. 
+					
+					\nr Zeige, daß alle konventionellen Darstellungsarten äquivalent sind. 
+				\end{Aufgabe}
+				\noindent Mit Blick auf den \Mengenschriftdesign{Raumzeitvektor} klassifizieren wir folgendermaßen.  
+				\begin{info}[Raumvektorklassen]
+					Sei $x\in\mcM$. Wir bezeichnen $\dabs{x}{P}^2\in\R_{>0}$ als \emph{raumähnlich}, $\dabs{x}{P}^2\in\R_{<0}$ als \emph{zeitlich} und $\dabs{x}{P}^2=0_\R$ als \emph{lichtartig}. 
+				\end{info}
+			
+			\subsection*{Geschwindigkeiten}
+				Mit dem konstruierten Raumzeitvektor des Ortes eines Objektes können wir den zugrundelegenden Weg ableiten und erhalten die Geschwindigkeit. Wir verketten die noch mit der Relativierungsfunktion:
+				\begin{info}[Relativierung]
+					Wir defineren die \emph{Relativierungsfunktion} als die Abbildung $f:V\to W$ auf den $K$-Vektorräumen $V,W$ der Form 
+					$$x\mapsto \mal_{W}(k(v),x)$$
+					für $k(v):=1/\sqrt{1-\dabs{v}{2}^2/c_0^2}\in\R$ als \emph{Relativierungskoeffizient}, wobei mit $v$ meist die Geschwindigkeit $||\fdef{\stern{\gamma'}{i}{t}}{i\in[3]}||_2$ für einen Weg $\gamma:\R\to\R^3$ gemeint ist. 
+				\end{info}
+				\noindent Dann können wir schreiben 
+				$$v(t):=(\Funktionenschriftdesign{Relativierung}\,\circ D^1\circ \Funktionenschriftdesign{Raumzeitvektor}_r)(t,r(t))$$
+				für $r:\R\to\R^3$ und $t\in\R$. Mit $D^1$ meinen wir die gewöhnliche formale Ableitung. In der Physik benutzt man häufig die Abkürzung $d\gamma/d\tau$, wobei $\gamma$ eine Weltlinie in $\mcM$ ist. 
+				\begin{Aufgabe}
+					\nr Wende das Konzept auf den konkreten Ort $r(t):=(x(t),y(t),z(t))$ an und berechne $v(t)$. 
+					
+					\nr Zeige nun $\Maus{\scpr{x}{x}}{\mcM,P}<0_\R$ mit $\dabs{\fdef{x_i}{i\in[3]}}{2}<c_0$. 
+				\end{Aufgabe}
+\end{document}

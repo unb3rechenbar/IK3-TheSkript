@@ -1,0 +1,48 @@
+\documentclass[../WiSe22ANA3.tex]{subfiles}
+\begin{document}
+	\lesson{1}{di 25 okt 2022 10:30}{Lagrange Transformation} 
+		\section{Lagrange Transformation}
+			\subsection{Allgemeiner Ansatz}
+				Sei $f:\R^2\to\R$ mit $\diff{f}{h}{x}{}=\pdiff{f}{1}{x}{}\cdot h_1+\pdiff{f}{2}{x}{}\cdot h_2$ für $h\in\R^2$. \underline{Gelte zudem $\diff{f}{h}{x}{}=0_\R$.} Definiere nun
+				\begin{align*}
+					g:=f-\pdiff{f}{1}{}{}\cdot\pi_1.
+				\end{align*} 
+				Dann folgt mit der Kettenregel für $k\in\R^2$
+				\begin{align*}
+					\diff{g}{k}{x}{}&=\diff{f}{k}{x}{}-\nsqbra{\diff{(\pdiff{f}{1}{}{})}{k}{x}{}\cdot\pi_1(x)+\diff{\pi_1}{k}{x}{}\cdot\pdiff{f}{1}{x}{}} \\
+					&=\diff{f}{k}{x}{}-\nsqbra{\diff{(\pdiff{f}{1}{}{})}{k}{x}{}\cdot\pi_1(x)+\pi_1(k)\cdot\pdiff{f}{1}{x}{}} \\
+					&=\pdiff{f}{1}{x}{}\cdot k_1+\pdiff{f}{2}{x}{}\cdot k_2-\nsqbra{\diff{(\pdiff{f}{1}{}{})}{k}{x}{}\cdot\pi_1(x)+\pi_1(k)\cdot\pdiff{f}{1}{x}{}} \\
+					&=\pdiff{f}{2}{x}{}\cdot k_2-\diff{(\pdiff{f}{1}{}{})}{k}{x}{}\cdot\pi_1(x).
+				\end{align*}
+				Wegen der vorausgesetzten Form
+				\begin{align*}
+					\diff{g}{k}{x}{}=\pdiff{g}{1}{x}{}\cdot k_1+\pdiff{g}{2}{x}{}\cdot k_2
+				\end{align*}
+				folgt mit Koeffizientenvergleich
+				\begin{align*}
+					&\pdiff{g}{1}{x}{}=-\pi_1(x)=x_1 &&\pdiff{g}{2}{x}{}=\pdiff{f}{2}{x}{}.
+				\end{align*}
+				\begin{info}[Legendre-Transformierte]
+					Als die Legendre-transformierte von $f:\R^2\to\R$ definieren wir 
+					\begin{align*}
+						g:=&f-\pdiff{f}{1}{}{}\cdot\pi_1\qquad\text{erste Komponente }x_1\\
+						g:=&f-\pdiff{f}{2}{}{}\cdot\pi_2\qquad\text{zweite Komponente }x_2.
+					\end{align*}
+				\end{info}
+			\subsection{Anwendung auf Lagrange}
+				Es gilt für $L:\R\times(\R^d)^2\to\R$ mit der Definition $q:=\pdiff{L}{(2,2)}{}{}$ dann mit dem obigen Kapitel 
+				\begin{align*}
+					\tilde L:=L-\pi_{(2,2)}\cdot\pdiff{L}{(2,2)}{}{}.
+				\end{align*}
+				\begin{info}[Hamilton-Funktion]
+					Damit folgt die \textsc{Hamilton} Funktion mit $H=-\tilde L$ als
+					\begin{align*}
+						H=\pi_{(2,2)}\cdot\pdiff{L}{(2,2)}{}{}-L
+					\end{align*}
+					für Funktionswerte $x\in\R\times(\R^d)^2$. 
+				\end{info}
+				Ein besonderes Augenmerk lege auf
+				\begin{align*}
+					\pdiff{L}{(2,2)}{}{}\cdot \pi_{(2,2)}=\sum_{i\in[d]}\pdiff{L}{(2,2)}{}{}_i\cdot \pi_{(2,2)}.
+				\end{align*}
+\end{document}

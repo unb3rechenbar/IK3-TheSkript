@@ -1,0 +1,87 @@
+\documentclass[../WiSe22ANA3.tex]{subfiles}
+\begin{document}
+	\lesson{1}{di 07 feb 2023 08:15}{Poisson-Klammern} 
+		\textbf{Letzte Vorlesung! 🥳}
+		Wir betrachten als letztes Kapitel des Semesters die sogenannten \emph{Poisson-Klammern}.
+		\section{Poisson-Klammern}
+			Seien $f,g\in C^1(\R\times(\R^d)^2,\R)$ Funktionen der Zeit $t\in\R$ und den Auswertungen der Parameterfunktionen $p,q\in C^1(\R,\R^d)$. Dabei kann $q$ der \emph{generalisierte Ort} und $p$ der \emph{generalisierte Impuls} sein. Dann können wir die Summe über die Freiheitsgrade $d\in\N$ des betrachteten Systems $\Sigma$ formulieren, als welcher Summanden wir die  symmetrische Differentialdifferenz
+			\begin{multline*}
+				\text{PD}_k(f,g):=\Diff{f}{0_\R,(e_k,0_{\R^d})}{x}{}\cdot\Diff{g}{0_\R,(0_{\R^d},e_k)}{x}{}\\
+				-\Diff{f}{0_\R,(0_{\R^d},e_k)}{x}{}\cdot\Diff{g}{0_\R,(e_k,0_{\R^d})}{x}{}
+			\end{multline*}
+			mit der manchmal auch verwendeten Kurzschreibweise $\pdv{f}{q_k}\cdot\pdv{g}{p_k}-\pdv{f}{p_k}\cdot\pdv{g}{q_k}$. 
+			\begin{info}[Poisson-Klammer]
+				Als \emph{Poisson-Klammer} definieren wir den \emph{bilinearen Differentialoperator} in $\text{Diff}^1(C^1(\R\times(\R^d)^2,\R))$ der Form 
+				$$\nset{f,g}:=\sum_{k\in[d]}\text{PD}_k(f,g)$$
+				des Systems $\Sigma$ der Freiheitsgrade $d\in\N$. 
+			\end{info}
+			\begin{Aufgabe}
+				\nr Zeige die Eigenschaften des bilinearen Differentialoperators: Zeige $\nset{\cdot,\cdot}$ stellt für die Funktionstypen einen Differentialoperator dar. Zeige dessen Bilinearität. 
+			\end{Aufgabe}
+			In der Menge $\text{Diff}^k(C^k(V,W))$ sammeln wir alle Differentialoperatoren auf dem Funktionenraum der $k$-mal stetig differenzierbaren Funktionen von $V$ nach $W$. 
+			\begin{Aufgabe}
+				\nr Recherchiere die genauen Rahmenbedingungen der Definition. 
+			\end{Aufgabe}
+			Die Poissonklammern stellen ein prominentes Beispiel für die sogenannten \emph{Lie-Klammern}, welche definiert sind als spezielle \emph{innere Verknüpfung} $[\cdot,\cdot]:V\times V\to V,\;(x,y)\mapsto [x,y]$ auf einem $K$-Vektorraum $V$. Sie erfüllt drei Charakteristiken, die wir im folgenden kurz beleuchten wollen. 
+			\begin{info}[Lie-Klammer]
+				Eine innere Verknüpfung $[\cdot,\cdot]:V^2\to V$ nennen wir \emph{Lie-Klammer}, wenn sie die Bedingungen 
+				\begin{clist}
+					\item Bilinearität,
+					\item Es gilt $[x,x]=0_K$ für alle $x\in V$, 
+					\item Sie ist mit der Jacobi-Rotationsidentität vereinbar; für $x,y,z\in V$ gilt 
+ 					$$[x,[y,z]]=[z,[x,y]]=[y,[z,x]],$$
+				\end{clist}
+				erfüllt. Liegt eine solche interne Verknüpfung auf einem $K$-Vektorraum $V$ vor, so wird $(V,[\cdot,\cdot])$ als \emph{Lie-Algebra} bezeichnet. 
+			\end{info}
+			
+		\section{Theoreme}
+			Zum Abschluss wollen wir noch einen Blick auf allgemeine Theoreme auf dem Vektorraum der Parameter der Form $(\R^d)^2$ mit $d\in\N$ als Freiheitsgrade betrachten. 
+			\subsection*{Liouvilles Theorem}	
+				Für eine Teilmenge $\Lambda\subseteq (\R^d)^2$ gilt die \emph{Volumentransformationsinvarianz} der Form 
+				$$\lint{\psi(x)}{x}{(\R^d)^2}=\lint{(f\circ\psi)(x)\cdot V(f'(x))}{x}{(\R^d)^2}.$$
+				Der Beweis führt über die Definition des \emph{Volumenfaktors} $V(f'(x))$ der \emph{kanonischen} Transformationsfunktion $f\in C^1((\R^d)^2,(\R^d)^2)$ durch die Gramsche Matrix   $G(x)=\fdef{\scpr{x_i}{x_j}}{(i,j)\in[N]^2}$ mit $N:=\dim((\R^d)^2)=2d$.
+				\begin{Aufgabe}
+					\nr Zeige den Satz mithilfe maßtheoretischer Produktmaße $\lambda^k$. 
+				\end{Aufgabe}
+				
+			\subsection*{Hamilton-Jacobi Formalismus}
+				Auf der Suche nach einer möglichst vorteilhaften Perspektive im Parameterraum, also Basis, versucht man eine optimierende Transformation $f$ zu finden, sodaß 
+				$$H(t,f(x))=0.$$
+				Dies ist genau dann möglich, wenn die Auswertung $f(x)$ nur \emph{Erhaltungsgrößen} enthält, also 
+				$$\Diff{H}{0,E_i}{t,f(x)}{}=0$$
+				für $E:=\fdef{\mbbEins_{[d]}\cdot(e_i,0_{\R^d})+\mbbEins_{\nset{d+1,2d}}\cdot (0_{\R^d},e_i)}{i\in[2d]}$ gilt. Behaupte nun die Nullbedingung:
+				$$H(t,x)+H(t,h)=0.$$
+				Dabei wählen wir nun \emph{speziell} die Form $h:=(x_1,\stern{f}{2}{x})$. Damit gilt dann
+				\begin{align*}
+					&x_2=\Diff{H}{0,(0,1_{\R^d})}{t,h}{} &&\stern{f}{1}{x}=\Diff{H}{0,(1_{\R^d},0)}{t,h}{}
+				\end{align*}
+				und in eingesetzter Form 
+				$$H(t,(x_1,\Diff{H}{0,(0,1_{\R^d})}{t,h}{})+\Diff{H}{1,0_{(\R^d)^2}}{t,h}{}=0.$$
+				\begin{Aufgabe}
+					\nr Leite die skizzierte Beziehung aus der Wirkungsvariation der Lagrange Funktion $L$ gegeben durch $\deldiff{L}{0,(h(t),h'(t))}{t,(q(t),q'(t))}{}=0$ her. 
+					
+					\nr Beobachte unter welchen Bedingungen die Existenz einer solchen Transformationsfunktion gegeben ist.
+				\end{Aufgabe}
+				Das bereits skizzierte Programm zur Problemlösung folgt der Struktur:
+				\begin{clist}
+					\item Schreibe die Hamilton Funktion $H$ auf. 
+					\item Finde die Transformation $f$. 
+					\item Schreibe für die Form $h:=(x_1,\stern{f}{2}{x})$ die zweite Hamilton-Funktionsauswertung $H(t,h)$ auf. 
+					\item Notiere die Variablen $x_1,x_2$ durch Ableitungen von $H(t,h)$. 
+					\item Prüfe die Nullbedingung bei Addition. 
+				\end{clist}
+				\begin{Aufgabe}
+					\nr Verwende das Programm, um per Hammerschlag das Problem des harmonischen Oszillators zu lösen. 
+				\end{Aufgabe}
+				
+		\section*{Reiserückblick}
+			Die Reise des \textt{IK3} führte uns von $3N\in\N$ Freiheitsgrade mit $k\in\N$ Zwangsbedingungen zu den generalisierten Koordinaten, welche wir mithilfe der Lagrange-Multiplikatoren haben. 
+			
+			Mit den Symmetriargumenten versuchten wir uns das Leben leichter zu machen, woraufhin wir zum ersten Höhepunkt die Lagrangegleichung aufstellten; Ein kurzer Blick auf die Hamiltonfunktion erlaubte uns einen solch umfangreichen Werkzeugkasten zu bedienen, daß Vielteilchensysteme mathematisch greifbar wurden. Wir schauten im kleinen nach Rotationen und Translationen und fanden Transformationsmatrizen.
+			
+			Als uns auffiel, daß mit hohen Geschwindigkeitstransformationen etwas nicht stimmte, fanden wir die spezielle Relativitätstheorie als Ausweg mit relativem Ausblick von Systemen auf andere mithilfe des Lorentz-Fernrohres. 
+			
+			Am Ende fanden wir den Weg zurück zu den Transformationen und den Blick in den Parameterraum und die Charakterisierung der kanonischen Transformationen. 
+			
+			Als weisere Wanderer verlassen wir nun die Theorie bis zum \textt{IK4}. 
+\end{document}

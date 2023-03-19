@@ -1,0 +1,71 @@
+\documentclass[../WiSe22ANA3.tex]{subfiles}
+\begin{document}
+	\lesson{1}{di 06 dez 2022 08:45}{} 
+		Betrachte nochmal die Matrix aus letzter Stunde:
+		\begin{align*}
+			\Gamma(\underline l,\underline e):=\textit{Winkelzuordnung}(\underline l,\underline e)=
+			\begin{pmatrix}
+				\scpr{\underline l_1}{\underline e_1} & \scpr{\underline l_1}{\underline e_2} & \scpr{\underline l_1}{\underline e_3} \\
+				\scpr{\underline l_2}{\underline e_1} & \scpr{\underline l_2}{\underline e_2} & \scpr{\underline l_2}{\underline e_3} \\
+				\scpr{\underline l_3}{\underline e_1} & \scpr{\underline l_3}{\underline e_2} & 
+				\scpr{\underline l_3}{\underline e_3}
+			\end{pmatrix}. 
+		\end{align*}
+		Wegen Symmetrie des Skalarproduktes sind nur sechs Einträge unabhängig:
+		\begin{align*}
+			\Gamma(\underline l,\underline e)=\quad\underbrace{\begin{pmatrix}
+				\scpr{\underline l_1}{\underline e_1} & \scpr{\underline l_1}{\underline e_2} & \scpr{\underline l_1}{\underline e_3} \\
+				 & \scpr{\underline l_2}{\underline e_2} & \scpr{\underline l_2}{\underline e_3} \\
+				 & & 
+				\scpr{\underline l_3}{\underline e_3}
+			\end{pmatrix}}_{\substack{\text{Matrix der}\\\text{Zwangsbedingungen}}} \quad+\quad\underbrace{\begin{pmatrix}
+				 & & \\
+				\scpr{\underline l_2}{\underline e_1} & & \\
+				\scpr{\underline l_3}{\underline e_1} & \scpr{\underline l_3}{\underline e_2} & 
+			\end{pmatrix}}_{\substack{\text{Matrix der}\\\text{Freiheitsgrade}}} \\
+			\textbf{(Visualisierung!)}
+		\end{align*}
+		Wir können damit für $x\in\R^3$ als Transformation schreiben:
+		\begin{info}[Koordinatentransformationsfunktion]
+			Seien $\underline l,\underline e\in\cBasistupel{\R^3}$ auf ONBs und $\Gamma(\underline l,\underline e)$ die Winkelzuordungsmatrix. Dann nennen wir 
+			$$\textit{Transformation\,}_{\Gamma(\underline l,\underline e)}:\clfdef{\R^3}{\R^3}{x}{\Gamma(\underline l,\underline e)\cdot x}$$
+			die Transformationsfunktion zu $\Gamma(\underline l,\underline e)$ und schreiben abgekürzt $\mcT_{\underline l,\underline e}$. 
+		\end{info}
+		\begin{Aufgabe}
+			\nr\label{afg:coordf} Zeige $f=\avec{\underline l}{}\circ f_M\circ\coord{\underline e}{}\Longleftrightarrow\forall i\in[\Def{e}]:(\coord{\underline l}{}\circ f)(x_i)=M\cdot\underline e_i$ für $x\in\R^d$. 
+		\end{Aufgabe}
+		\noindent Mit der Aufgabe \refnr{afg:coordf} können wir dann mit $f=\id{\R^3}{}$ schreiben 
+		$$\coord{x}{\underline l}=\fdef{\scpr{\underline l}{\underline e}\cdot x(i)}{i\in\Def{\underline l}}.$$
+		\begin{Aufgabe}
+			\nr Zeige, daß sich damit $\Gamma(\underline l,\underline e)$ ergibt. 
+		\end{Aufgabe}
+		\begin{align*}
+			X=\Gamma(\underline l,\underline e)\cdot x:=\fdef{\sum_{i\in[3]}\Gamma(\underline l,\underline e)(j,i)\cdot x_i}{j\in[3]}.
+		\end{align*}
+		Aus dieser lässt sich nun die Transformationsfunktion ableiten:
+		\begin{align*}
+			\textit{Transformation\,}_\Gamma:\clfdef{\R^3}{\R^3}{x}{\Gamma\cdot x}.
+		\end{align*}
+		\begin{Bemerkung}
+			Bei der $\textit{Transformation\,}_\Gamma$ Funktion handelt es sich um eine \underline{orthogonale} Abbildung. Nach der linearen Algebra $\postref{\text{Satz }15.2.11}$ können wir die Matrix mit einer Funktion \textit{Blockzuordnung} identifizieren:
+		\begin{align*}
+			\textit{BlockMatrixZuordnung}:\clfdef{\R^{d\times d}}{\Abb{\R^l}{\R^{d\times d}}}{A}{\clfdef{\R^l}{\R^{d\times d}}{x}{M_A(x)}},
+		\end{align*}
+		wobei 
+		\begin{align*}
+			\textit{BlockMatrixZuordnung}(A)(x)=
+			\left(\begin{smallmatrix}~
+\begin{tikzpicture}[inner sep=0]
+\node (a) {$\begin{smallmatrix}\lambda_1\end{smallmatrix}$};
+\node (b) at (1,-1) {$\begin{smallmatrix}\lambda_k\end{smallmatrix}$};
+\node (c) at (1.8,-1.8) {$\arraycolsep=1pt\begin{smallmatrix}\begin{array}{|cc|}\hline \cos x_1&-\sin x_1\\\sin x_1&\cos x_1\\\hline\end{array}\end{smallmatrix}$};
+\node (d) at (2.8,-2.8) [anchor=north west] {$\arraycolsep=1.1pt\begin{smallmatrix}\begin{array}{|cc|}\hline \cos x_l&-\sin x_l\\\sin x_l&\cos x_l\\\hline\end{array}\end{smallmatrix}$};
+\node[scale=5, xshift=0.6cm, yshift=-0.2cm] at (a.east) {$0$};
+\node[scale=5] at (0.5,-2.7) {$0$};
+\draw[loosely dotted,very thick,dash phase=2pt] (c)--(d);
+\draw[loosely dotted,very thick,dash phase=2pt] (a)--(b);
+\end{tikzpicture}
+\end{smallmatrix}\right).
+		\end{align*}
+		\end{Bemerkung}
+\end{document}
