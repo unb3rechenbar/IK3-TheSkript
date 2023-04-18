@@ -1,8 +1,8 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
-\contentsline {chapter}{\numberline {1}Einführung und Einleitung}{4}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Notation und kurze Wiederholung}{4}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Vielteilchensysteme}{6}{section.1.2}%
+\contentsline {chapter}{\numberline {1}Einführung und Einleitung}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Notation und kurze Wiederholung}{5}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Vielteilchensysteme}{7}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Zwangsbedingungen und verallgemeinerte Koordinaten}{8}{section.1.3}%
 \contentsline {chapter}{\numberline {2}D'Alembertscher Grundsatz und Lagrangesche Gleichungen}{10}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Virtuelle Verschiebung}{10}{section.2.1}%
@@ -12,54 +12,54 @@
 \contentsline {subsection}{\numberline {2.2.2}Betrachtung des zweiten Terms im d'Alembertschen Prinzip}{13}{subsection.2.2.2}%
 \contentsline {section}{\numberline {2.3}Konservative Systeme}{14}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Reibung und andere geschwindigkeitsabhängige Potentiale}{15}{section.2.4}%
-\contentsline {chapter}{\numberline {3}Wiederholung und Reibung}{18}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Reibung}{20}{section.3.1}%
-\contentsline {chapter}{\numberline {4}Hamilton}{23}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Hamilton Prinzip und Aspekte der Variationsrechnung}{23}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Ableitung Lagrange von Hamilton}{26}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Hamilton's principle for non-holonomic systems}{27}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Conversation laws and symmetries}{27}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Weiterführung Hamilton}{28}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Symmetrien}{29}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Erhaltungssätze und Symmetrien}{29}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Noether-Theorem}{30}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Translationssymmetrie}{33}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Rotationssymmetrie}{33}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Zeitsymmetrie}{33}{subsection.6.2.3}%
-\contentsline {chapter}{\numberline {7}Lagrange Transformation}{34}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Lagrange Transformation}{34}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Allgemeiner Ansatz}{34}{subsection.7.1.1}%
-\contentsline {subsection}{\numberline {7.1.2}Anwendung auf Lagrange}{35}{subsection.7.1.2}%
-\contentsline {chapter}{\numberline {8}Virial- und Kepler Problem}{36}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Das Virialproblem}{36}{section.8.1}%
-\contentsline {chapter}{\numberline {9}Na, nicht aufgepasst?}{38}{chapter.9}%
-\contentsline {chapter}{\numberline {10}Hyperbolische Laufbahnen}{39}{chapter.10}%
-\contentsline {section}{\numberline {10.1}Streuungsquerschnitt}{39}{section.10.1}%
-\contentsline {section}{\numberline {10.2}Beispiel Streuung geladener Teilchen}{39}{section.10.2}%
-\contentsline {section}{\numberline {10.3}Streuparameter und Winkel}{39}{section.10.3}%
-\contentsline {chapter}{\numberline {11}Orthogonale Transformationen}{40}{chapter.11}%
-\contentsline {section}{\numberline {11.1}Das Vektorrezept}{40}{section.11.1}%
-\contentsline {section}{\numberline {11.2}Die Winkelzuordnung}{42}{section.11.2}%
-\contentsline {chapter}{\numberline {12}Na, nicht aufgepasst?}{43}{chapter.12}%
-\contentsline {chapter}{\numberline {13}Gekoppelter Oszillator}{45}{chapter.13}%
-\contentsline {section}{\numberline {13.1}Gekoppelter Oszillator}{45}{section.13.1}%
-\contentsline {section}{\numberline {13.2}Mehrteilchensysteme}{45}{section.13.2}%
-\contentsline {chapter}{\numberline {14}Fortsetzung Oszillator}{50}{chapter.14}%
-\contentsline {chapter}{\numberline {15}Spezielle Relativitätstheorie Einleitung}{54}{chapter.15}%
-\contentsline {section}{\numberline {15.1}Einleitung und Postulate}{54}{section.15.1}%
-\contentsline {section}{\numberline {15.2}Minkowski-Raum}{55}{section.15.2}%
-\contentsline {chapter}{\numberline {16}Galilei- und Lorentz-Transformation}{60}{chapter.16}%
-\contentsline {section}{\numberline {16.1}Transformationen}{60}{section.16.1}%
-\contentsline {section}{\numberline {16.2}Maxwell Gleichungen}{63}{section.16.2}%
-\contentsline {chapter}{\numberline {17}Na, nicht aufgepasst?}{66}{chapter.17}%
-\contentsline {section}{\numberline {17.1}Lorentz-Kovariante Formulierung}{66}{section.17.1}%
-\contentsline {section}{\numberline {17.2}Beispiele}{67}{section.17.2}%
-\contentsline {subsection}{\numberline {17.2.1}Das Zwillingsparadoxon}{67}{subsection.17.2.1}%
-\contentsline {chapter}{\numberline {18}Na, nicht aufgepasst?}{68}{chapter.18}%
-\contentsline {chapter}{\numberline {19}Na, nicht aufgepasst?}{69}{chapter.19}%
-\contentsline {section}{\numberline {19.1}Maxwellsche Gleichung}{69}{section.19.1}%
-\contentsline {section}{\numberline {19.2}Relativistische Mechanik und Kinematik}{69}{section.19.2}%
-\contentsline {chapter}{\numberline {20}Na, nicht aufgepasst?}{70}{chapter.20}%
-\contentsline {chapter}{\numberline {21}Poisson-Klammern}{71}{chapter.21}%
-\contentsline {section}{\numberline {21.1}Poisson-Klammern}{71}{section.21.1}%
-\contentsline {section}{\numberline {21.2}Theoreme}{72}{section.21.2}%
+\contentsline {chapter}{\numberline {3}Wiederholung und Reibung}{17}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Reibung}{19}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Hamilton}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Hamilton Prinzip und Aspekte der Variationsrechnung}{21}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Ableitung Lagrange von Hamilton}{24}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Hamilton's principle for non-holonomic systems}{25}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Conversation laws and symmetries}{25}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Weiterführung Hamilton}{26}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Symmetrien}{27}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Erhaltungssätze und Symmetrien}{27}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Noether-Theorem}{28}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Translationssymmetrie}{30}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Rotationssymmetrie}{30}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Zeitsymmetrie}{30}{subsection.6.2.3}%
+\contentsline {chapter}{\numberline {7}Lagrange Transformation}{31}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Lagrange Transformation}{31}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Allgemeiner Ansatz}{31}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Anwendung auf Lagrange}{32}{subsection.7.1.2}%
+\contentsline {chapter}{\numberline {8}Virial- und Kepler Problem}{33}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Das Virialproblem}{33}{section.8.1}%
+\contentsline {chapter}{\numberline {9}Na, nicht aufgepasst?}{35}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Hyperbolische Laufbahnen}{36}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Streuungsquerschnitt}{36}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Beispiel Streuung geladener Teilchen}{36}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Streuparameter und Winkel}{36}{section.10.3}%
+\contentsline {chapter}{\numberline {11}Orthogonale Transformationen}{37}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Das Vektorrezept}{37}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Die Winkelzuordnung}{38}{section.11.2}%
+\contentsline {chapter}{\numberline {12}Na, nicht aufgepasst?}{40}{chapter.12}%
+\contentsline {chapter}{\numberline {13}Gekoppelter Oszillator}{42}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Gekoppelter Oszillator}{42}{section.13.1}%
+\contentsline {section}{\numberline {13.2}Mehrteilchensysteme}{42}{section.13.2}%
+\contentsline {chapter}{\numberline {14}Fortsetzung Oszillator}{46}{chapter.14}%
+\contentsline {chapter}{\numberline {15}Spezielle Relativitätstheorie Einleitung}{49}{chapter.15}%
+\contentsline {section}{\numberline {15.1}Einleitung und Postulate}{49}{section.15.1}%
+\contentsline {section}{\numberline {15.2}Minkowski-Raum}{50}{section.15.2}%
+\contentsline {chapter}{\numberline {16}Galilei- und Lorentz-Transformation}{54}{chapter.16}%
+\contentsline {section}{\numberline {16.1}Transformationen}{54}{section.16.1}%
+\contentsline {section}{\numberline {16.2}Maxwell Gleichungen}{56}{section.16.2}%
+\contentsline {chapter}{\numberline {17}Na, nicht aufgepasst?}{59}{chapter.17}%
+\contentsline {section}{\numberline {17.1}Lorentz-Kovariante Formulierung}{59}{section.17.1}%
+\contentsline {section}{\numberline {17.2}Beispiele}{60}{section.17.2}%
+\contentsline {subsection}{\numberline {17.2.1}Das Zwillingsparadoxon}{60}{subsection.17.2.1}%
+\contentsline {chapter}{\numberline {18}Na, nicht aufgepasst?}{61}{chapter.18}%
+\contentsline {chapter}{\numberline {19}Na, nicht aufgepasst?}{62}{chapter.19}%
+\contentsline {section}{\numberline {19.1}Maxwellsche Gleichung}{62}{section.19.1}%
+\contentsline {section}{\numberline {19.2}Relativistische Mechanik und Kinematik}{62}{section.19.2}%
+\contentsline {chapter}{\numberline {20}Na, nicht aufgepasst?}{63}{chapter.20}%
+\contentsline {chapter}{\numberline {21}Poisson-Klammern}{64}{chapter.21}%
+\contentsline {section}{\numberline {21.1}Poisson-Klammern}{64}{section.21.1}%
+\contentsline {section}{\numberline {21.2}Theoreme}{65}{section.21.2}%

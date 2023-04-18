@@ -1,12 +1,26 @@
 \documentclass[11pt]{report}
 
-\usepackage[aufgaben,mitschrift,namen,design]{ckern}
+\usepackage[aufgaben,mitschrift,namen,design]{kern}
 
 % \input{../../../../Verwaltung/LaTeX/Header/Konstruktionsdateien/kern.tex}
 % \input{../../../../Verwaltung/LaTeX/Header/Konstruktionsdateien/mitschrift.tex}
 % \input{../../../../Verwaltung/LaTeX/Header/Konstruktionsdateien/aufgabenpaket.tex}
 % \input{../../../../Verwaltung/LaTeX/Header/Konstruktionsdateien/namensregister.tex}
 % \input{../../../../Verwaltung/LaTeX/Header/Konstruktionsdateien/designaddon.tex}
+
+\usepackage{geometry}
+\geometry{
+    letterpaper, 
+    twoside=true, 
+    bindingoffset=1cm, 
+    left=3.5cm, 
+    right=3.5cm, 
+    top=3.5cm, 
+    bottom=3.5cm
+}
+
+\ihead{\textbf{Integrierter Kurs IV}\\\textit{Experimentalphysik II}\\\texttt{Skript}}
+\chead{\textit{Tom Folgmann}}
 
 \setlength{\parindent}{0pt}
 
@@ -17,6 +31,7 @@
 	\maketitle
 	
 	\subfile{Notes/lec1.tex}
+		Sehr geehrte Damen und Herren, dies ist eine extrem lange Zeile, die ihren Job einzig in der Darstellung der Umbruchmethode hat, welche TeXShop verwendet. Vielen Dank f\"ur Ihr Verst\"andnis.
 	\subfile{Notes/lec2.tex}
 	\subfile{Notes/lec3.tex}
 	\subfile{Notes/lec4.tex}
