@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.3.30)  18 APR 2023 09:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.3.30)  26 APR 2023 18:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -24,21 +24,25 @@ File: size11.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
 )
-(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Verwaltung/Kon
-stanz/LaTeX/Packages/kern/kern.sty
+(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Privat/Creativ
+e/Code/LaTeX/Packages/kern/kern.sty
 Package: kern 2023/01/27 1.0 kern Bibliothek
 
-(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Verwaltung/Kon
-stanz/LaTeX/Packages/kern/Zusatz/aufgabenpaket.tex
+(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Privat/Creativ
+e/Code/LaTeX/Packages/kern/Zusatz/aufgabenpaket.tex
 \c@shw=\count194
 )
-(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Verwaltung/Kon
-stanz/LaTeX/Packages/kern/Zusatz/designaddon.tex
+(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Privat/Creativ
+e/Code/LaTeX/Packages/kern/Zusatz/designaddon.tex
 ! Undefined control sequence.
 l.26 	\definecolor
                   {gray75}{gray}{0.75}
-? s
-OK, entering \scrollmode...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 
 ! LaTeX Error: Missing \begin{document}.
 
@@ -108,12 +112,12 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 )
-(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Verwaltung/Kon
-stanz/LaTeX/Packages/kern/Zusatz/mitschrift.tex)
-(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Verwaltung/Kon
-stanz/LaTeX/Packages/kern/Zusatz/namensregister.tex)
-(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Verwaltung/Kon
-stanz/LaTeX/Packages/kern/Basic/Pakete.tex
+(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Privat/Creativ
+e/Code/LaTeX/Packages/kern/Zusatz/mitschrift.tex)
+(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Privat/Creativ
+e/Code/LaTeX/Packages/kern/Zusatz/namensregister.tex)
+(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Privat/Creativ
+e/Code/LaTeX/Packages/kern/Basic/Pakete.tex
 (/usr/local/texlive/2023/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks16
@@ -404,6 +408,28 @@ LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
 (Font)                  U/wasy/m/n --> U/wasy/b/n on input line 93.
 LaTeX Font Info:    Redeclaring math symbol \ocircle on input line 243.
 )
+(/usr/local/texlive/2023/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count287
+\Gm@cntv=\count288
+\c@Gm@tempcnt=\count289
+\Gm@bindingoffset=\dimen154
+\Gm@wd@mp=\dimen155
+\Gm@odd@mp=\dimen156
+\Gm@even@mp=\dimen157
+\Gm@layoutwidth=\dimen158
+\Gm@layoutheight=\dimen159
+\Gm@layouthoffset=\dimen160
+\Gm@layoutvoffset=\dimen161
+\Gm@dimlist=\toks36
+)
 (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -421,15 +447,15 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen154
-\Gin@req@width=\dimen155
+\Gin@req@height=\dimen162
+\Gin@req@width=\dimen163
 )
 (/usr/local/texlive/2023/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count287
-\float@exts=\toks36
+\c@float@type=\count290
+\float@exts=\toks37
 \float@box=\box55
-\@float@everytoks=\toks37
+\@float@everytoks=\toks38
 \@floatcapt=\box56
 )
 (/usr/local/texlive/2023/texmf-dist/tex/latex/pgfplots/pgfplots.sty
@@ -440,9 +466,9 @@ Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
 (/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
 x
-\pgfutil@everybye=\toks38
-\pgfutil@tempdima=\dimen156
-\pgfutil@tempdimb=\dimen157
+\pgfutil@everybye=\toks39
+\pgfutil@tempdima=\dimen164
+\pgfutil@tempdimb=\dimen165
 )
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box57
@@ -457,33 +483,33 @@ Package: pgf 2023-01-15 v3.1.10 (3.1.10)
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks39
-\pgfkeys@temptoks=\toks40
+\pgfkeys@pathtoks=\toks40
+\pgfkeys@temptoks=\toks41
 
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfil
 tered.code.tex
-\pgfkeys@tmptoks=\toks41
+\pgfkeys@tmptoks=\toks42
 ))
-\pgf@x=\dimen158
-\pgf@y=\dimen159
-\pgf@xa=\dimen160
-\pgf@ya=\dimen161
-\pgf@xb=\dimen162
-\pgf@yb=\dimen163
-\pgf@xc=\dimen164
-\pgf@yc=\dimen165
-\pgf@xd=\dimen166
-\pgf@yd=\dimen167
+\pgf@x=\dimen166
+\pgf@y=\dimen167
+\pgf@xa=\dimen168
+\pgf@ya=\dimen169
+\pgf@xb=\dimen170
+\pgf@yb=\dimen171
+\pgf@xc=\dimen172
+\pgf@yc=\dimen173
+\pgf@xd=\dimen174
+\pgf@yd=\dimen175
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count288
-\c@pgf@countb=\count289
-\c@pgf@countc=\count290
-\c@pgf@countd=\count291
-\t@pgf@toka=\toks42
-\t@pgf@tokb=\toks43
-\t@pgf@tokc=\toks44
-\pgf@sys@id@count=\count292
+\c@pgf@counta=\count291
+\c@pgf@countb=\count292
+\c@pgf@countc=\count293
+\c@pgf@countd=\count294
+\t@pgf@toka=\toks43
+\t@pgf@tokb=\toks44
+\t@pgf@tokc=\toks45
+\pgf@sys@id@count=\count295
 
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
@@ -501,8 +527,8 @@ File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
 code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count293
-\pgfsyssoftpath@bigbuffer@items=\count294
+\pgfsyssoftpath@smallbuffer@items=\count296
+\pgfsyssoftpath@bigbuffer@items=\count297
 )
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
 code.tex
@@ -531,12 +557,12 @@ Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen168
-\pgfmath@count=\count295
+\pgfmath@dimen=\dimen176
+\pgfmath@count=\count298
 \pgfmath@box=\box58
-\pgfmath@toks=\toks45
-\pgfmath@stack@operand=\toks46
-\pgfmath@stack@operation=\toks47
+\pgfmath@toks=\toks46
+\pgfmath@stack@operand=\toks47
+\pgfmath@stack@operation=\toks48
 )
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
 tex)
@@ -558,37 +584,37 @@ code.tex)
 erarithmetics.code.tex)
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count296
+\c@pgfmathroundto@lastzeros=\count299
 )) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
 de.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen169
-\pgf@picmaxx=\dimen170
-\pgf@picminy=\dimen171
-\pgf@picmaxy=\dimen172
-\pgf@pathminx=\dimen173
-\pgf@pathmaxx=\dimen174
-\pgf@pathminy=\dimen175
-\pgf@pathmaxy=\dimen176
-\pgf@xx=\dimen177
-\pgf@xy=\dimen178
-\pgf@yx=\dimen179
-\pgf@yy=\dimen180
-\pgf@zx=\dimen181
-\pgf@zy=\dimen182
+\pgf@picminx=\dimen177
+\pgf@picmaxx=\dimen178
+\pgf@picminy=\dimen179
+\pgf@picmaxy=\dimen180
+\pgf@pathminx=\dimen181
+\pgf@pathmaxx=\dimen182
+\pgf@pathminy=\dimen183
+\pgf@pathmaxy=\dimen184
+\pgf@xx=\dimen185
+\pgf@xy=\dimen186
+\pgf@yx=\dimen187
+\pgf@yy=\dimen188
+\pgf@zx=\dimen189
+\pgf@zy=\dimen190
 )
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
 ruct.code.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen183
-\pgf@path@lasty=\dimen184
+\pgf@path@lastx=\dimen191
+\pgf@path@lasty=\dimen192
 )
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
 .code.tex
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen185
-\pgf@shorten@start@additional=\dimen186
+\pgf@shorten@end@additional=\dimen193
+\pgf@shorten@start@additional=\dimen194
 )
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
 de.tex
@@ -596,19 +622,19 @@ File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfpic=\box59
 \pgf@hbox=\box60
 \pgf@layerbox@main=\box61
-\pgf@picture@serial@count=\count297
+\pgf@picture@serial@count=\count300
 )
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
 ate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen187
+\pgflinewidth=\dimen195
 )
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
 ations.code.tex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen188
-\pgf@pt@y=\dimen189
-\pgf@pt@temp=\dimen190
+\pgf@pt@x=\dimen196
+\pgf@pt@y=\dimen197
+\pgf@pt@temp=\dimen198
 )
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
 e.tex
@@ -625,14 +651,14 @@ File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
 de.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen191
+\pgfarrowsep=\dimen199
 )
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
 e.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen192
-\pgf@sys@shading@range@num=\count298
-\pgf@shadingcount=\count299
+\pgf@max=\dimen256
+\pgf@sys@shading@range@num=\count301
+\pgf@shadingcount=\count302
 )
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
 e.tex
@@ -671,8 +697,8 @@ File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen193
-\pgf@nodesepend=\dimen194
+\pgf@nodesepstart=\dimen257
+\pgf@nodesepend=\dimen258
 )
 (/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -1-18.sty
@@ -685,10 +711,10 @@ Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen195
-\pgffor@skip=\dimen196
-\pgffor@stack=\toks48
-\pgffor@toks=\toks49
+\pgffor@iter=\dimen259
+\pgffor@skip=\dimen260
+\pgffor@stack=\toks49
+\pgffor@toks=\toks50
 ))
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
 e.tex
@@ -697,34 +723,34 @@ Package: tikz 2023-01-15 v3.1.10 (3.1.10)
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count300
-\pgfplotmarksize=\dimen197
+\pgf@plot@mark@count=\count303
+\pgfplotmarksize=\dimen261
 )
-\tikz@lastx=\dimen198
-\tikz@lasty=\dimen199
-\tikz@lastxsaved=\dimen256
-\tikz@lastysaved=\dimen257
-\tikz@lastmovetox=\dimen258
-\tikz@lastmovetoy=\dimen259
-\tikzleveldistance=\dimen260
-\tikzsiblingdistance=\dimen261
+\tikz@lastx=\dimen262
+\tikz@lasty=\dimen263
+\tikz@lastxsaved=\dimen264
+\tikz@lastysaved=\dimen265
+\tikz@lastmovetox=\dimen266
+\tikz@lastmovetoy=\dimen267
+\tikzleveldistance=\dimen268
+\tikzsiblingdistance=\dimen269
 \tikz@figbox=\box64
 \tikz@figbox@bg=\box65
 \tikz@tempbox=\box66
 \tikz@tempbox@bg=\box67
-\tikztreelevel=\count301
-\tikznumberofchildren=\count302
-\tikznumberofcurrentchild=\count303
-\tikz@fig@count=\count304
+\tikztreelevel=\count304
+\tikznumberofchildren=\count305
+\tikznumberofcurrentchild=\count306
+\tikz@fig@count=\count307
 
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count305
-\pgfmatrixcurrentcolumn=\count306
-\pgf@matrix@numberofcolumns=\count307
+\pgfmatrixcurrentrow=\count308
+\pgfmatrixcurrentcolumn=\count309
+\pgf@matrix@numberofcolumns=\count310
 )
-\tikz@expandcount=\count308
+\tikz@expandcount=\count311
 
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
@@ -732,12 +758,12 @@ File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
-\t@pgfplots@toka=\toks50
-\t@pgfplots@tokb=\toks51
-\t@pgfplots@tokc=\toks52
-\pgfplots@tmpa=\dimen262
-\c@pgfplots@coordindex=\count309
-\c@pgfplots@scanlineindex=\count310
+\t@pgfplots@toka=\toks51
+\t@pgfplots@tokb=\toks52
+\t@pgfplots@tokc=\toks53
+\pgfplots@tmpa=\dimen270
+\c@pgfplots@coordindex=\count312
+\c@pgfplots@scanlineindex=\count313
 
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric
 .code.tex))
@@ -748,9 +774,9 @@ soldpgfsupp_loader.code.tex
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.cod
 e.tex)
 Package pgfplots: loading complementary utilities for your pgf version...
-\t@pgf@toka=\toks53
-\t@pgf@tokb=\toks54
-\t@pgf@tokc=\toks55
+\t@pgf@toka=\toks54
+\t@pgf@tokb=\toks55
+\t@pgf@tokc=\toks56
 
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
 soldpgfsupp_pgfutil-common-lists.tex))
@@ -762,14 +788,14 @@ liststructure.code.tex)
 liststructureext.code.tex)
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 array.code.tex
-\c@pgfplotsarray@tmp=\count311
+\c@pgfplotsarray@tmp=\count314
 )
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 matrix.code.tex)
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
 shared.code.tex
-\c@pgfplotstable@counta=\count312
-\t@pgfplotstable@a=\toks56
+\c@pgfplotstable@counta=\count315
+\t@pgfplotstable@a=\toks57
 )
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 deque.code.tex)
@@ -781,7 +807,7 @@ ta.code.tex))
 .code.tex)
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplot
 s.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count313
+\c@pgfplotslibrarysurf@no=\count316
 
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots
 .surfshading.pgfsys-pdftex.def)))
@@ -813,14 +839,14 @@ x)
 s/tikzlibrarydecorations.code.tex
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoration
 s.code.tex
-\pgfdecoratedcompleteddistance=\dimen263
-\pgfdecoratedremainingdistance=\dimen264
-\pgfdecoratedinputsegmentcompleteddistance=\dimen265
-\pgfdecoratedinputsegmentremainingdistance=\dimen266
-\pgf@decorate@distancetomove=\dimen267
-\pgf@decorate@repeatstate=\count314
-\pgfdecorationsegmentamplitude=\dimen268
-\pgfdecorationsegmentlength=\dimen269
+\pgfdecoratedcompleteddistance=\dimen271
+\pgfdecoratedremainingdistance=\dimen272
+\pgfdecoratedinputsegmentcompleteddistance=\dimen273
+\pgfdecoratedinputsegmentremainingdistance=\dimen274
+\pgf@decorate@distancetomove=\dimen275
+\pgf@decorate@repeatstate=\count317
+\pgfdecorationsegmentamplitude=\dimen276
+\pgfdecorationsegmentlength=\dimen277
 )
 \tikz@lib@dec@box=\box68
 )
@@ -834,13 +860,13 @@ s/tikzlibrarydecorations.pathreplacing.code.tex
 brarydecorations.pathreplacing.code.tex))
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplo
 ts.contourlua.code.tex)
-\pgfplots@numplots=\count315
-\pgfplots@xmin@reg=\dimen270
-\pgfplots@xmax@reg=\dimen271
-\pgfplots@ymin@reg=\dimen272
-\pgfplots@ymax@reg=\dimen273
-\pgfplots@zmin@reg=\dimen274
-\pgfplots@zmax@reg=\dimen275
+\pgfplots@numplots=\count318
+\pgfplots@xmin@reg=\dimen278
+\pgfplots@xmax@reg=\dimen279
+\pgfplots@ymin@reg=\dimen280
+\pgfplots@ymax@reg=\dimen281
+\pgfplots@zmin@reg=\dimen282
+\pgfplots@zmax@reg=\dimen283
 )
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryplotmarks.code.tex
@@ -861,10 +887,10 @@ Package: pgfplotstable 2021/05/15 v1.18.1 Table typesetting and Pretty-printing
 .coltype.code.tex))
 (/usr/local/texlive/2023/texmf-dist/tex/latex/tools/array.sty
 Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen276
+\col@sep=\dimen284
 \ar@mcellbox=\box69
-\extrarowheight=\dimen277
-\NC@list=\toks57
+\extrarowheight=\dimen285
+\NC@list=\toks58
 \extratabsurround=\skip59
 \backup@length=\skip60
 \ar@cellbox=\box70
@@ -908,8 +934,8 @@ Package: tcolorbox 2023/03/17 version 6.0.3 text color boxes
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2022-07-02 v1.5u LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks58
-\verbatim@line=\toks59
+\every@verbatim=\toks59
+\verbatim@line=\toks60
 \verbatim@in@stream=\read4
 )
 (/usr/local/texlive/2023/texmf-dist/tex/latex/environ/environ.sty
@@ -922,9 +948,9 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \tcb@upperbox=\box72
 \tcb@lowerbox=\box73
 \tcb@phantombox=\box74
-\c@tcbbreakpart=\count316
-\c@tcblayer=\count317
-\c@tcolorbox@number=\count318
+\c@tcbbreakpart=\count319
+\c@tcblayer=\count320
+\c@tcolorbox@number=\count321
 \tcb@temp=\box75
 \tcb@temp=\box76
 \tcb@temp=\box77
@@ -943,9 +969,6 @@ Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
 (/usr/local/texlive/2023/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-)
-(/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
 Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
 \tcb@testbox=\box79
@@ -964,7 +987,7 @@ Package: expl3 2023-02-22 L3 programming layer (loader)
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count319
+\l__color_backend_stack_int=\count322
 \l__pdf_internal_box=\box82
 ))
 Package: xparse 2023-02-02 L3 Experimental document command parser
@@ -998,14 +1021,14 @@ Package zref Info: New property: page on input line 769.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\c@abspage=\count320
+\c@abspage=\count323
 Package zref Info: New property: abspage on input line 65.
 )
 (/usr/local/texlive/2023/texmf-dist/tex/latex/needspace/needspace.sty
 Package: needspace 2010/09/12 v1.3d reserve vertical space
 )
 \mdf@templength=\skip62
-\c@mdf@globalstyle@cnt=\count321
+\c@mdf@globalstyle@cnt=\count324
 \mdf@skipabove@length=\skip63
 \mdf@skipbelow@length=\skip64
 \mdf@leftmargin@length=\skip65
@@ -1081,16 +1104,16 @@ File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
 \mdf@horizontalspaceofbox=\skip126
 \mdfsubtitleheight=\skip127
 \mdfsubsubtitleheight=\skip128
-\c@mdfcountframes=\count322
+\c@mdfcountframes=\count325
 
 ****** mdframed patching \endmdf@trivlist
 
 ****** -- success******
 
-\mdf@envdepth=\count323
-\c@mdf@env@i=\count324
-\c@mdf@env@ii=\count325
-\c@mdf@zref@counter=\count326
+\mdf@envdepth=\count326
+\c@mdf@env@i=\count327
+\c@mdf@env@ii=\count328
+\c@mdf@zref@counter=\count329
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
 (/usr/local/texlive/2023/texmf-dist/tex/latex/caption/caption.sty
@@ -1098,52 +1121,52 @@ Package: caption 2023/03/12 v3.6j Customizing captions (AR)
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
-\caption@tempdima=\dimen278
-\captionmargin=\dimen279
-\caption@leftmargin=\dimen280
-\caption@rightmargin=\dimen281
-\caption@width=\dimen282
-\caption@indent=\dimen283
-\caption@parindent=\dimen284
-\caption@hangindent=\dimen285
+\caption@tempdima=\dimen286
+\captionmargin=\dimen287
+\caption@leftmargin=\dimen288
+\caption@rightmargin=\dimen289
+\caption@width=\dimen290
+\caption@indent=\dimen291
+\caption@parindent=\dimen292
+\caption@hangindent=\dimen293
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count327
-\c@continuedfloat=\count328
+\c@caption@flags=\count330
+\c@continuedfloat=\count331
 Package caption Info: float package is loaded.
 )
 (/usr/local/texlive/2023/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2023/02/19 v1.6 Sub-captions (AR)
 Package caption Info: New subtype `subfigure' on input line 239.
-\c@subfigure=\count329
+\c@subfigure=\count332
 Package caption Info: New subtype `subtable' on input line 239.
-\c@subtable=\count330
+\c@subtable=\count333
 )
 (/usr/local/texlive/2023/texmf-dist/tex/generic/soul/soul.sty
 Package: soul 2023-02-18 v3.0 Permit use of UTF-8 characters in soul (HO)
 
 (/usr/local/texlive/2023/texmf-dist/tex/generic/soul/soul-ori.sty
 Package: soul-ori 2023-02-18 v3.0 letterspacing/underlining (mf)
-\SOUL@word=\toks60
-\SOUL@lasttoken=\toks61
-\SOUL@syllable=\toks62
-\SOUL@cmds=\toks63
-\SOUL@buffer=\toks64
-\SOUL@token=\toks65
-\SOUL@syllgoal=\dimen286
-\SOUL@syllwidth=\dimen287
-\SOUL@charkern=\dimen288
-\SOUL@hyphkern=\dimen289
-\SOUL@dimen=\dimen290
-\SOUL@dimeni=\dimen291
-\SOUL@minus=\count331
-\SOUL@comma=\count332
-\SOUL@apo=\count333
-\SOUL@grave=\count334
+\SOUL@word=\toks61
+\SOUL@lasttoken=\toks62
+\SOUL@syllable=\toks63
+\SOUL@cmds=\toks64
+\SOUL@buffer=\toks65
+\SOUL@token=\toks66
+\SOUL@syllgoal=\dimen294
+\SOUL@syllwidth=\dimen295
+\SOUL@charkern=\dimen296
+\SOUL@hyphkern=\dimen297
+\SOUL@dimen=\dimen298
+\SOUL@dimeni=\dimen299
+\SOUL@minus=\count334
+\SOUL@comma=\count335
+\SOUL@apo=\count336
+\SOUL@grave=\count337
 \SOUL@spaceskip=\skip129
-\SOUL@ttwidth=\dimen292
-\SOUL@uldp=\dimen293
-\SOUL@ulht=\dimen294
+\SOUL@ttwidth=\dimen300
+\SOUL@uldp=\dimen301
+\SOUL@ulht=\dimen302
 ))
 (/usr/local/texlive/2023/texmf-dist/tex/latex/tikz-cd/tikz-cd.sty
 Package: tikz-cd 2021/05/04 v1.0 Commutative diagrams with TikZ
@@ -1160,10 +1183,10 @@ File: tikzlibraryquotes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
 meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowinset=\dimen295
-\pgfarrowlength=\dimen296
-\pgfarrowwidth=\dimen297
-\pgfarrowlinewidth=\dimen298
+\pgfarrowinset=\dimen303
+\pgfarrowlength=\dimen304
+\pgfarrowwidth=\dimen305
+\pgfarrowlinewidth=\dimen306
 )))
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryshapes.code.tex
@@ -1254,94 +1277,94 @@ File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
 code.tex
 File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\arrowsize=\dimen299
+\arrowsize=\dimen307
 ))
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytrees.code.tex
 File: tikzlibrarytrees.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-\l__tikzsymbols_Moai_thickness_dim=\dimen300
-\l__tikzsymbols_Kochtopf_nr_arguments_int=\count335
-\l__tikzsymbols_Bratpfanne_nr_arguments_int=\count336
-\l__tikzsymbols_Schneebesen_nr_arguments_int=\count337
-\l__tikzsymbols_Sieb_nr_arguments_int=\count338
-\l__tikzsymbols_Purierstab_nr_arguments_int=\count339
-\l__tikzsymbols_Dreizack_nr_arguments_int=\count340
-\l__tikzsymbols_Backblech_nr_arguments_int=\count341
-\l__tikzsymbols_Ofen_nr_arguments_int=\count342
-\l__tikzsymbols_Pfanne_nr_arguments_int=\count343
-\l__tikzsymbols_Herd_nr_arguments_int=\count344
-\l__tikzsymbols_Saftpresse_nr_arguments_int=\count345
-\l__tikzsymbols_Schussel_nr_arguments_int=\count346
-\l__tikzsymbols_Schaler_nr_arguments_int=\count347
-\l__tikzsymbols_Reibe_nr_arguments_int=\count348
-\l__tikzsymbols_Flasche_nr_arguments_int=\count349
-\l__tikzsymbols_Nudelholz_nr_arguments_int=\count350
-\l__tikzsymbols_Knoblauchpresse_nr_arguments_int=\count351
-\l__tikzsymbols_Sadey_nr_arguments_int=\count352
-\l__tikzsymbols_dSadey_nr_arguments_int=\count353
-\l__tikzsymbols_Changey_nr_arguments_int=\count354
-\l__tikzsymbols_dChangey_nr_arguments_int=\count355
-\l__tikzsymbols_cChangey_nr_arguments_int=\count356
-\l__tikzsymbols_dcChangey_nr_arguments_int=\count357
-\l__tikzsymbols_Annoey_nr_arguments_int=\count358
-\l__tikzsymbols_dAnnoey_nr_arguments_int=\count359
-\l__tikzsymbols_Smiley_nr_arguments_int=\count360
-\l__tikzsymbols_dSmiley_nr_arguments_int=\count361
-\l__tikzsymbols_Laughey_nr_arguments_int=\count362
-\l__tikzsymbols_dLaughey_nr_arguments_int=\count363
-\l__tikzsymbols_Neutrey_nr_arguments_int=\count364
-\l__tikzsymbols_dNeutrey_nr_arguments_int=\count365
-\l__tikzsymbols_Winkey_nr_arguments_int=\count366
-\l__tikzsymbols_oldWinkey_nr_arguments_int=\count367
-\l__tikzsymbols_dWinkey_nr_arguments_int=\count368
-\l__tikzsymbols_olddWinkey_nr_arguments_int=\count369
-\l__tikzsymbols_Sey_nr_arguments_int=\count370
-\l__tikzsymbols_dSey_nr_arguments_int=\count371
-\l__tikzsymbols_Xey_nr_arguments_int=\count372
-\l__tikzsymbols_dXey_nr_arguments_int=\count373
-\l__tikzsymbols_Innocey_nr_arguments_int=\count374
-\l__tikzsymbols_wInnocey_nr_arguments_int=\count375
-\l__tikzsymbols_dInnocey_nr_arguments_int=\count376
-\l__tikzsymbols_Cooley_nr_arguments_int=\count377
-\l__tikzsymbols_dCooley_nr_arguments_int=\count378
-\l__tikzsymbols_Tongey_nr_arguments_int=\count379
-\l__tikzsymbols_dTongey_nr_arguments_int=\count380
-\l__tikzsymbols_Nursey_nr_arguments_int=\count381
-\l__tikzsymbols_dNursey_nr_arguments_int=\count382
-\l__tikzsymbols_Vomey_nr_arguments_int=\count383
-\l__tikzsymbols_dVomey_nr_arguments_int=\count384
-\l__tikzsymbols_Walley_nr_arguments_int=\count385
-\l__tikzsymbols_rWalley_nr_arguments_int=\count386
-\l__tikzsymbols_dWalley_nr_arguments_int=\count387
-\l__tikzsymbols_drWalley_nr_arguments_int=\count388
-\l__tikzsymbols_Cat_nr_arguments_int=\count389
-\l__tikzsymbols_SchrodingersCat_nr_arguments_int=\count390
-\l__tikzsymbols_Ninja_nr_arguments_int=\count391
-\l__tikzsymbols_dNinja_nr_arguments_int=\count392
-\l__tikzsymbols_Sleepey_nr_arguments_int=\count393
-\l__tikzsymbols_dSleepey_nr_arguments_int=\count394
-\l__tikzsymbols_Maskey_nr_arguments_int=\count395
-\l__tikzsymbols_NiceReapey_nr_arguments_int=\count396
-\l__tikzsymbols_Strichmaxerl_nr_arguments_int=\count397
-\l__tikzsymbols_Person_nr_arguments_int=\count398
-\l__tikzsymbols_Heart_nr_arguments_int=\count399
-\l__tikzsymbols_dHeart_nr_arguments_int=\count400
-\l__tikzsymbols_HeartBroken_nr_arguments_int=\count401
-\l__tikzsymbols_Candle_nr_arguments_int=\count402
-\l__tikzsymbols_Fire_nr_arguments_int=\count403
-\l__tikzsymbols_Coffeecup_nr_arguments_int=\count404
-\l__tikzsymbols_Chair_nr_arguments_int=\count405
-\l__tikzsymbols_Bed_nr_arguments_int=\count406
-\l__tikzsymbols_Tribar_nr_arguments_int=\count407
-\l__tikzsymbols_Moai_nr_arguments_int=\count408
-\l__tikzsymbols_Snowman_nr_arguments_int=\count409
-\l__tikzsymbols_BasicTree_nr_arguments_int=\count410
-\l__tikzsymbols_WorstTree_nr_arguments_int=\count411
-\l__tikzsymbols_Springtree_nr_arguments_int=\count412
-\l__tikzsymbols_Summertree_nr_arguments_int=\count413
-\l__tikzsymbols_Autumntree_nr_arguments_int=\count414
-\l__tikzsymbols_Wintertree_nr_arguments_int=\count415
+\l__tikzsymbols_Moai_thickness_dim=\dimen308
+\l__tikzsymbols_Kochtopf_nr_arguments_int=\count338
+\l__tikzsymbols_Bratpfanne_nr_arguments_int=\count339
+\l__tikzsymbols_Schneebesen_nr_arguments_int=\count340
+\l__tikzsymbols_Sieb_nr_arguments_int=\count341
+\l__tikzsymbols_Purierstab_nr_arguments_int=\count342
+\l__tikzsymbols_Dreizack_nr_arguments_int=\count343
+\l__tikzsymbols_Backblech_nr_arguments_int=\count344
+\l__tikzsymbols_Ofen_nr_arguments_int=\count345
+\l__tikzsymbols_Pfanne_nr_arguments_int=\count346
+\l__tikzsymbols_Herd_nr_arguments_int=\count347
+\l__tikzsymbols_Saftpresse_nr_arguments_int=\count348
+\l__tikzsymbols_Schussel_nr_arguments_int=\count349
+\l__tikzsymbols_Schaler_nr_arguments_int=\count350
+\l__tikzsymbols_Reibe_nr_arguments_int=\count351
+\l__tikzsymbols_Flasche_nr_arguments_int=\count352
+\l__tikzsymbols_Nudelholz_nr_arguments_int=\count353
+\l__tikzsymbols_Knoblauchpresse_nr_arguments_int=\count354
+\l__tikzsymbols_Sadey_nr_arguments_int=\count355
+\l__tikzsymbols_dSadey_nr_arguments_int=\count356
+\l__tikzsymbols_Changey_nr_arguments_int=\count357
+\l__tikzsymbols_dChangey_nr_arguments_int=\count358
+\l__tikzsymbols_cChangey_nr_arguments_int=\count359
+\l__tikzsymbols_dcChangey_nr_arguments_int=\count360
+\l__tikzsymbols_Annoey_nr_arguments_int=\count361
+\l__tikzsymbols_dAnnoey_nr_arguments_int=\count362
+\l__tikzsymbols_Smiley_nr_arguments_int=\count363
+\l__tikzsymbols_dSmiley_nr_arguments_int=\count364
+\l__tikzsymbols_Laughey_nr_arguments_int=\count365
+\l__tikzsymbols_dLaughey_nr_arguments_int=\count366
+\l__tikzsymbols_Neutrey_nr_arguments_int=\count367
+\l__tikzsymbols_dNeutrey_nr_arguments_int=\count368
+\l__tikzsymbols_Winkey_nr_arguments_int=\count369
+\l__tikzsymbols_oldWinkey_nr_arguments_int=\count370
+\l__tikzsymbols_dWinkey_nr_arguments_int=\count371
+\l__tikzsymbols_olddWinkey_nr_arguments_int=\count372
+\l__tikzsymbols_Sey_nr_arguments_int=\count373
+\l__tikzsymbols_dSey_nr_arguments_int=\count374
+\l__tikzsymbols_Xey_nr_arguments_int=\count375
+\l__tikzsymbols_dXey_nr_arguments_int=\count376
+\l__tikzsymbols_Innocey_nr_arguments_int=\count377
+\l__tikzsymbols_wInnocey_nr_arguments_int=\count378
+\l__tikzsymbols_dInnocey_nr_arguments_int=\count379
+\l__tikzsymbols_Cooley_nr_arguments_int=\count380
+\l__tikzsymbols_dCooley_nr_arguments_int=\count381
+\l__tikzsymbols_Tongey_nr_arguments_int=\count382
+\l__tikzsymbols_dTongey_nr_arguments_int=\count383
+\l__tikzsymbols_Nursey_nr_arguments_int=\count384
+\l__tikzsymbols_dNursey_nr_arguments_int=\count385
+\l__tikzsymbols_Vomey_nr_arguments_int=\count386
+\l__tikzsymbols_dVomey_nr_arguments_int=\count387
+\l__tikzsymbols_Walley_nr_arguments_int=\count388
+\l__tikzsymbols_rWalley_nr_arguments_int=\count389
+\l__tikzsymbols_dWalley_nr_arguments_int=\count390
+\l__tikzsymbols_drWalley_nr_arguments_int=\count391
+\l__tikzsymbols_Cat_nr_arguments_int=\count392
+\l__tikzsymbols_SchrodingersCat_nr_arguments_int=\count393
+\l__tikzsymbols_Ninja_nr_arguments_int=\count394
+\l__tikzsymbols_dNinja_nr_arguments_int=\count395
+\l__tikzsymbols_Sleepey_nr_arguments_int=\count396
+\l__tikzsymbols_dSleepey_nr_arguments_int=\count397
+\l__tikzsymbols_Maskey_nr_arguments_int=\count398
+\l__tikzsymbols_NiceReapey_nr_arguments_int=\count399
+\l__tikzsymbols_Strichmaxerl_nr_arguments_int=\count400
+\l__tikzsymbols_Person_nr_arguments_int=\count401
+\l__tikzsymbols_Heart_nr_arguments_int=\count402
+\l__tikzsymbols_dHeart_nr_arguments_int=\count403
+\l__tikzsymbols_HeartBroken_nr_arguments_int=\count404
+\l__tikzsymbols_Candle_nr_arguments_int=\count405
+\l__tikzsymbols_Fire_nr_arguments_int=\count406
+\l__tikzsymbols_Coffeecup_nr_arguments_int=\count407
+\l__tikzsymbols_Chair_nr_arguments_int=\count408
+\l__tikzsymbols_Bed_nr_arguments_int=\count409
+\l__tikzsymbols_Tribar_nr_arguments_int=\count410
+\l__tikzsymbols_Moai_nr_arguments_int=\count411
+\l__tikzsymbols_Snowman_nr_arguments_int=\count412
+\l__tikzsymbols_BasicTree_nr_arguments_int=\count413
+\l__tikzsymbols_WorstTree_nr_arguments_int=\count414
+\l__tikzsymbols_Springtree_nr_arguments_int=\count415
+\l__tikzsymbols_Summertree_nr_arguments_int=\count416
+\l__tikzsymbols_Autumntree_nr_arguments_int=\count417
+\l__tikzsymbols_Wintertree_nr_arguments_int=\count418
 )
 (/usr/local/texlive/2023/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip20
@@ -1369,11 +1392,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count416
+\c@section@level=\count419
 )
-\@linkdim=\dimen301
-\Hy@linkcounter=\count417
-\Hy@pagecounter=\count418
+\@linkdim=\dimen309
+\Hy@linkcounter=\count420
+\Hy@pagecounter=\count421
  (/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2023-02-07 v7.00v Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -1382,7 +1405,7 @@ Now handling font encoding PD1 ...
 (/usr/local/texlive/2023/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count419
+\Hy@SavedSpaceFactor=\count422
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2023-02-07 v7.00v Hyperref: PDF Unicode definition (HO)
@@ -1396,9 +1419,9 @@ Package hyperref Info: Plain pages OFF on input line 4192.
 Package hyperref Info: Backreferencing OFF on input line 4197.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4425.
-\c@Hy@tempcnt=\count420
+\c@Hy@tempcnt=\count423
 LaTeX Info: Redefining \url on input line 4763.
-\XeTeXLinkMargin=\dimen302
+\XeTeXLinkMargin=\dimen310
 
 (/usr/local/texlive/2023/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -1407,9 +1430,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count421
-\Field@Width=\dimen303
-\Fld@charsize=\dimen304
+\Fld@menulength=\count424
+\Field@Width=\dimen311
+\Fld@charsize=\dimen312
 Package hyperref Info: Hyper figures OFF on input line 6042.
 Package hyperref Info: Link nesting OFF on input line 6047.
 Package hyperref Info: Hyper index ON on input line 6050.
@@ -1417,9 +1440,9 @@ Package hyperref Info: backreferencing OFF on input line 6057.
 Package hyperref Info: Link coloring OFF on input line 6062.
 Package hyperref Info: Link coloring with OCG OFF on input line 6067.
 Package hyperref Info: PDF/A mode OFF on input line 6072.
-\Hy@abspage=\count422
-\c@Item=\count423
-\c@Hfootnote=\count424
+\Hy@abspage=\count425
+\c@Item=\count426
+\c@Hfootnote=\count427
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -1431,9 +1454,9 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\HyAnn@Count=\count425
-\Fld@listcount=\count426
-\c@bookmark@seq@number=\count427
+\HyAnn@Count=\count428
+\Fld@listcount=\count429
+\c@bookmark@seq@number=\count430
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
@@ -1462,10 +1485,10 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 
 (/usr/local/texlive/2023/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/local/texlive/2023/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks66
-\XKV@tempa@toks=\toks67
+\XKV@toks=\toks67
+\XKV@tempa@toks=\toks68
 )
-\XKV@depth=\count428
+\XKV@depth=\count431
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/local/texlive/2023/texmf-dist/tex/latex/fmtcount/fcprefix.sty
@@ -1473,10 +1496,10 @@ Package: fcprefix 2012/09/28
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
 Package: fcnumparser 2017/06/15
-\fc@digit@counter=\count429
+\fc@digit@counter=\count432
 ))
-\c@padzeroesN=\count430
-\fc@tmpcatcode=\count431
+\c@padzeroesN=\count433
+\fc@tmpcatcode=\count434
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/fmtcount/fc-ngerman.def
 File: fc-ngerman.def 2012/06/18
@@ -1490,78 +1513,78 @@ File: fc-germanb.def 2013/08/17
 (/usr/local/texlive/2023/texmf-dist/tex/latex/fmtcount/fc-ngermanb.def
 File: fc-ngermanb.def 2013/08/17
 ))
-\@DT@modctr=\count432
-\@ordinalctr=\count433
-\@orgargctr=\count434
-\@strctr=\count435
-\@tmpstrctr=\count436
-\@DT@loopN=\count437
-\@DT@X=\count438
+\@DT@modctr=\count435
+\@ordinalctr=\count436
+\@orgargctr=\count437
+\@strctr=\count438
+\@tmpstrctr=\count439
+\@DT@loopN=\count440
+\@DT@X=\count441
 )
 (/usr/local/texlive/2023/texmf-dist/tex/latex/datetime/datetime-defaults.sty
 Package: datetime-defaults 2013/09/10
 )
-\@day=\count439
-\@month=\count440
-\@year=\count441
-\c@HOUR=\count442
-\c@HOURXII=\count443
-\c@MINUTE=\count444
-\c@TOHOUR=\count445
-\c@TOMINUTE=\count446
-\c@SECOND=\count447
-\currenthour=\count448
-\currentminute=\count449
-\currentsecond=\count450
+\@day=\count442
+\@month=\count443
+\@year=\count444
+\c@HOUR=\count445
+\c@HOURXII=\count446
+\c@MINUTE=\count447
+\c@TOHOUR=\count448
+\c@TOMINUTE=\count449
+\c@SECOND=\count450
+\currenthour=\count451
+\currentminute=\count452
+\currentsecond=\count453
 Package datetime Info: No datetime.cfg file found, using default settings on in
 put line 308.
-\@dtctr=\count451
-\dayofyear=\count452
-\dayofweek=\count453
+\@dtctr=\count454
+\dayofyear=\count455
+\dayofweek=\count456
 LaTeX Info: Redefining \today on input line 736.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/datetime/dt-ngerman.def
 File: dt-ngerman.def 2013/09/10
 LaTeX Info: Redefining \datengerman on input line 86.
 )
-\dt@a=\toks68
-\dt@b=\toks69
+\dt@a=\toks69
+\dt@b=\toks70
 )
 (/usr/local/texlive/2023/texmf-dist/tex/latex/pdfpages/pdfpages.sty
 Package: pdfpages 2022/12/19 v0.5x Insert pages of external PDF documents (AM)
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count454
-\calc@Bcount=\count455
-\calc@Adimen=\dimen305
-\calc@Bdimen=\dimen306
+\calc@Acount=\count457
+\calc@Bcount=\count458
+\calc@Adimen=\dimen313
+\calc@Bdimen=\dimen314
 \calc@Askip=\skip131
 \calc@Bskip=\skip132
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count456
+\calc@Ccount=\count459
 \calc@Cskip=\skip133
 )
 (/usr/local/texlive/2023/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2023/03/23 v3.0b eso-pic (RN)
-\ESO@tempdima=\dimen307
-\ESO@tempdimb=\dimen308
+\ESO@tempdima=\dimen315
+\ESO@tempdimb=\dimen316
 )
-\AM@pagewidth=\dimen309
-\AM@pageheight=\dimen310
-\AM@fboxrule=\dimen311
+\AM@pagewidth=\dimen317
+\AM@pageheight=\dimen318
+\AM@fboxrule=\dimen319
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/pdfpages/pppdftex.def
 File: pppdftex.def 2022/12/19 v0.5x Pdfpages driver for pdfTeX (AM)
 )
-\pdfpages@includegraphics@status=\count457
+\pdfpages@includegraphics@status=\count460
 \AM@pagebox=\box108
-\AM@global@opts=\toks70
-\AM@pagecnt=\count458
-\AM@toc@title=\toks71
-\AM@lof@heading=\toks72
-\c@AM@survey=\count459
+\AM@global@opts=\toks71
+\AM@pagecnt=\count461
+\AM@toc@title=\toks72
+\AM@lof@heading=\toks73
+\c@AM@survey=\count462
 \AM@templatesizebox=\box109
 )
 (/usr/local/texlive/2023/texmf-dist/tex/latex/frankenstein/attrib.sty
@@ -1571,8 +1594,8 @@ at)
 (/usr/local/texlive/2023/texmf-dist/tex/latex/frankenstein/moredefs.sty
 Package: moredefs 2001/08/31 v1.8 more defining commands (Frankenstein's brain)
 
-\sc@toks@a=\toks73
-\sc@toks@b=\toks74
+\sc@toks@a=\toks74
+\sc@toks@b=\toks75
 
 
 ! LaTeX Error: Command \g@prependto@macro already defined.
@@ -1595,116 +1618,116 @@ Package: setspace 2022/12/04 v6.7b set line spacing
 )
 (/usr/local/texlive/2023/texmf-dist/tex/latex/marginnote/marginnote.sty
 Package: marginnote 2018/08/09 v1.4b non floating margin notes for LaTeX
-\c@mn@abspage=\count460
+\c@mn@abspage=\count463
 )
 (/usr/local/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip135
-\enit@outerparindent=\dimen312
-\enit@toks=\toks75
+\enit@outerparindent=\dimen320
+\enit@toks=\toks76
 \enit@inbox=\box110
-\enit@count@id=\count461
-\enitdp@description=\count462
+\enit@count@id=\count464
+\enitdp@description=\count465
 )
 (/usr/local/texlive/2023/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \ttl@box=\box111
 \beforetitleunit=\skip136
 \aftertitleunit=\skip137
-\ttl@plus=\dimen313
-\ttl@minus=\dimen314
-\ttl@toksa=\toks76
-\titlewidth=\dimen315
-\titlewidthlast=\dimen316
-\titlewidthfirst=\dimen317
+\ttl@plus=\dimen321
+\ttl@minus=\dimen322
+\ttl@toksa=\toks77
+\titlewidth=\dimen323
+\titlewidthlast=\dimen324
+\titlewidthfirst=\dimen325
 )
 (/usr/local/texlive/2023/texmf-dist/tex/latex/stringstrings/stringstrings.sty
 Package: stringstrings 2020/12/08 v1.24 Extensive array of string manipulation 
 routines for cosmetic and programming application
-\c@@letterindex=\count463
-\c@@@letterindex=\count464
-\c@@@@letterindex=\count465
-\c@@wordindex=\count466
-\c@@iargc=\count467
-\c@@gobblesize=\count468
-\c@@maxrotation=\count469
-\c@@stringsize=\count470
-\c@@@stringsize=\count471
-\c@@@@stringsize=\count472
-\c@@revisedstringsize=\count473
-\c@@gobbleindex=\count474
-\c@@charsfound=\count475
-\c@@alph=\count476
-\c@@alphaindex=\count477
-\c@@capstrigger=\count478
-\c@@fromindex=\count479
-\c@@toindex=\count480
-\c@@previousindex=\count481
-\c@@flag=\count482
-\c@@matchloc=\count483
-\c@@matchend=\count484
-\c@@matchsize=\count485
-\c@@matchmax=\count486
-\c@@skipped=\count487
-\c@@lcwords=\count488
-\c@@@matchloc=\count489
+\c@@letterindex=\count466
+\c@@@letterindex=\count467
+\c@@@@letterindex=\count468
+\c@@wordindex=\count469
+\c@@iargc=\count470
+\c@@gobblesize=\count471
+\c@@maxrotation=\count472
+\c@@stringsize=\count473
+\c@@@stringsize=\count474
+\c@@@@stringsize=\count475
+\c@@revisedstringsize=\count476
+\c@@gobbleindex=\count477
+\c@@charsfound=\count478
+\c@@alph=\count479
+\c@@alphaindex=\count480
+\c@@capstrigger=\count481
+\c@@fromindex=\count482
+\c@@toindex=\count483
+\c@@previousindex=\count484
+\c@@flag=\count485
+\c@@matchloc=\count486
+\c@@matchend=\count487
+\c@@matchsize=\count488
+\c@@matchmax=\count489
+\c@@skipped=\count490
+\c@@lcwords=\count491
+\c@@@matchloc=\count492
 )
 (/usr/local/texlive/2023/texmf-dist/tex/latex/physics/physics.sty
 Package: physics 
 )
 (/usr/local/texlive/2023/texmf-dist/tex/latex/siunitx/siunitx.sty
 Package: siunitx 2023-03-14 v3.2.3 A comprehensive (SI) units package
-\l__siunitx_angle_tmp_dim=\dimen318
+\l__siunitx_angle_tmp_dim=\dimen326
 \l__siunitx_angle_marker_box=\box112
 \l__siunitx_angle_unit_box=\box113
-\l__siunitx_compound_count_int=\count490
+\l__siunitx_compound_count_int=\count493
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/translations/translations.sty
 Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages
  (CN)
 )
-\l__siunitx_number_exponent_fixed_int=\count491
-\l__siunitx_number_min_decimal_int=\count492
-\l__siunitx_number_min_integer_int=\count493
-\l__siunitx_number_round_precision_int=\count494
-\l__siunitx_number_lower_threshold_int=\count495
-\l__siunitx_number_upper_threshold_int=\count496
-\l__siunitx_number_group_first_int=\count497
-\l__siunitx_number_group_size_int=\count498
-\l__siunitx_number_group_minimum_int=\count499
+\l__siunitx_number_exponent_fixed_int=\count494
+\l__siunitx_number_min_decimal_int=\count495
+\l__siunitx_number_min_integer_int=\count496
+\l__siunitx_number_round_precision_int=\count497
+\l__siunitx_number_lower_threshold_int=\count498
+\l__siunitx_number_upper_threshold_int=\count499
+\l__siunitx_number_group_first_int=\count500
+\l__siunitx_number_group_size_int=\count501
+\l__siunitx_number_group_minimum_int=\count502
 \l__siunitx_table_tmp_box=\box114
-\l__siunitx_table_tmp_dim=\dimen319
-\l__siunitx_table_column_width_dim=\dimen320
+\l__siunitx_table_tmp_dim=\dimen327
+\l__siunitx_table_column_width_dim=\dimen328
 \l__siunitx_table_integer_box=\box115
 \l__siunitx_table_decimal_box=\box116
 \l__siunitx_table_uncert_box=\box117
 \l__siunitx_table_before_box=\box118
 \l__siunitx_table_after_box=\box119
-\l__siunitx_table_before_dim=\dimen321
-\l__siunitx_table_carry_dim=\dimen322
-\l__siunitx_unit_tmp_int=\count500
-\l__siunitx_unit_position_int=\count501
-\l__siunitx_unit_total_int=\count502
+\l__siunitx_table_before_dim=\dimen329
+\l__siunitx_table_carry_dim=\dimen330
+\l__siunitx_unit_tmp_int=\count503
+\l__siunitx_unit_position_int=\count504
+\l__siunitx_unit_total_int=\count505
 )
 (/usr/local/texlive/2023/texmf-dist/tex/generic/chemfig/chemfig.sty
 (/usr/local/texlive/2023/texmf-dist/tex/generic/chemfig/chemfig.tex
 (/usr/local/texlive/2023/texmf-dist/tex/generic/simplekv/simplekv.tex
 Package: simplekv 2022/10/01 v0.2a Simple keyval package (CT)
 )
-\CF_cnt_atomgroup=\count503
-\CF_cnt_group=\count504
-\CF_cnt_atom=\count505
-\CF_cnt_cycle=\count506
-\CF_cnt_cyclebonds=\count507
-\CF_cnt_compound=\count508
-\CF_dim=\dimen323
-\CF_arrowsize=\dimen324
-\CF_zero=\dimen325
+\CF_cnt_atomgroup=\count506
+\CF_cnt_group=\count507
+\CF_cnt_atom=\count508
+\CF_cnt_cycle=\count509
+\CF_cnt_cyclebonds=\count510
+\CF_cnt_compound=\count511
+\CF_dim=\dimen331
+\CF_arrowsize=\dimen332
+\CF_zero=\dimen333
 \CF_box=\box120
 \CF_boxstuff=\box121
 \CF_testbox=\box122
 \CF_chargebox=\box123
-\CF_substtoks=\toks77
+\CF_substtoks=\toks78
 )
 Package: chemfig 2023/02/18 v1.6d Draw molecule with an easy syntax (CT)
 )
@@ -1716,19 +1739,19 @@ Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 (/usr/local/texlive/2023/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.st
 y
 Package: xtemplate 2023-02-02 L3 Experimental prototype document functions
-\l__xtemplate_tmp_dim=\dimen326
-\l__xtemplate_tmp_int=\count509
+\l__xtemplate_tmp_dim=\dimen334
+\l__xtemplate_tmp_int=\count512
 \l__xtemplate_tmp_muskip=\muskip21
 \l__xtemplate_tmp_skip=\skip138
 )
 Package: xfrac 2023-02-02 L3 Experimental split-level fractions
 \l__xfrac_slash_box=\box124
 \l__xfrac_tmp_box=\box125
-\l__xfrac_denominator_bot_sep_dim=\dimen327
-\l__xfrac_numerator_bot_sep_dim=\dimen328
-\l__xfrac_numerator_top_sep_dim=\dimen329
-\l__xfrac_slash_left_sep_dim=\dimen330
-\l__xfrac_slash_right_sep_dim=\dimen331
+\l__xfrac_denominator_bot_sep_dim=\dimen335
+\l__xfrac_numerator_bot_sep_dim=\dimen336
+\l__xfrac_numerator_top_sep_dim=\dimen337
+\l__xfrac_slash_left_sep_dim=\dimen338
+\l__xfrac_slash_right_sep_dim=\dimen339
 \l__xfrac_slash_left_muskip=\muskip22
 \l__xfrac_slash_right_muskip=\muskip23
 
@@ -1743,47 +1766,47 @@ Package: nicefrac 1998/08/04 v0.9b Nice fractions
 )
 Package: chemformula 2022/01/23 v4.17 typeset chemical compounds and reactions 
 (CN)
-\l__chemformula_tmpa_dim=\dimen332
-\l__chemformula_tmpb_dim=\dimen333
-\l__chemformula_tmpc_dim=\dimen334
-\l__chemformula_tmpa_int=\count510
-\l__chemformula_tmpb_int=\count511
-\l__chemformula_tmpc_int=\count512
+\l__chemformula_tmpa_dim=\dimen340
+\l__chemformula_tmpb_dim=\dimen341
+\l__chemformula_tmpc_dim=\dimen342
+\l__chemformula_tmpa_int=\count513
+\l__chemformula_tmpb_int=\count514
+\l__chemformula_tmpc_int=\count515
 \l__chemformula_tmpa_box=\box126
 \l__chemformula_tmpb_box=\box127
-\l__chemformula_arrow_length_dim=\dimen335
-\l__chemformula_arrow_label_height_dim=\dimen336
-\l__chemformula_arrow_label_offset_dim=\dimen337
-\l__chemformula_arrow_minimum_length_dim=\dimen338
-\l__chemformula_arrow_shortage_dim=\dimen339
-\l__chemformula_arrow_offset_dim=\dimen340
-\l__chemformula_arrow_yshift_dim=\dimen341
-\l__chemformula_radical_radius_dim=\dimen342
-\l__chemformula_radical_hshift_dim=\dimen343
-\l__chemformula_radical_vshift_dim=\dimen344
-\l__chemformula_radical_space_dim=\dimen345
-\l__chemformula_arrow_head_dim=\dimen346
-\l__chemformula_name_dim=\dimen347
-\l__chemformula_adduct_space_dim=\dimen348
-\l__chemformula_charge_shift_dim=\dimen349
-\l__chemformula_subscript_shift_dim=\dimen350
-\l__chemformula_superscript_shift_dim=\dimen351
-\l__chemformula_subscript_dim=\dimen352
-\l__chemformula_superscript_dim=\dimen353
-\l__chemformula_bond_dim=\dimen354
-\l__chemformula_bond_space_dim=\dimen355
-\l__chemformula_elspec_pair_distance_dim=\dimen356
-\l__chemformula_elspec_pair_line_length_dim=\dimen357
-\l__chemformula_elspec_pair_width_dim=\dimen358
-\l__chemformula_kroegervink_positive_radius_dim=\dimen359
-\l__chemformula_kroegervink_positive_hshift_dim=\dimen360
-\l__chemformula_kroegervink_positive_vshift_dim=\dimen361
-\l__chemformula_kroegervink_positive_space_dim=\dimen362
+\l__chemformula_arrow_length_dim=\dimen343
+\l__chemformula_arrow_label_height_dim=\dimen344
+\l__chemformula_arrow_label_offset_dim=\dimen345
+\l__chemformula_arrow_minimum_length_dim=\dimen346
+\l__chemformula_arrow_shortage_dim=\dimen347
+\l__chemformula_arrow_offset_dim=\dimen348
+\l__chemformula_arrow_yshift_dim=\dimen349
+\l__chemformula_radical_radius_dim=\dimen350
+\l__chemformula_radical_hshift_dim=\dimen351
+\l__chemformula_radical_vshift_dim=\dimen352
+\l__chemformula_radical_space_dim=\dimen353
+\l__chemformula_arrow_head_dim=\dimen354
+\l__chemformula_name_dim=\dimen355
+\l__chemformula_adduct_space_dim=\dimen356
+\l__chemformula_charge_shift_dim=\dimen357
+\l__chemformula_subscript_shift_dim=\dimen358
+\l__chemformula_superscript_shift_dim=\dimen359
+\l__chemformula_subscript_dim=\dimen360
+\l__chemformula_superscript_dim=\dimen361
+\l__chemformula_bond_dim=\dimen362
+\l__chemformula_bond_space_dim=\dimen363
+\l__chemformula_elspec_pair_distance_dim=\dimen364
+\l__chemformula_elspec_pair_line_length_dim=\dimen365
+\l__chemformula_elspec_pair_width_dim=\dimen366
+\l__chemformula_kroegervink_positive_radius_dim=\dimen367
+\l__chemformula_kroegervink_positive_hshift_dim=\dimen368
+\l__chemformula_kroegervink_positive_vshift_dim=\dimen369
+\l__chemformula_kroegervink_positive_space_dim=\dimen370
 \l__chemformula_stoich_space_skip=\skip142
 \l__chemformula_math_space_skip=\skip143
 \l__chemformula_additions_symbol_space_skip=\skip144
-\l__chemformula_count_tokens_int=\count513
-\g__chemformula_lewis_int=\count514
+\l__chemformula_count_tokens_int=\count516
+\g__chemformula_lewis_int=\count517
 \l__chemformula_arrow_arg_i_box=\box128
 \l__chemformula_arrow_arg_ii_box=\box129
 \l__chemformula_superscript_box=\box130
@@ -1803,27 +1826,27 @@ Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
 ))
 (/usr/local/texlive/2023/texmf-dist/tex/latex/xargs/xargs.sty
 Package: xargs 2008/03/22 v1.1  extended macro definitions  (mpg)
-\xargs@max=\count515
-\xargs@toksa=\toks78
-\xargs@toksb=\toks79
+\xargs@max=\count518
+\xargs@toksa=\toks79
+\xargs@toksb=\toks80
 ))
 (/usr/local/texlive/2023/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/local/texlive/2023/texmf-dist/tex/generic/xstring/xstring.tex
-\integerpart=\count516
-\decimalpart=\count517
+\integerpart=\count519
+\decimalpart=\count520
 )
 Package: xstring 2023/01/14 v1.85 String manipulations (CT)
 )
-(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Verwaltung/Kon
-stanz/LaTeX/Packages/kern/Basic/AllgemeineDefinitionen.tex)
-(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Verwaltung/Kon
-stanz/LaTeX/Packages/kern/Basic/Variablennamen.tex
+(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Privat/Creativ
+e/Code/LaTeX/Packages/kern/Basic/AllgemeineDefinitionen.tex)
+(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Privat/Creativ
+e/Code/LaTeX/Packages/kern/Basic/Variablennamen.tex
 LaTeX Font Info:    Overwriting math alphabet `\mathcalb' in version `bold'
 (Font)                  U/BOONDOX-calo/m/n --> U/BOONDOX-calo/b/n on input line
  9.
 )
-(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Verwaltung/Kon
-stanz/LaTeX/Packages/kern/Basic/Logik.tex
+(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Privat/Creativ
+e/Code/LaTeX/Packages/kern/Basic/Logik.tex
 
 ! LaTeX Error: Command \UmgebungEinrueckungsfrei already defined.
                Or name \end... illegal, see p.192 of the manual.
@@ -1839,31 +1862,31 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 )
-(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Verwaltung/Kon
-stanz/LaTeX/Packages/kern/Basic/Beweisfuehrung.tex
-\c@fallui=\count518
-\c@falluii=\count519
-\c@falluiii=\count520
-\c@falluiv=\count521
-\c@falluv=\count522
-\c@falluvi=\count523
-\c@falluvii=\count524
-\c@falluviii=\count525
-\c@falluix=\count526
-\enitdp@fallu=\count527
-\c@Beweisprogrammi=\count528
-\enitdp@Beweisprogramm=\count529
+(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Privat/Creativ
+e/Code/LaTeX/Packages/kern/Basic/Beweisfuehrung.tex
+\c@fallui=\count521
+\c@falluii=\count522
+\c@falluiii=\count523
+\c@falluiv=\count524
+\c@falluv=\count525
+\c@falluvi=\count526
+\c@falluvii=\count527
+\c@falluviii=\count528
+\c@falluix=\count529
+\enitdp@fallu=\count530
+\c@Beweisprogrammi=\count531
+\enitdp@Beweisprogramm=\count532
 )
-(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Verwaltung/Kon
-stanz/LaTeX/Packages/kern/Basic/Umgebungen.tex
-\c@afgb=\count530
-\c@bspa=\count531
-\c@expt=\count532
-\c@hrlt=\count533
-\c@anlg=\count534
-\c@ernr=\count535
-\c@ino=\count536
-\c@inha=\count537
+(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Privat/Creativ
+e/Code/LaTeX/Packages/kern/Basic/Umgebungen.tex
+\c@afgb=\count533
+\c@bspa=\count534
+\c@expt=\count535
+\c@hrlt=\count536
+\c@anlg=\count537
+\c@ernr=\count538
+\c@ino=\count539
+\c@inha=\count540
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
 Library (tcolorbox): 'tcbskins.code.tex' version '6.0.3'
@@ -1881,9 +1904,9 @@ File: tikzlibraryfill.image.code.tex 2022/07/20 v1.0.0 Image filling library
 (/usr/local/texlive/2023/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
 Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.0.3'
 ))
-\c@ex=\count538
-\c@subex=\count539
-\c@subsubex=\count540
+\c@ex=\count541
+\c@subex=\count542
+\c@subsubex=\count543
 
 
 ! LaTeX Error: Command \refsubex already defined.
@@ -1899,7 +1922,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-\c@lemma=\count541
+\c@lemma=\count544
 Package thmtools Info: Key `mdframed' (with value ` linewidth=1pt, rightline=fa
 lse, topline=false, bottomline=false, ')
 (thmtools)             is not a known style key.
@@ -1970,30 +1993,105 @@ Package thmtools Info: Automatically pulling in `thmdef-mdframed' on input line
 (/usr/local/texlive/2023/texmf-dist/tex/latex/thmtools/thmdef-mdframed.sty
 Package: thmdef-mdframed 2023/02/17 v0.75
 )
-\c@frg=\count542
-\c@defi=\count543
-\c@ueloes=\count544
-\c@Erinnerungsdef=\count545
-\c@bsp=\count546
-\c@htgr=\count547
-\c@wfx=\count548
-\c@uups=\count549
-\c@trk=\count550
-\c@alg=\count551
-\c@verm=\count552
-\c@zsm=\count553
-\c@anwendung=\count554
-\c@Lemma=\count555
-\c@hbeh=\count556
-\c@begr=\count557
-\c@bem=\count558
+\c@frg=\count545
+\c@defi=\count546
+\c@ueloes=\count547
+\c@Erinnerungsdef=\count548
+\c@bsp=\count549
+\c@htgr=\count550
+\c@wfx=\count551
+\c@uups=\count552
+\c@trk=\count553
+\c@alg=\count554
+\c@verm=\count555
+\c@zsm=\count556
+\c@anwendung=\count557
+\c@Lemma=\count558
+\c@hbeh=\count559
+\c@begr=\count560
+\c@bem=\count561
 )
-(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Verwaltung/Kon
-stanz/LaTeX/Packages/kern/Basic/Grundfunktionen.tex)
-(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Verwaltung/Kon
-stanz/LaTeX/Packages/kern/Basic/Archiv.tex)
-(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Verwaltung/Kon
-stanz/LaTeX/Packages/kern/Kurse/Analysis.tex
+(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Privat/Creativ
+e/Code/LaTeX/Packages/kern/Basic/Grundfunktionen.tex)
+(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Privat/Creativ
+e/Code/LaTeX/Packages/kern/Basic/UmdefinitionUndDesign.tex
+
+! LaTeX Error: Command \arcsinh undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13     \renewcommand*{\arcsinh}
+                                 {\sinh^{-1}}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \arccosh undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14     \renewcommand*{\arccosh}
+                                 {\cosh^{-1}}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \arctanh undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15     \renewcommand*{\arctanh}
+                                 {\tanh^{-1}}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \arccsch undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16     \renewcommand*{\arccsch}
+                                 {\csch^{-1}}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \arcsech undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17     \renewcommand*{\arcsech}
+                                 {\sech^{-1}}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \arccoth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18     \renewcommand*{\arccoth}
+                                 {\coth^{-1}}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+)
+(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Privat/Creativ
+e/Code/LaTeX/Packages/kern/Basic/Archiv.tex)
+(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Privat/Creativ
+e/Code/LaTeX/Packages/kern/Kurse/Analysis.tex
 
 ! LaTeX Error: Command \endlich undefined.
 
@@ -2007,68 +2105,48 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 )
-(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Verwaltung/Kon
-stanz/LaTeX/Packages/kern/Kurse/Masstheorie.tex)
-(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Verwaltung/Kon
-stanz/LaTeX/Packages/kern/Kurse/LineareAlgebra.tex)
-(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Verwaltung/Kon
-stanz/LaTeX/Packages/kern/Kurse/Algebra.tex)
-(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Verwaltung/Kon
-stanz/LaTeX/Packages/kern/Kurse/Physik.tex)
-(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Verwaltung/Kon
-stanz/LaTeX/Packages/kern/Kurse/Philosophie.tex)
-(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Verwaltung/Kon
-stanz/LaTeX/Packages/kern/Eigenes/Mengenlehre.tex)
-(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Verwaltung/Kon
-stanz/LaTeX/Packages/kern/Eigenes/Schullistendesign.tex
-\c@clisti=\count559
-\c@clistii=\count560
-\c@clistiii=\count561
-\c@clistiv=\count562
-\c@clistv=\count563
-\c@clistvi=\count564
-\c@clistvii=\count565
-\c@clistviii=\count566
-\c@clistix=\count567
-\enitdp@clist=\count568
-\c@alisti=\count569
-\c@alistii=\count570
-\c@alistiii=\count571
-\c@alistiv=\count572
-\c@alistv=\count573
-\c@alistvi=\count574
-\c@alistvii=\count575
-\c@alistviii=\count576
-\c@alistix=\count577
-\enitdp@alist=\count578
+(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Privat/Creativ
+e/Code/LaTeX/Packages/kern/Kurse/Masstheorie.tex)
+(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Privat/Creativ
+e/Code/LaTeX/Packages/kern/Kurse/LineareAlgebra.tex)
+(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Privat/Creativ
+e/Code/LaTeX/Packages/kern/Kurse/Algebra.tex)
+(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Privat/Creativ
+e/Code/LaTeX/Packages/kern/Kurse/Physik.tex)
+(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Privat/Creativ
+e/Code/LaTeX/Packages/kern/Kurse/Philosophie.tex)
+(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Privat/Creativ
+e/Code/LaTeX/Packages/kern/Eigenes/Mengenlehre.tex)
+(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Privat/Creativ
+e/Code/LaTeX/Packages/kern/Eigenes/Schullistendesign.tex
+\c@clisti=\count562
+\c@clistii=\count563
+\c@clistiii=\count564
+\c@clistiv=\count565
+\c@clistv=\count566
+\c@clistvi=\count567
+\c@clistvii=\count568
+\c@clistviii=\count569
+\c@clistix=\count570
+\enitdp@clist=\count571
+\c@alisti=\count572
+\c@alistii=\count573
+\c@alistiii=\count574
+\c@alistiv=\count575
+\c@alistv=\count576
+\c@alistvi=\count577
+\c@alistvii=\count578
+\c@alistviii=\count579
+\c@alistix=\count580
+\enitdp@alist=\count581
 )
-(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Verwaltung/Kon
-stanz/LaTeX/Packages/kern/Eigenes/ZusaetzlicheMathematik.tex)
-(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Verwaltung/Kon
-stanz/LaTeX/Packages/kern/Eigenes/EigeneSchreibweisen.tex))
-(/usr/local/texlive/2023/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2020/01/02 v5.9 Page Geometry
-
-(/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/ifvtex.sty
-Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
-)
-\Gm@cnth=\count579
-\Gm@cntv=\count580
-\c@Gm@tempcnt=\count581
-\Gm@bindingoffset=\dimen363
-\Gm@wd@mp=\dimen364
-\Gm@odd@mp=\dimen365
-\Gm@even@mp=\dimen366
-\Gm@layoutwidth=\dimen367
-\Gm@layoutheight=\dimen368
-\Gm@layouthoffset=\dimen369
-\Gm@layoutvoffset=\dimen370
-\Gm@dimlist=\toks80
-)
+(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Privat/Creativ
+e/Code/LaTeX/Packages/kern/Eigenes/ZusaetzlicheMathematik.tex)
+(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Privat/Creativ
+e/Code/LaTeX/Packages/kern/Eigenes/EigeneSchreibweisen.tex))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
-
-(./WiSe22IK3T.aux
+ (./WiSe22IK3T.aux
 
 LaTeX Warning: Label `nr:1={}' multiply defined.
 
@@ -2336,6 +2414,41 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* bindingoffset: 28.45274pt
+* modes: twoside 
+* h-part:(L,W,R)=(99.58464pt, 386.67297pt, 99.58464pt)
+* v-part:(T,H,B)=(99.58464pt, 595.8007pt, 99.58464pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=386.67297pt
+* \textheight=595.8007pt
+* \oddsidemargin=55.7674pt
+* \evensidemargin=27.31465pt
+* \topmargin=-9.68535pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=59.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
 (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count582
@@ -2414,42 +2527,6 @@ lations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
 or `german'. on input line 30.
-
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
-*geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: letterpaper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* bindingoffset: 28.45274pt
-* modes: twoside 
-* h-part:(L,W,R)=(99.58464pt, 386.67297pt, 99.58464pt)
-* v-part:(T,H,B)=(99.58464pt, 595.8007pt, 99.58464pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=386.67297pt
-* \textheight=595.8007pt
-* \oddsidemargin=55.7674pt
-* \evensidemargin=27.31465pt
-* \topmargin=-9.68535pt
-* \headheight=12.0pt
-* \headsep=25.0pt
-* \topskip=11.0pt
-* \footskip=30.0pt
-* \marginparwidth=59.0pt
-* \marginparsep=10.0pt
-* \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
 
 pdfTeX warning (font expansion): font should be expanded before its first use
 LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
@@ -2530,7 +2607,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.33 ...Virial- und Kepler Problem}{36}{chapter.8}
+l.33 ...Virial- und Kepler Problem}{33}{chapter.8}
                                                   % [2
 
 ]
@@ -2592,11 +2669,6 @@ Package mdframed Info: mdframed detected package amsthm
 Package hyperref Info: bookmark level for unknown Erinnerungsdef defaults to 0 
 on input line 39.
 
-
-LaTeX Warning: Reference `mdf@pagelabel-1' on page 6 undefined on input line 43
-.
-
-
 Overfull \hbox (3.19545pt too wide) detected at line 48
 []
  []
@@ -2605,35 +2677,28 @@ Package mdframed Info: mdframed works in twoside mode on input line 51.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 51.
-
-LaTeX Warning: Reference `mdf@pagelabel-2' on page 6 undefined on input line 56
-.
-
 Package hyperref Info: bookmark level for unknown ino defaults to 0 on input li
 ne 70.
 [6]
-Package marginnote Info: Suggest that margin note 9.1 will be on
-(marginnote)             absolute page 9.
-(marginnote)             This may be wrong on input line 78.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 78.
+Package marginnote Info: Margin note 9.1 is on absolute page 9 on input line 78
+.
+Package marginnote Info: xpos seems to be 131.3699pt on input line 78.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/cmllr/m/n/10'
 (microtype)             (new value: 10.0pt) on input line 78.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/cmllr/m/n/7'
 (microtype)             (new value: 7.0pt) on input line 78.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/cmllr/m/n/5'
 (microtype)             (new value: 5.0pt) on input line 78.
-Package marginnote Info: Suggest that margin note 9.2 will be on
-(marginnote)             absolute page 9.
-(marginnote)             This may be wrong on input line 85.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 85.
-Package marginnote Info: Suggest that margin note 9.3 will be on
-(marginnote)             absolute page 9.
-(marginnote)             This may be wrong on input line 87.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 87.
+Package marginnote Info: Margin note 9.2 is on absolute page 9 on input line 85
+.
+Package marginnote Info: xpos seems to be 131.3699pt on input line 85.
+Package marginnote Info: Margin note 9.3 is on absolute page 9 on input line 87
+.
+Package marginnote Info: xpos seems to be 131.04015pt on input line 87.
  [7]
 Package marginnote Info: Margin note 10.1 is on absolute page 10 on input line 
 113.
-Package marginnote Info: xpos seems to be 129.60251pt on input line 113.
+Package marginnote Info: xpos seems to be 103.04617pt on input line 113.
  [8]) (./Notes/lec2.tex [9]
 Lecture 2.
 
@@ -2651,10 +2716,6 @@ ne 21.
 
 ]
 Package mdframed Info: Not enough space on this page on input line 29.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-3' on page 11 undefined on input line 2
-9.
 
 ! Missing number, treated as zero.
 <to be read again> 
@@ -2683,20 +2744,12 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 31.
 Package hyperref Info: bookmark level for unknown beh defaults to 0 on input li
 ne 31.
-
-LaTeX Warning: Reference `mdf@pagelabel-4' on page 11 undefined on input line 3
-5.
-
 Package mdframed Info: mdframed works in twoside mode on input line 37.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 37.
 Package hyperref Info: bookmark level for unknown begr defaults to 0 on input l
 ine 37.
-
-LaTeX Warning: Reference `mdf@pagelabel-5' on page 11 undefined on input line 3
-8.
-
 [11]
 ! Missing number, treated as zero.
 <to be read again> 
@@ -2723,23 +2776,11 @@ Package mdframed Info: mdframed works in twoside mode on input line 74.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 74.
-
-LaTeX Warning: Reference `mdf@pagelabel-6' on page 12 undefined on input line 7
-5.
-
 Package mdframed Info: mdframed works in twoside mode on input line 77.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 77.
-
-LaTeX Warning: Reference `mdf@pagelabel-7' on page 12 undefined on input line 8
-7.
-
 [12]
-
-LaTeX Warning: Reference `mdf@pagelabel-8' on page 13 undefined on input line 8
-7.
-
 ! Missing number, treated as zero.
 <to be read again> 
                    f
@@ -2765,10 +2806,6 @@ Package mdframed Info: mdframed works in twoside mode on input line 91.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 91.
-
-LaTeX Warning: Reference `mdf@pagelabel-9' on page 13 undefined on input line 9
-2.
-
 Package mdframed Info: mdframed works in twoside mode on input line 94.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -2779,22 +2816,10 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 107.
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 115.
-
-LaTeX Warning: Reference `mdf@pagelabel-10' on page 13 undefined on input line 
-115.
-
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
 (mdframed)              on input line 122.
-
-LaTeX Warning: Reference `mdf@pagelabel-11' on page 13 undefined on input line 
-122.
-
 [13]
-
-LaTeX Warning: Reference `mdf@pagelabel-12' on page 14 undefined on input line 
-122.
-
 ! Missing number, treated as zero.
 <to be read again> 
                    f
@@ -2846,20 +2871,12 @@ l.135 				\end{align*}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-
-LaTeX Warning: Reference `mdf@pagelabel-13' on page 14 undefined on input line 
-136.
-
 Package mdframed Info: mdframed works in twoside mode on input line 140.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 140.
 Package hyperref Info: bookmark level for unknown vrr defaults to 0 on input li
 ne 140.
-
-LaTeX Warning: Reference `mdf@pagelabel-14' on page 14 undefined on input line 
-141.
-
 [14]
 ! Missing number, treated as zero.
 <to be read again> 
@@ -2886,26 +2903,14 @@ Package mdframed Info: mdframed works in twoside mode on input line 164.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 164.
-
-LaTeX Warning: Reference `mdf@pagelabel-15' on page 15 undefined on input line 
-172.
-
 Package mdframed Info: mdframed works in twoside mode on input line 174.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 174.
-
-LaTeX Warning: Reference `mdf@pagelabel-16' on page 15 undefined on input line 
-175.
-
 Package mdframed Info: mdframed works in twoside mode on input line 177.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 177.
-
-LaTeX Warning: Reference `mdf@pagelabel-17' on page 15 undefined on input line 
-178.
-
 [15]) (./Notes/lec3.tex [16]
 Lecture 3.
 
@@ -2917,17 +2922,9 @@ Package mdframed Info: mdframed works in twoside mode on input line 21.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 21.
-
-LaTeX Warning: Reference `mdf@pagelabel-18' on page 17 undefined on input line 
-53.
-
 [17
 
 ]
-
-LaTeX Warning: Reference `mdf@pagelabel-19' on page 18 undefined on input line 
-53.
-
 Package mdframed Info: mdframed works in twoside mode on input line 55.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -2935,39 +2932,21 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
 (mdframed)              on input line 76.
-
-LaTeX Warning: Reference `mdf@pagelabel-20' on page 18 undefined on input line 
-76.
-
-[18]
-
-LaTeX Warning: Reference `mdf@pagelabel-21' on page 19 undefined on input line 
-76.
-
+ [18]
 Package mdframed Info: mdframed works in twoside mode on input line 93.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 93.
-
-LaTeX Warning: Reference `mdf@pagelabel-22' on page 19 undefined on input line 
-101.
-
-[19]
-
-LaTeX Warning: Reference `mdf@pagelabel-23' on page 20 undefined on input line 
-101.
-
-) (./Notes/lec4.tex [20]
+ [19]) (./Notes/lec4.tex [20]
 Lecture 4.
 
 Overfull \hbox (6.09521pt too wide) in paragraph at lines 3--3
 [][] 
  []
 
-Package marginnote Info: Suggest that margin note 23.1 will be on
-(marginnote)             absolute page 23.
-(marginnote)             This may be wrong on input line 18.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 18.
+Package marginnote Info: Margin note 23.1 is on absolute page 23 on input line 
+18.
+Package marginnote Info: xpos seems to be 131.36461pt on input line 18.
 [21
 
 ]
@@ -2975,11 +2954,6 @@ Package mdframed Info: mdframed works in twoside mode on input line 29.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 29.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-24' on page 22 undefined on input line 
-34.
-
 Package mdframed Info: mdframed works in twoside mode on input line 37.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -3023,20 +2997,12 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 44.
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 45.
-
-LaTeX Warning: Reference `mdf@pagelabel-25' on page 22 undefined on input line 
-45.
-
 Package mdframed Info: mdframed works in twoside mode on input line 47.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 47.
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 48.
-
-LaTeX Warning: Reference `mdf@pagelabel-26' on page 22 undefined on input line 
-48.
-
 Package mdframed Info: mdframed works in twoside mode on input line 78.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -3045,30 +3011,14 @@ Package hyperref Info: bookmark level for unknown verm defaults to 0 on input l
 ine 78.
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 83.
-
-LaTeX Warning: Reference `mdf@pagelabel-27' on page 22 undefined on input line 
-83.
-
 Package mdframed Info: You first box width is to small
  mdframed fixed it
 (mdframed)              on input line 84.
-
-LaTeX Warning: Reference `mdf@pagelabel-28' on page 22 undefined on input line 
-84.
-
 [22]
-
-LaTeX Warning: Reference `mdf@pagelabel-29' on page 23 undefined on input line 
-84.
-
 Package mdframed Info: mdframed works in twoside mode on input line 86.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 86.
-
-LaTeX Warning: Reference `mdf@pagelabel-30' on page 23 undefined on input line 
-87.
-
 
 Overfull \hbox (3.36105pt too wide) detected at line 96
  []$[]  \OT1/cmr/m/n/10.95 0[] = \OML/cmm/m/it/10.95 ^^NS[] [] [] \OT1/cmr/m/n/
@@ -3082,23 +3032,13 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 98.
 Package hyperref Info: bookmark level for unknown bem defaults to 0 on input li
 ne 98.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-31' on page 24 undefined on input line 
-99.
-
 Package mdframed Info: mdframed works in twoside mode on input line 123.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 123.
 Package mdframed Info: Not enough space on this page on input line 127.
-[24]
+ [24]
 Package mdframed Info: Not enough space on this page on input line 127.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-32' on page 25 undefined on input line 
-127.
-
 ) (./Notes/lec5.tex [25]
 Lecture 5.
 
@@ -3155,10 +3095,6 @@ You have given more \span or & marks than there were
 in the preamble to the \halign or \valign now in progress.
 So I'll assume that you meant to type \cr instead.
 
-
-LaTeX Warning: Reference `mdf@pagelabel-33' on page 27 undefined on input line 
-28.
-
 [27
 
 ]
@@ -3172,23 +3108,17 @@ Overfull \hbox (59.87517pt too wide) detected at line 46
 r/m/n/10.95 ) = [] [][]$ 
  []
 
-
-LaTeX Warning: Reference `mdf@pagelabel-34' on page 28 undefined on input line 
-48.
-
 [28]
-Package marginnote Info: Suggest that margin note 31.1 will be on
-(marginnote)             absolute page 31.
-(marginnote)             This may be wrong on input line 71.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 71.
+Package marginnote Info: Margin note 31.1 is on absolute page 31 on input line 
+71.
+Package marginnote Info: xpos seems to be 131.47508pt on input line 71.
 Package mdframed Info: mdframed works in twoside mode on input line 78.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 78.
-Package marginnote Info: Suggest that margin note 31.2 will be on
-(marginnote)             absolute page 31.
-(marginnote)             This may be wrong on input line 91.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 91.
+Package marginnote Info: Margin note 31.2 is on absolute page 32 on input line 
+91.
+Package marginnote Info: xpos seems to be 113.92769pt on input line 91.
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
 (Font)              scaled to size 10.50003pt on input line 91.
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
@@ -3201,10 +3131,9 @@ LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
 (Font)              scaled to size 8.40002pt on input line 94.
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
 (Font)              scaled to size 6.30002pt on input line 94.
-Package marginnote Info: Suggest that margin note 31.3 will be on
-(marginnote)             absolute page 31.
-(marginnote)             This may be wrong on input line 97.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 97.
+Package marginnote Info: Margin note 31.3 is on absolute page 32 on input line 
+97.
+Package marginnote Info: xpos seems to be 113.91716pt on input line 97.
 
 Overfull \hbox (17.93929pt too wide) in paragraph at lines 100--102
 \T1/cmr/m/n/10.95 (-20) und in zu-sam-men-ge-fas-s-ter Form $\OML/cmm/m/it/10.9
@@ -3215,16 +3144,7 @@ Overfull \hbox (17.93929pt too wide) in paragraph at lines 100--102
 10.95 (-20) := [][]$\T1/cmr/m/n/10.95 (-20) . 
  []
 
-
-LaTeX Warning: Reference `mdf@pagelabel-35' on page 29 undefined on input line 
-102.
-
-[29]
-
-LaTeX Warning: Reference `mdf@pagelabel-36' on page 30 undefined on input line 
-102.
-
-) (./Notes/lec7.tex [30]
+[29]) (./Notes/lec7.tex [30]
 Lecture 7.
 
 Overfull \hbox (4.81775pt too wide) in paragraph at lines 3--3
@@ -3255,18 +3175,10 @@ Package mdframed Info: mdframed works in twoside mode on input line 5.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 5.
-
-LaTeX Warning: Reference `mdf@pagelabel-37' on page 33 undefined on input line 
-13.
-
 Package mdframed Info: mdframed works in twoside mode on input line 20.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 20.
-
-LaTeX Warning: Reference `mdf@pagelabel-38' on page 33 undefined on input line 
-21.
-
 [33
 
 ]
@@ -3276,19 +3188,10 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 39.
 Package hyperref Info: bookmark level for unknown annm defaults to 0 on input l
 ine 39.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-39' on page 34 undefined on input line 
-40.
-
 Package mdframed Info: mdframed works in twoside mode on input line 46.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 46.
-
-LaTeX Warning: Reference `mdf@pagelabel-40' on page 34 undefined on input line 
-51.
-
 ) (./Notes/lec9.tex [34]
 Lecture 9.
 
@@ -3309,20 +3212,12 @@ Package mdframed Info: mdframed works in twoside mode on input line 9.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 9.
-
-LaTeX Warning: Reference `mdf@pagelabel-41' on page 36 undefined on input line 
-14.
-
 Package mdframed Info: mdframed works in twoside mode on input line 23.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 23.
 Package hyperref Info: bookmark level for unknown uups defaults to 0 on input l
 ine 23.
-
-LaTeX Warning: Reference `mdf@pagelabel-42' on page 36 undefined on input line 
-27.
-
 ) (./Notes/lec11.tex [36
 
 ]
@@ -3332,43 +3227,32 @@ Overfull \hbox (10.66354pt too wide) in paragraph at lines 3--3
 [][] 
  []
 
-Package marginnote Info: Suggest that margin note 39.1 will be on
-(marginnote)             absolute page 39.
-(marginnote)             This may be wrong on input line 16.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 16.
-Package marginnote Info: Suggest that margin note 39.2 will be on
-(marginnote)             absolute page 39.
-(marginnote)             This may be wrong on input line 18.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 18.
-Package marginnote Info: Suggest that margin note 39.3 will be on
-(marginnote)             absolute page 39.
-(marginnote)             This may be wrong on input line 20.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 20.
+Package marginnote Info: Margin note 39.1 is on absolute page 39 on input line 
+16.
+Package marginnote Info: xpos seems to be 131.3699pt on input line 16.
+Package marginnote Info: Margin note 39.2 is on absolute page 39 on input line 
+18.
+Package marginnote Info: xpos seems to be 131.3699pt on input line 18.
+Package marginnote Info: Margin note 39.3 is on absolute page 39 on input line 
+20.
+Package marginnote Info: xpos seems to be 131.3699pt on input line 20.
 [37
 
 ]
-Package marginnote Info: Suggest that margin note 40.1 will be on
-(marginnote)             absolute page 40.
-(marginnote)             This may be wrong on input line 32.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 32.
-Package marginnote Info: Suggest that margin note 40.2 will be on
-(marginnote)             absolute page 40.
-(marginnote)             This may be wrong on input line 41.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 41.
-Package marginnote Info: Suggest that margin note 40.3 will be on
-(marginnote)             absolute page 40.
-(marginnote)             This may be wrong on input line 43.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 43.
+Package marginnote Info: Margin note 40.1 is on absolute page 40 on input line 
+32.
+Package marginnote Info: xpos seems to be 102.91716pt on input line 32.
+Package marginnote Info: Margin note 40.2 is on absolute page 40 on input line 
+41.
+Package marginnote Info: xpos seems to be 102.91716pt on input line 41.
+Package marginnote Info: Margin note 40.3 is on absolute page 40 on input line 
+43.
+Package marginnote Info: xpos seems to be 102.92595pt on input line 43.
  [38]
 Package mdframed Info: mdframed works in twoside mode on input line 61.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 61.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-43' on page 39 undefined on input line 
-62.
-
 ) (./Notes/lec12.tex [39]
 Lecture 12.
 
@@ -3376,18 +3260,16 @@ Overfull \hbox (5.27597pt too wide) in paragraph at lines 3--3
 [][] 
  []
 
-Package marginnote Info: Suggest that margin note 42.1 will be on
-(marginnote)             absolute page 42.
-(marginnote)             This may be wrong on input line 35.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 35.
+Package marginnote Info: Margin note 42.1 is on absolute page 42 on input line 
+35.
+Package marginnote Info: xpos seems to be 103.17148pt on input line 35.
 
 LaTeX Warning: Reference `nr:afg:coordf' on page 40 undefined on input line 37.
 
 
-Package marginnote Info: Suggest that margin note 42.2 will be on
-(marginnote)             absolute page 42.
-(marginnote)             This may be wrong on input line 40.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 40.
+Package marginnote Info: Margin note 42.2 is on absolute page 43 on input line 
+40.
+Package marginnote Info: xpos seems to be 131.3699pt on input line 40.
 
 Package scrlayer-scrpage Warning: \footheight to low.
 (scrlayer-scrpage)                At least 17.68002pt needed,
@@ -3407,11 +3289,6 @@ Package mdframed Info: mdframed works in twoside mode on input line 50.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 50.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-44' on page 41 undefined on input line 
-70.
-
 ) (./Notes/lec13.tex [41]
 Lecture 13.
 
@@ -3421,16 +3298,16 @@ Overfull \hbox (9.34442pt too wide) in paragraph at lines 3--3
 
 Package marginnote Info: Margin note 44.1 is on absolute page 44 on input line 
 8.
-Package marginnote Info: xpos seems to be 129.60251pt on input line 8.
+Package marginnote Info: xpos seems to be 102.78915pt on input line 8.
 Package marginnote Info: Margin note 44.2 is on absolute page 44 on input line 
 19.
-Package marginnote Info: xpos seems to be 129.60251pt on input line 19.
+Package marginnote Info: xpos seems to be 102.59293pt on input line 19.
 [42
 
 ]
 Package marginnote Info: Margin note 45.1 is on absolute page 45 on input line 
 35.
-Package marginnote Info: xpos seems to be 129.60251pt on input line 35.
+Package marginnote Info: xpos seems to be 131.36792pt on input line 35.
 
 
 ! Package ifthen Error: Boolean multdim undefined.
@@ -3583,30 +3460,24 @@ l.43 ..._\R,e_i),(0_\R,e_j))}{x}{}}{(i,j)\in[d]^2}
 I'm ignoring this; it doesn't match any \if.
 
 [43]
-Package marginnote Info: Suggest that margin note 46.1 will be on
-(marginnote)             absolute page 46.
-(marginnote)             This may be wrong on input line 46.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 46.
-Package marginnote Info: Suggest that margin note 46.2 will be on
-(marginnote)             absolute page 46.
-(marginnote)             This may be wrong on input line 48.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 48.
-Package marginnote Info: Suggest that margin note 46.3 will be on
-(marginnote)             absolute page 46.
-(marginnote)             This may be wrong on input line 50.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 50.
-Package marginnote Info: Suggest that margin note 46.4 will be on
-(marginnote)             absolute page 46.
-(marginnote)             This may be wrong on input line 57.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 57.
-Package marginnote Info: Suggest that margin note 46.5 will be on
-(marginnote)             absolute page 46.
-(marginnote)             This may be wrong on input line 59.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 59.
-Package marginnote Info: Suggest that margin note 46.6 will be on
-(marginnote)             absolute page 46.
-(marginnote)             This may be wrong on input line 72.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 72.
+Package marginnote Info: Margin note 46.1 is on absolute page 46 on input line 
+46.
+Package marginnote Info: xpos seems to be 103.62761pt on input line 46.
+Package marginnote Info: Margin note 46.2 is on absolute page 46 on input line 
+48.
+Package marginnote Info: xpos seems to be 102.91716pt on input line 48.
+Package marginnote Info: Margin note 46.3 is on absolute page 46 on input line 
+50.
+Package marginnote Info: xpos seems to be 102.91716pt on input line 50.
+Package marginnote Info: Margin note 46.4 is on absolute page 46 on input line 
+57.
+Package marginnote Info: xpos seems to be 102.67119pt on input line 57.
+Package marginnote Info: Margin note 46.5 is on absolute page 46 on input line 
+59.
+Package marginnote Info: xpos seems to be 102.91716pt on input line 59.
+Package marginnote Info: Margin note 46.6 is on absolute page 47 on input line 
+72.
+Package marginnote Info: xpos seems to be 131.3699pt on input line 72.
 
 
 Package scrlayer-scrpage Warning: \headheight to low.
@@ -3624,33 +3495,27 @@ Overfull \vbox (12.2401pt too high) has occurred while \output is active []
 
 
 [44]
-Package marginnote Info: Margin note 47.1 is on absolute page 48 on input line 
+Package marginnote Info: Margin note 47.1 is on absolute page 47 on input line 
 74.
-Package marginnote Info: xpos seems to be 129.515pt on input line 74.
-Package marginnote Info: Suggest that margin note 47.2 will be on
-(marginnote)             absolute page 47.
-(marginnote)             This may be wrong on input line 76.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 76.
-Package marginnote Info: Suggest that margin note 47.3 will be on
-(marginnote)             absolute page 47.
-(marginnote)             This may be wrong on input line 81.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 81.
-Package marginnote Info: Suggest that margin note 47.4 will be on
-(marginnote)             absolute page 47.
-(marginnote)             This may be wrong on input line 86.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 86.
-Package marginnote Info: Suggest that margin note 47.5 will be on
-(marginnote)             absolute page 47.
-(marginnote)             This may be wrong on input line 88.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 88.
-Package marginnote Info: Suggest that margin note 47.6 will be on
-(marginnote)             absolute page 47.
-(marginnote)             This may be wrong on input line 90.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 90.
-Package marginnote Info: Suggest that margin note 47.7 will be on
-(marginnote)             absolute page 47.
-(marginnote)             This may be wrong on input line 96.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 96.
+Package marginnote Info: xpos seems to be 131.37894pt on input line 74.
+Package marginnote Info: Margin note 47.2 is on absolute page 47 on input line 
+76.
+Package marginnote Info: xpos seems to be 131.3699pt on input line 76.
+Package marginnote Info: Margin note 47.3 is on absolute page 47 on input line 
+81.
+Package marginnote Info: xpos seems to be 131.3699pt on input line 81.
+Package marginnote Info: Margin note 47.4 is on absolute page 47 on input line 
+86.
+Package marginnote Info: xpos seems to be 131.3699pt on input line 86.
+Package marginnote Info: Margin note 47.5 is on absolute page 47 on input line 
+88.
+Package marginnote Info: xpos seems to be 131.37938pt on input line 88.
+Package marginnote Info: Margin note 47.6 is on absolute page 47 on input line 
+90.
+Package marginnote Info: xpos seems to be 131.3699pt on input line 90.
+Package marginnote Info: Margin note 47.7 is on absolute page 47 on input line 
+96.
+Package marginnote Info: xpos seems to be 131.3699pt on input line 96.
 ) (./Notes/lec14.tex [45]
 Lecture 14.
 
@@ -3660,11 +3525,10 @@ Overfull \hbox (3.95685pt too wide) in paragraph at lines 3--3
 
 Package marginnote Info: Margin note 48.1 is on absolute page 48 on input line 
 7.
-Package marginnote Info: xpos seems to be 129.60251pt on input line 7.
-Package marginnote Info: Suggest that margin note 48.2 will be on
-(marginnote)             absolute page 48.
-(marginnote)             This may be wrong on input line 9.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 9.
+Package marginnote Info: xpos seems to be 102.91716pt on input line 7.
+Package marginnote Info: Margin note 48.2 is on absolute page 48 on input line 
+9.
+Package marginnote Info: xpos seems to be 102.91716pt on input line 9.
 
 Overfull \hbox (10.27306pt too wide) in paragraph at lines 12--13
 []\T1/cmr/m/n/10.95 (-20) Erweitere die De-ter-mi-nan-te ent-lang der ers-ten S
@@ -3672,48 +3536,40 @@ pal-te mit $\OMS/rsfs/m/n/10.95 M[] \OT1/cmr/m/n/10.95 (-20) := [][] []$\T1/cmr
 /m/n/10.95 (-20) ,
  []
 
-Package marginnote Info: Suggest that margin note 48.3 will be on
-(marginnote)             absolute page 48.
-(marginnote)             This may be wrong on input line 24.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 24.
+Package marginnote Info: Margin note 48.3 is on absolute page 49 on input line 
+24.
+Package marginnote Info: xpos seems to be 133.20145pt on input line 24.
 [46
 
 ]
-Package marginnote Info: Suggest that margin note 49.1 will be on
-(marginnote)             absolute page 49.
-(marginnote)             This may be wrong on input line 26.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 26.
-Package marginnote Info: Suggest that margin note 49.2 will be on
-(marginnote)             absolute page 49.
-(marginnote)             This may be wrong on input line 28.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 28.
-Package marginnote Info: Suggest that margin note 49.3 will be on
-(marginnote)             absolute page 49.
-(marginnote)             This may be wrong on input line 32.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 32.
-Package marginnote Info: Suggest that margin note 49.4 will be on
-(marginnote)             absolute page 49.
-(marginnote)             This may be wrong on input line 42.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 42.
-Package marginnote Info: Suggest that margin note 49.5 will be on
-(marginnote)             absolute page 49.
-(marginnote)             This may be wrong on input line 47.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 47.
-Package marginnote Info: Suggest that margin note 49.6 will be on
-(marginnote)             absolute page 49.
-(marginnote)             This may be wrong on input line 58.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 58.
+Package marginnote Info: Margin note 49.1 is on absolute page 49 on input line 
+26.
+Package marginnote Info: xpos seems to be 132.01477pt on input line 26.
+Package marginnote Info: Margin note 49.2 is on absolute page 49 on input line 
+28.
+Package marginnote Info: xpos seems to be 131.3699pt on input line 28.
+Package marginnote Info: Margin note 49.3 is on absolute page 49 on input line 
+32.
+Package marginnote Info: xpos seems to be 131.3699pt on input line 32.
+Package marginnote Info: Margin note 49.4 is on absolute page 49 on input line 
+42.
+Package marginnote Info: xpos seems to be 131.3699pt on input line 42.
+Package marginnote Info: Margin note 49.5 is on absolute page 49 on input line 
+47.
+Package marginnote Info: xpos seems to be 131.3699pt on input line 47.
+Package marginnote Info: Margin note 49.6 is on absolute page 50 on input line 
+58.
+Package marginnote Info: xpos seems to be 102.91716pt on input line 58.
  [47]
 Package marginnote Info: Margin note 50.1 is on absolute page 50 on input line 
 65.
-Package marginnote Info: xpos seems to be 129.32652pt on input line 65.
-Package marginnote Info: Margin note 50.2 is on absolute page 51 on input line 
+Package marginnote Info: xpos seems to be 102.91716pt on input line 65.
+Package marginnote Info: Margin note 50.2 is on absolute page 50 on input line 
 67.
-Package marginnote Info: xpos seems to be 129.60168pt on input line 67.
-Package marginnote Info: Suggest that margin note 50.3 will be on
-(marginnote)             absolute page 50.
-(marginnote)             This may be wrong on input line 69.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 69.
+Package marginnote Info: xpos seems to be 102.91357pt on input line 67.
+Package marginnote Info: Margin note 50.3 is on absolute page 50 on input line 
+69.
+Package marginnote Info: xpos seems to be 102.63104pt on input line 69.
 Package mdframed Info: mdframed works in twoside mode on input line 71.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -3736,10 +3592,6 @@ l-ener-gie-ma-trix $\OT1/cmr/m/n/10.95 (-20) ^^C$ \T1/cmr/m/n/10.95 (-20) dia-g
 o-nal, al-so $\OT1/cmr/m/n/10.95 (-20) ^^C = [][]$\T1/cmr/m/n/10.95 (-20) .
  []
 
-
-LaTeX Warning: Reference `mdf@pagelabel-45' on page 48 undefined on input line 
-77.
-
 ) (./Notes/lec15.tex [48]
 Lecture 15.
 
@@ -3747,57 +3599,51 @@ Overfull \hbox (9.34442pt too wide) in paragraph at lines 3--3
 [][] 
  []
 
-Package marginnote Info: Margin note 51.1 is on absolute page 51 on input line 
+Package marginnote Info: Margin note 51.1 is on absolute page 52 on input line 
 19.
-Package marginnote Info: xpos seems to be 130.162pt on input line 19.
+Package marginnote Info: xpos seems to be 102.91716pt on input line 19.
 [49
 
 ]
 Package marginnote Info: Margin note 52.1 is on absolute page 52 on input line 
 26.
-Package marginnote Info: xpos seems to be 130.17879pt on input line 26.
+Package marginnote Info: xpos seems to be 102.90985pt on input line 26.
 Package marginnote Info: Margin note 52.2 is on absolute page 52 on input line 
 42.
-Package marginnote Info: xpos seems to be 129.60251pt on input line 42.
+Package marginnote Info: xpos seems to be 102.91716pt on input line 42.
  [50]
-Package marginnote Info: Margin note 53.1 is on absolute page 53 on input line 
+Package marginnote Info: Margin note 53.1 is on absolute page 54 on input line 
 64.
-Package marginnote Info: xpos seems to be 129.60251pt on input line 64.
+Package marginnote Info: xpos seems to be 102.18877pt on input line 64.
  [51]
 Package marginnote Info: Margin note 54.1 is on absolute page 54 on input line 
 66.
-Package marginnote Info: xpos seems to be 129.60251pt on input line 66.
-Package marginnote Info: Suggest that margin note 54.2 will be on
-(marginnote)             absolute page 54.
-(marginnote)             This may be wrong on input line 68.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 68.
-Package marginnote Info: Suggest that margin note 54.3 will be on
-(marginnote)             absolute page 54.
-(marginnote)             This may be wrong on input line 70.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 70.
-Package marginnote Info: Suggest that margin note 54.4 will be on
-(marginnote)             absolute page 54.
-(marginnote)             This may be wrong on input line 77.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 77.
-Package marginnote Info: Suggest that margin note 54.5 will be on
-(marginnote)             absolute page 54.
-(marginnote)             This may be wrong on input line 79.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 79.
-Package marginnote Info: Suggest that margin note 54.6 will be on
-(marginnote)             absolute page 54.
-(marginnote)             This may be wrong on input line 85.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 85.
-Package marginnote Info: Suggest that margin note 54.7 will be on
-(marginnote)             absolute page 54.
-(marginnote)             This may be wrong on input line 87.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 87.
+Package marginnote Info: xpos seems to be 102.91716pt on input line 66.
+Package marginnote Info: Margin note 54.2 is on absolute page 54 on input line 
+68.
+Package marginnote Info: xpos seems to be 102.91716pt on input line 68.
+Package marginnote Info: Margin note 54.3 is on absolute page 54 on input line 
+70.
+Package marginnote Info: xpos seems to be 102.91302pt on input line 70.
+Package marginnote Info: Margin note 54.4 is on absolute page 54 on input line 
+77.
+Package marginnote Info: xpos seems to be 102.92082pt on input line 77.
+Package marginnote Info: Margin note 54.5 is on absolute page 54 on input line 
+79.
+Package marginnote Info: xpos seems to be 103.20958pt on input line 79.
+Package marginnote Info: Margin note 54.6 is on absolute page 54 on input line 
+85.
+Package marginnote Info: xpos seems to be 102.92545pt on input line 85.
+Package marginnote Info: Margin note 54.7 is on absolute page 54 on input line 
+87.
+Package marginnote Info: xpos seems to be 102.91716pt on input line 87.
  [52]
 Package marginnote Info: Margin note 55.1 is on absolute page 55 on input line 
 105.
-Package marginnote Info: xpos seems to be 129.60251pt on input line 105.
+Package marginnote Info: xpos seems to be 131.41147pt on input line 105.
 Package marginnote Info: Margin note 55.2 is on absolute page 55 on input line 
 107.
-Package marginnote Info: xpos seems to be 129.60251pt on input line 107.
+Package marginnote Info: xpos seems to be 131.3699pt on input line 107.
 ) (./Notes/lec16.tex [53]
 Lecture 16.
 
@@ -3807,22 +3653,22 @@ Overfull \hbox (3.95685pt too wide) in paragraph at lines 3--3
 
 Package marginnote Info: Margin note 56.1 is on absolute page 56 on input line 
 21.
-Package marginnote Info: xpos seems to be 129.6075pt on input line 21.
+Package marginnote Info: xpos seems to be 102.60233pt on input line 21.
 [54
 
 ]
 Package marginnote Info: Margin note 57.1 is on absolute page 57 on input line 
 38.
-Package marginnote Info: xpos seems to be 129.60251pt on input line 38.
+Package marginnote Info: xpos seems to be 131.1447pt on input line 38.
 Package marginnote Info: Margin note 57.2 is on absolute page 57 on input line 
 40.
-Package marginnote Info: xpos seems to be 129.60251pt on input line 40.
+Package marginnote Info: xpos seems to be 131.00343pt on input line 40.
 Package marginnote Info: Margin note 57.3 is on absolute page 57 on input line 
 42.
-Package marginnote Info: xpos seems to be 129.58899pt on input line 42.
+Package marginnote Info: xpos seems to be 131.3699pt on input line 42.
 Package marginnote Info: Margin note 57.4 is on absolute page 57 on input line 
 44.
-Package marginnote Info: xpos seems to be 129.60162pt on input line 44.
+Package marginnote Info: xpos seems to be 132.46472pt on input line 44.
 <Bilddateien/IMG_8130.jpg, id=859, 1400.23125pt x 829.0975pt>
 File: Bilddateien/IMG_8130.jpg Graphic file (type jpg)
 <use Bilddateien/IMG_8130.jpg>
@@ -3834,10 +3680,9 @@ Overfull \hbox (2.48312pt too wide) detected at line 57
  []
 
 [55 <./Bilddateien/IMG_8130.jpg>]
-Package marginnote Info: Suggest that margin note 58.1 will be on
-(marginnote)             absolute page 58.
-(marginnote)             This may be wrong on input line 64.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 64.
+Package marginnote Info: Margin note 58.1 is on absolute page 58 on input line 
+64.
+Package marginnote Info: xpos seems to be 103.05135pt on input line 64.
 <Bilddateien/IMG_5C89688377FE-1.jpeg, id=871, 1890.06125pt x 605.26125pt>
 File: Bilddateien/IMG_5C89688377FE-1.jpeg Graphic file (type jpg)
 <use Bilddateien/IMG_5C89688377FE-1.jpeg>
@@ -3845,15 +3690,14 @@ Package pdftex.def Info: Bilddateien/IMG_5C89688377FE-1.jpeg  used on input lin
 e 75.
 (pdftex.def)             Requested size: 199.16928pt x 63.78056pt.
  [56 <./Bilddateien/IMG_5C89688377FE-1.jpeg>]
-Package marginnote Info: Suggest that margin note 59.1 will be on
-(marginnote)             absolute page 59.
-(marginnote)             This may be wrong on input line 99.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 99.
+Package marginnote Info: Margin note 59.1 is on absolute page 59 on input line 
+99.
+Package marginnote Info: xpos seems to be 131.3699pt on input line 99.
 
 [57]
 Package marginnote Info: Margin note 60.1 is on absolute page 60 on input line 
 112.
-Package marginnote Info: xpos seems to be 129.60251pt on input line 112.
+Package marginnote Info: xpos seems to be 102.91794pt on input line 112.
 
 ! Undefined control sequence.
 l.118 				\InfoblockDAlembertOperatorDef
@@ -3866,7 +3710,7 @@ and I'll forget about whatever was undefined.
 
 Package marginnote Info: Margin note 60.2 is on absolute page 60 on input line 
 122.
-Package marginnote Info: xpos seems to be 129.19957pt on input line 122.
+Package marginnote Info: xpos seems to be 103.63751pt on input line 122.
 ) (./Notes/lec17.tex [58]
 Lecture 17.
 
@@ -3876,15 +3720,13 @@ Overfull \hbox (9.34442pt too wide) in paragraph at lines 3--3
 
 Package marginnote Info: Margin note 61.1 is on absolute page 61 on input line 
 10.
-Package marginnote Info: xpos seems to be 129.60251pt on input line 10.
-Package marginnote Info: Suggest that margin note 61.2 will be on
-(marginnote)             absolute page 61.
-(marginnote)             This may be wrong on input line 20.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 20.
-Package marginnote Info: Suggest that margin note 61.3 will be on
-(marginnote)             absolute page 61.
-(marginnote)             This may be wrong on input line 28.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 28.
+Package marginnote Info: xpos seems to be 131.08372pt on input line 10.
+Package marginnote Info: Margin note 61.2 is on absolute page 61 on input line 
+20.
+Package marginnote Info: xpos seems to be 131.3699pt on input line 20.
+Package marginnote Info: Margin note 61.3 is on absolute page 62 on input line 
+28.
+Package marginnote Info: xpos seems to be 102.91716pt on input line 28.
 [59
 
 ]) (./Notes/lec18.tex [60]
@@ -3896,7 +3738,7 @@ Overfull \hbox (9.34442pt too wide) in paragraph at lines 3--3
 
 Package marginnote Info: Margin note 63.1 is on absolute page 63 on input line 
 9.
-Package marginnote Info: xpos seems to be 130.20573pt on input line 9.
+Package marginnote Info: xpos seems to be 131.3699pt on input line 9.
 ) (./Notes/lec19.tex [61
 
 ]
@@ -3910,10 +3752,6 @@ Package mdframed Info: mdframed works in twoside mode on input line 6.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 6.
-
-LaTeX Warning: Reference `mdf@pagelabel-46' on page 62 undefined on input line 
-12.
-
 ) (./Notes/lec20.tex [62
 
 ]
@@ -3947,25 +3785,23 @@ You may provide a definition with
 
 Package marginnote Info: Margin note 66.1 is on absolute page 66 on input line 
 19.
-Package marginnote Info: xpos seems to be 129.60765pt on input line 19.
+Package marginnote Info: xpos seems to be 102.92313pt on input line 19.
 [64
 
 ]
 Package marginnote Info: Margin note 67.1 is on absolute page 67 on input line 
 23.
-Package marginnote Info: xpos seems to be 129.66539pt on input line 23.
-Package marginnote Info: Suggest that margin note 67.2 will be on
-(marginnote)             absolute page 67.
-(marginnote)             This may be wrong on input line 44.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 44.
+Package marginnote Info: xpos seems to be 131.3699pt on input line 23.
+Package marginnote Info: Margin note 67.2 is on absolute page 67 on input line 
+44.
+Package marginnote Info: xpos seems to be 131.3699pt on input line 44.
  [65]
-Package marginnote Info: Margin note 68.1 is on absolute page 69 on input line 
+Package marginnote Info: Margin note 68.1 is on absolute page 68 on input line 
 61.
-Package marginnote Info: xpos seems to be 129.60251pt on input line 61.
-Package marginnote Info: Suggest that margin note 68.2 will be on
-(marginnote)             absolute page 68.
-(marginnote)             This may be wrong on input line 63.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 63.
+Package marginnote Info: xpos seems to be 103.22787pt on input line 61.
+Package marginnote Info: Margin note 68.2 is on absolute page 68 on input line 
+63.
+Package marginnote Info: xpos seems to be 102.90332pt on input line 63.
 
 Overfull \hbox (10.76382pt too wide) in paragraph at lines 69--70
 []\T1/cmr/m/n/10.95 (-20) Schreibe für die Form $\OML/cmm/m/it/10.95 h \OT1/cmr
@@ -3974,10 +3810,9 @@ Overfull \hbox (10.76382pt too wide) in paragraph at lines 69--70
 te Hamilton-Funktionsauswertung
  []
 
-Package marginnote Info: Suggest that margin note 68.3 will be on
-(marginnote)             absolute page 68.
-(marginnote)             This may be wrong on input line 74.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 74.
+Package marginnote Info: Margin note 68.3 is on absolute page 68 on input line 
+74.
+Package marginnote Info: xpos seems to be 104.13953pt on input line 74.
 ! Undefined control sequence.
 l.78 			Die Reise des \textt
                             {IK3} fÃ¼hrte uns von $3N\in\N$ Freiheitsgrade m...
@@ -4008,13 +3843,13 @@ Package rerunfilecheck Info: File `WiSe22IK3T.out' has not changed.
 (rerunfilecheck)             Checksum: A273359853DFAB7B403DEF2BA8C9E341;11201.
  ) 
 Here is how much of TeX's memory you used:
- 62456 strings out of 476025
- 1459034 string characters out of 14540017
- 17062827 words of memory out of 20000000
- 80864 multiletter control sequences out of 15000+600000
+ 62382 strings out of 476025
+ 1458103 string characters out of 14540017
+ 17064365 words of memory out of 20000000
+ 80785 multiletter control sequences out of 15000+600000
  572870 words of font info for 363 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 143i,29n,137p,1074b,1521s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 143i,29n,137p,1074b,1514s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pf
 b></usr/local/texlive/2023/texmf-dist/fonts/type1/public/bbold-type1/bbold5.pfb
 ></usr/local/texlive/2023/texmf-dist/fonts/type1/public/bbold-type1/bbold7.pfb>
@@ -4064,7 +3899,7 @@ al/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local
 /texlive/2023/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb></usr/local/texlive/
 2023/texmf-dist/fonts/type1/public/wasy-type1/wasy10.pfb></usr/local/texlive/20
 23/texmf-dist/fonts/type1/public/boondox/zxxrw8a.pfb>
-Output written on WiSe22IK3T.pdf (69 pages, 1900159 bytes).
+Output written on WiSe22IK3T.pdf (69 pages, 1899789 bytes).
 PDF statistics:
  1264 PDF objects out of 1440 (max. 8388607)
  1071 compressed objects within 11 object streams
